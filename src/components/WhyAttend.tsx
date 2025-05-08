@@ -169,7 +169,7 @@ const WhyAttend: React.FC = () => {
         <div className="flex flex-col sm:flex-row gap-4 mt-6 justify-center ">
             <CustomButton
               text={t('whyAttend.ctaBuyTicket', 'Buy your ticket')}
-              onClick={() => {}}
+              onClick={() => window.open('https://mego.tickets/#/', '_blank')}
               roundSide="both"
             />
             <CustomButton

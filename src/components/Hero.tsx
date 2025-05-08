@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
             <div className="absolute inset-x-0 bottom-0 h-3/4 md:h-full w-full md:w-4/5 lg:w-3/4 xl:w-2/3 bg-gradient-to-t from-[#fbe6e9]/70 via-[#fbe6e9]/40 to-transparent rounded-t-[150px] md:rounded-t-[200px] z-0 opacity-70 md:opacity-100 md:right-0 md:left-auto blur-2xl"></div>
             
             {/* Testo Location sovrapposto */}
-            <div className="absolute top-4 right-4 md:top-6 md:right-6 lg:top-8 lg:right-8 z-20">
+            <div className="absolute sm:block hidden top-4 right-4 md:top-6 md:right-6 lg:top-8 lg:right-8 z-20">
               <span className="text-black font-bold text-xs sm:text-sm md:text-base tracking-wider uppercase">
                 {t('hero.location', 'SPAZIO MURAT - BARI')}
               </span>
