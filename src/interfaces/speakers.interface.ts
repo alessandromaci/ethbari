@@ -6,6 +6,8 @@ interface SocialLink {
 interface Speaker {
     Nome: string;
     Cognome: string;
+    Username?: string;
+    MainHashtag: string;
     Socials_links: SocialLink[];
     Mansione: string;
     Photourl: string;

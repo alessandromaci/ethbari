@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
     <>
       <footer className="w-full bg-ethbari-dark text-white pt-16 pb-12 px-6 rounded-t-3xl">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
-          {/* Colonna Sinistra (Info) */} 
+          {/* Colonna Sinistra (Info) */}
           <div className="lg:col-span-7 space-y-10">
             <h2 className="text-4xl md:text-5xl font-black leading-tight uppercase tracking-wider">
               {t('footer.assist.title', `WE'RE HERE TO CONNECT AND ASSIST YOU`)}
@@ -36,15 +36,18 @@ const Footer: React.FC = () => {
             <div>
               <h4 className="font-bold uppercase tracking-wider mb-3">{t('footer.followUs', 'FOLLOW US')}</h4>
               <div className="flex space-x-5">
-                <SocialIcon href="https://www.linkedin.com/company/ethereumbari" iconName="linkedin"/>
-                <SocialIcon href="https://www.instagram.com/ethereumbari" iconName="instagram"/>
+                <SocialIcon href="https://www.linkedin.com/company/ethereumbari" iconName="linkedin" />
+                <SocialIcon href="https://www.instagram.com/ethereumbari" iconName="instagram" />
               </div>
             </div>
           </div>
 
-          {/* Colonna Destra (Form) */} 
+          {/* Colonna Destra (Form) */}
           <div className="lg:col-span-5 bg-[#333333] rounded-3xl flex items-center justify-center p-4">
-            <img src="/map.svg" alt="Map" className="w-full h-auto object-cover rounded-lg max-w-[90%]" />
+            <img
+              onClick={() => window.open('https://www.google.com/maps/place/Spazio+Murat/@41.1264093,16.8691747,17z/data=!3m2!4b1!5s0x1347e866a6711563:0xa0cf5b02f7139cf8!4m6!3m5!1s0x1347e8641da0e4bd:0x471bec7a34deffaf!8m2!3d41.1264053!4d16.8717496!16s%2Fg%2F11c45d2w4p?entry=ttu&g_ep=EgoyMDI1MDUwNS4wIKXMDSoASAFQAw%3D%3D', '_blank')}
+              src="/map.svg" alt="Map"
+              className="w-full h-auto object-cover rounded-lg max-w-[95%] cursor-pointer hover:scale-105 transition-all duration-300" />
           </div>
         </div>
       </footer>

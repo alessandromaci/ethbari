@@ -2,58 +2,59 @@
   {
     "Nome": "Matteo",
     "Cognome": "Tambussi",
+    "MainHashtag": "@SpaghettETH",
     "Socials_links": [
-      { "type": "linkedin", "url": "https://www.linkedin.com/in/matteotambussi" },
-      { "type": "twitter", "url": "https://twitter.com/matteotambussi" },
-      { "type": "facebook", "url": "https://www.facebook.com/matteotambussi" },
-      { "type": "instagram", "url": "https://www.instagram.com/matteotambussi" },
-      { "type": "telegram", "url": "https://t.me/matteotambussi" },
-      { "type": "github", "url": "https://github.com/matteotambussi" }
+      { "type": "twitter", "url": "https://x.com/matteotambussi" }
     ],
-    "Mansione": "Blockchain Developer & Core Contributor",
+    "Mansione": "Musician and web3 art since 2018. Co-founder of SpaghettETH. Previously: Livepeer, Remix IDE, Stake Capital, Rekt, StableSummit",
     "Photourl": "/speakers/matlemad.jpg"
   },
   {
     "Nome": "Francesco",
     "Cognome": "Bianchi",
+    "MainHashtag": "@Pareto",
     "Socials_links": [
-      { "type": "github", "url": "https://github.com/francesco_bianchi" },
-      { "type": "twitter", "url": "https://twitter.com/francesco_bianchi" }
+      { "type": "twitter", "url": "https://x.com/biafffff" }
     ],
-    "Mansione": "DeFi Researcher & Strategist",
+    "Mansione": "Francesco leads growth at Pareto. Previously, a researcher in academia and a banker at Citi.",
     "Photourl": "/speakers/francesco_bianchi.jpg"
   },
   {
     "Nome": "Maria",
-    "Cognome": "Verdi",
+    "Cognome": "Magenes",
+    "MainHashtag": "@Hype",
     "Socials_links": [
-      { "type": "linkedin", "url": "https://www.linkedin.com/in/mariaverdi" }
+      { "type": "twitter", "url": "https://x.com/mariamagenes1" }
     ],
-    "Mansione": "Smart Contract Auditor & Security Expert",
+    "Mansione": "Maria is VP of Strategy at hype, a crypto marketing agency. She’s been involved in the DeFi marketing since 2018. Prev @summerfinance_, @balancer, @MakerDAO & @aave.",
     "Photourl": "/speakers/maria.jpg"
   },
   {
     "Nome": "Alessandro",
     "Cognome": "Maci",
+    "MainHashtag": "@P2P.org",
     "Socials_links": [
-      { "type": "twitter", "url": "https://twitter.com/alessandro_macin" }
+      { "type": "twitter", "url": "https://x.com/alerex_eth" }
     ],
-    "Mansione": "Founder & CEO di Web3 Startup",
+    "Mansione": "Product Lead at P2P.org, building the infrastructure that powers institutional access to digital assets and managing over $7B in TVL. His background includes co-founding Woop and contributing to DeFi DAOs like Index Coop and Developer DAO",
     "Photourl": "/speakers/alessandro_maci.jpg"
   },
   {
-    "Nome": "Sofia",
-    "Cognome": "Gialli",
+    "Nome": null,
+    "Cognome": null,
+    "Username": "LimoneETH",
+    "MainHashtag": "@builders_garden",
     "Socials_links": [
-      { "type": "linkedin", "url": "https://www.linkedin.com/in/sofiagialli" },
-      { "type": "github", "url": "https://github.com/sofiagialli" }
+      { "type": "twitter", "url": "https://x.com/limone_eth" }
     ],
-    "Mansione": "NFT Artist & Community Manager",
+    "Mansione": "Product @builders_garden 📷 | hosting a web3 hub in Rome @urbeEth @ETHRome",
     "Photourl": "/speakers/limoneth.png"
   },
   {
-    "Nome": "Davide",
-    "Cognome": "Bruni",
+    "Nome": null,
+    "Cognome": null,
+    "Username": "Jaack",
+    "MainHashtag": "@Routescan",
     "Socials_links": [
       { "type": "twitter", "url": "https://twitter.com/davidebruni_dao" }
     ],

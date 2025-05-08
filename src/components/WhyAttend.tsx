@@ -166,18 +166,18 @@ const WhyAttend: React.FC = () => {
           ))}
         </div>
 
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-4">
-          <CustomButton
-            text={t('whyAttend.ctaBuyTicket', 'Buy your ticket')}
-            onClick={() => {}}
-            roundSide="both"
-          />
-          <CustomButton
-            text={t('whyAttend.ctaApplySponsor', 'Apply as sponsor')}
-            onClick={() => {}}
-            backgroundClasses="bg-[linear-gradient(90deg,#00C9E3_0.02%,rgba(0,201,227,0.34)_105.15%)]"
-            roundSide="both"
-          />
+        <div className="flex flex-col sm:flex-row gap-4 mt-6 justify-center ">
+            <CustomButton
+              text={t('whyAttend.ctaBuyTicket', 'Buy your ticket')}
+              onClick={() => {}}
+              roundSide="both"
+            />
+            <CustomButton
+              text={t('whyAttend.ctaApplySponsor', 'Apply as sponsor')}
+              onClick={() => {}}
+              backgroundClasses="bg-[linear-gradient(90deg,#00C9E3_0.02%,rgba(0,201,227,0.34)_105.15%)]"
+              roundSide="both"
+            />
         </div>
       </div>
     </section>
