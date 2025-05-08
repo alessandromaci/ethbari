@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import type { Speaker } from "../interfaces/speakers.interface";
 
 interface SpeakerCardProps {
@@ -6,35 +7,62 @@ interface SpeakerCardProps {
 }
 
 const SpeakerCard: React.FC<SpeakerCardProps> = ({ speaker, index }) => {
+    const [isHovered, setIsHovered] = useState(false);
+
     return (
         <div className="flex flex-col gap-2">
-            <div key={`speaker-${index}-${speaker.Nome}-${speaker.Cognome}`} className="rounded-xl border-2 border-red-500 overflow-hidden h-96 bg-gray-100">
+            {/* Contenitore principale per immagine e overlay hover */}
+            <div 
+                className="relative rounded-xl border-2 border-red-500 overflow-hidden h-96 bg-gray-100" // Rimosso aspect-ratio, ripristinato h-96
+                onMouseEnter={() => setIsHovered(true)}
+                onMouseLeave={() => setIsHovered(false)}
+            >
+                {/* Immagine */}
                 <img
                     src={speaker.Photourl}
                     alt={`${speaker.Nome} ${speaker.Cognome}` || `Speaker ${index + 1}`}
-                    className="object-cover w-full h-full filter grayscale transition-all duration-300 hover:filter-none hover:scale-105"
+                    className="object-cover w-full h-full filter grayscale transition-all duration-300" // Rimosso hover scale/filter
                 />
-            </div>
 
-            {/* md section */}
-            <div className="sm:hidden flex flex-col gap-2 items-center justify-center">
-                <div className="w-full flex flex-col items-center justify-center">
+                {/* Popup Overlay (visibile solo su sm+ on hover) */}
+                <div 
+                    className={`absolute inset-0 bg-white p-4 rounded-xl hidden sm:flex flex-col items-center justify-center text-center 
+                               transition-opacity duration-300 ease-in-out 
+                               ${isHovered ? 'opacity-100' : 'opacity-0 pointer-events-none'}` // Controllo opacità e pointer-events
+                    }
+                >
                     <h3 className="text-lg font-bold">{speaker.Nome} {speaker.Cognome}</h3>
-                    <p className="text-sm text-gray-500">{speaker.Mansione}</p>
-                </div>
-                {/* social links */}
-                <div className="flex flex-row gap-2">
-                    {
-                        speaker?.Socials_links?.map((social, index) => (
-                            <img
-                                onClick={() => window.open(social?.url, '_blank')}
-                                style={{ width: '25px', height: '25px', cursor: 'pointer' }}
+                    <p className="text-sm text-gray-600 px-2 mb-2">{speaker.Mansione}</p>
+                    {/* Social Links nel Popup */}
+                    <div className="flex flex-row gap-3 mt-1">
+                        {speaker?.Socials_links?.map((social, i) => (
+                            <a href={social.url} target="_blank" rel="noopener noreferrer" key={i} className="hover:opacity-75">
+                               <img
+                                style={{ width: '20px', height: '20px' }}
                                 src={`/icons/${social.type}.svg`}
                                 alt={social.type}
-                                key={index}
-                            />
-                        ))
-                    }
+                              />
+                            </a>
+                        ))}
+                    </div>
+                </div>
+            </div>
+
+            {/* Info visibili solo su Mobile (sotto la card) */}
+            <div className="sm:hidden flex flex-col gap-2 items-center justify-center mt-3 text-center">
+                <h3 className="text-lg font-bold">{speaker.Nome} {speaker.Cognome}</h3>
+                <p className="text-sm text-gray-500 px-2">{speaker.Mansione}</p>
+                {/* Social Links Mobile */}
+                <div className="flex flex-row gap-3 mt-1">
+                    {speaker?.Socials_links?.map((social, i) => (
+                        <a href={social.url} target="_blank" rel="noopener noreferrer" key={i} className="hover:opacity-75">
+                           <img
+                            style={{ width: '25px', height: '25px' }}
+                            src={`/icons/${social.type}.svg`}
+                            alt={social.type}
+                          />
+                        </a>
+                    ))}
                 </div>
             </div>
         </div>

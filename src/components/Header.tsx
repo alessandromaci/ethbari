@@ -139,7 +139,7 @@ const Header: React.FC = () => {
           <div className="hidden md:block">
             <CustomButton
               text={t('header.ticketButton', 'TICKETS')}
-              onClick={() => console.log('Ticket button clicked')} // Azione placeholder
+              onClick={() => window.open('https://mego.tickets/#/', '_blank')} // Azione placeholder
             />
           </div>
 

@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
                 iconWidth={12}
                 iconHeight={12}
                 text={window.innerWidth < 768 ? t('hero.ctaGetTicketsShort', 'Biglietto') : t('hero.ctaGetTickets', 'Prendi il tuo Biglietto')}
-                onClick={() => console.log('Hero CTA clicked')}
+                onClick={() => window.open('https://mego.tickets/#/', '_blank')}
                 backgroundClasses="bg-[linear-gradient(to_right,#FF0012_0%,rgba(255,0,18,0.49)_100%)]"
               />
             </div>
