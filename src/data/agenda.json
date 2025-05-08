@@ -1,0 +1,51 @@
+[
+  {
+    "title": "Opening Ceremony",
+    "speaker": "ETHBari Team",
+    "time": "10:25-10:45",
+    "duration": "20 minutes",
+    "tags": ["AI", "Blockchain", "Speaker"]
+  },
+  {
+    "title": "Keynote: The Future of DeFi",
+    "speaker": "Jane Doe",
+    "time": "10:45-11:30",
+    "duration": "45 minutes",
+    "tags": ["DeFi", "Keynote", "Speaker"]
+  },
+  {
+    "title": "Workshop: Building on L2s",
+    "speaker": "John Smith",
+    "time": "11:30-12:15",
+    "duration": "45 minutes",
+    "tags": ["L2", "Workshop", "Dev"]
+  },
+  {
+    "title": "Panel: NFTs and the Metaverse",
+    "speaker": "Alice & Bob",
+    "time": "12:15-13:00",
+    "duration": "45 minutes",
+    "tags": ["NFT", "Metaverse", "Panel"]
+  },
+  {
+    "title": "Lunch Break",
+    "speaker": "",
+    "time": "13:00-14:00",
+    "duration": "60 minutes",
+    "tags": ["Break"]
+  },
+  {
+    "title": "Advanced Smart Contract Security",
+    "speaker": "Charlie Brown",
+    "time": "14:00-14:45",
+    "duration": "45 minutes",
+    "tags": ["Security", "Smart Contracts", "Dev"]
+  },
+  {
+    "title": "Closing Remarks",
+    "speaker": "ETHBari Team",
+    "time": "14:45-15:00",
+    "duration": "15 minutes",
+    "tags": ["Closing"]
+  }
+] 

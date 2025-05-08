@@ -1,0 +1,63 @@
+[
+  {
+    "Nome": "Matteo",
+    "Cognome": "Tambussi",
+    "Socials_links": [
+      { "type": "linkedin", "url": "https://www.linkedin.com/in/matteotambussi" },
+      { "type": "twitter", "url": "https://twitter.com/matteotambussi" },
+      { "type": "facebook", "url": "https://www.facebook.com/matteotambussi" },
+      { "type": "instagram", "url": "https://www.instagram.com/matteotambussi" },
+      { "type": "telegram", "url": "https://t.me/matteotambussi" },
+      { "type": "github", "url": "https://github.com/matteotambussi" }
+    ],
+    "Mansione": "Blockchain Developer & Core Contributor",
+    "Photourl": "/speakers/matlemad.jpg"
+  },
+  {
+    "Nome": "Francesco",
+    "Cognome": "Bianchi",
+    "Socials_links": [
+      { "type": "github", "url": "https://github.com/francesco_bianchi" },
+      { "type": "twitter", "url": "https://twitter.com/francesco_bianchi" }
+    ],
+    "Mansione": "DeFi Researcher & Strategist",
+    "Photourl": "/speakers/francesco_bianchi.jpg"
+  },
+  {
+    "Nome": "Maria",
+    "Cognome": "Verdi",
+    "Socials_links": [
+      { "type": "linkedin", "url": "https://www.linkedin.com/in/mariaverdi" }
+    ],
+    "Mansione": "Smart Contract Auditor & Security Expert",
+    "Photourl": "/speakers/maria.jpg"
+  },
+  {
+    "Nome": "Alessandro",
+    "Cognome": "Maci",
+    "Socials_links": [
+      { "type": "twitter", "url": "https://twitter.com/alessandro_macin" }
+    ],
+    "Mansione": "Founder & CEO di Web3 Startup",
+    "Photourl": "/speakers/alessandro_maci.jpg"
+  },
+  {
+    "Nome": "Sofia",
+    "Cognome": "Gialli",
+    "Socials_links": [
+      { "type": "linkedin", "url": "https://www.linkedin.com/in/sofiagialli" },
+      { "type": "github", "url": "https://github.com/sofiagialli" }
+    ],
+    "Mansione": "NFT Artist & Community Manager",
+    "Photourl": "/speakers/limoneth.png"
+  },
+  {
+    "Nome": "Davide",
+    "Cognome": "Bruni",
+    "Socials_links": [
+      { "type": "twitter", "url": "https://twitter.com/davidebruni_dao" }
+    ],
+    "Mansione": "DAO Facilitator & Governance Specialist",
+    "Photourl": "/speakers/jack.jpg"
+  }
+] 
