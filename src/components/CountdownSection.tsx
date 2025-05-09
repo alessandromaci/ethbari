@@ -13,7 +13,7 @@ const CountdownSection: React.FC = () => {
   const [isEventOver, setIsEventOver] = useState(false); // Stato per evento passato
 
   useEffect(() => {
-    const eventDate = new Date('2025-09-08T17:19:00'); // Data hardcodata
+    const eventDate = new Date('2025-09-25T08:00:00'); // Data hardcodata
 
     const calculateState = () => {
       const now = new Date();

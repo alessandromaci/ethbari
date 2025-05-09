@@ -96,7 +96,7 @@ const AgendaSection: React.FC = () => {
         {/* Intestazione aggiornata */}
         <div className="flex flex-col lg:flex-row items-center justify-between mb-12 md:mb-16 gap-8 lg:gap-4">
           {/* Titolo e Sottotitolo a destra su lg, sopra e centrato su mobile */}
-          <div className="text-center lg:text-right w-full lg:w-auto order-2 lg:order-2">
+          <div className="text-left lg:text-right w-full lg:w-auto order-2 lg:order-2">
             <h2 className="text-black font-koho font-medium text-5xl md:text-6xl lg:text-7xl tracking-wider mb-2">
               {t('agenda.title', 'AGENDA')}
             </h2>

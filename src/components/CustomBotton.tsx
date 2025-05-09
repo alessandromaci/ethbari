@@ -15,9 +15,9 @@ const CustomButton = ({ icon, text, onClick, iconPosition = 'left', backgroundCl
     const currentBg = backgroundClasses || defaultBg;
 
     const baseStyling = `py-2
-    ${roundSide === 'left' ? 'rounded-l-[15px]' : 'rounded-r-[15px]'} 
-    ${roundSide === 'right' ? 'rounded-r-[15px]' : ''} 
-    ${roundSide === 'both' ? 'rounded-l-[3px] rounded-r-[15px]' : ''} 
+    ${roundSide === 'left' ? 'rounded-l-[10px]' : 'rounded-r-[10px]'} 
+    ${roundSide === 'right' ? 'rounded-r-[10px]' : ''} 
+    ${roundSide === 'both' ? 'rounded-l-[10px] rounded-r-[10px]' : ''} 
     px-6 text-lg
     font-geist 
     font-medium 
