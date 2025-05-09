@@ -110,7 +110,7 @@ const Header: React.FC = () => {
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 group" onClick={(e) => handleSmoothScroll(e, '#')}>
             <img
-              src="/Logo_Desktop.png"
+              src="/Logo_Desktop.svg"
               alt="ETHBARI Logo"
               className="hidden md:block h-10 w-auto group-hover:opacity-80 transition-opacity"
             />
