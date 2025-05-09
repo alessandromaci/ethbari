@@ -46,7 +46,7 @@ const benefits: AttendBenefit[] = [
 const BenefitCard: React.FC<{ benefit: AttendBenefit }> = ({ benefit }) => {
   const { t } = useTranslation();
   return (
-    <div className={`p-8 rounded-3xl shadow-sm ${benefit.textColorClass} flex flex-col min-h-[260px]`}
+    <div className={`p-8 rounded-3xl shadow-sm ${benefit.textColorClass} flex flex-col min-h-[300px]`}
       style={{ backgroundColor: benefit.bgColorClass }}
     >
       <h3 className="text-xl font-bold mb-3 uppercase tracking-wide font-koho font-bold">{t(benefit.titleKey, benefit.titleDefault)}</h3>
