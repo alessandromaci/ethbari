@@ -14,7 +14,11 @@ export default {
       fontFamily: {
         koho: ['KoHo', 'sans-serif'],
         geist: ['Geist', 'sans-serif'],
-      }
+      },
+      maxWidth: {
+        '8xl': '1400px',
+        '9xl': '1600px',
+      },
     },
   },
   plugins: [],

@@ -7,7 +7,7 @@ const ZeroToHero: React.FC = () => {
 
   return (
     <section className="w-full bg-white py-20">
-      <div className="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+      <div className="max-w-9xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
         {/* Colonna Sinistra */}
         <div className="flex-1 lg:max-w-xl text-center lg:text-left">
           <h2 className="text-black font-black text-4xl sm:text-5xl md:text-6xl leading-tight mb-4">

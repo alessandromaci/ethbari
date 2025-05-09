@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
   return (
     <>
       <footer className="w-full bg-ethbari-dark text-white pt-16 pb-12 px-6 rounded-t-3xl">
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <div className="max-w-9xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
           {/* Colonna Sinistra (Info) */}
           <div className="lg:col-span-7 space-y-10">
             <h2 className="text-4xl md:text-5xl font-black leading-tight uppercase tracking-wider">
@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
 
       {/* Barra Inferiore */}
       <div className="w-full bg-white py-4 px-6 text-gray-500 text-xs">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
+        <div className="max-w-9xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-2">
           <p onClick={() => window.open('https://yomi.digital/#/', '_blank')} className="text-gray-500 cursor-pointer">{t('footer.credits', 'Made with love by YOMI')}</p>
           <p className="text-gray-500">{t('footer.copy', '©2025')}</p>
           <div className="space-x-3">

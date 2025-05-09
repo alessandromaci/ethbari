@@ -52,7 +52,7 @@ const CountdownSection: React.FC = () => {
 
   return (
     <section className="w-full bg-white pt-12 pb-20">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-6 lg:gap-12">
+      <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-6 lg:gap-12">
         <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12">
           <div className="flex-1 flex flex-col justify-center text-center lg:text-left">
             <h2 className="text-black font-black text-4xl sm:text-5xl md:text-6xl leading-none mb-6">

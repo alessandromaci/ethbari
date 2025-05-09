@@ -79,7 +79,7 @@ const AgendaSection: React.FC = () => {
 
   return (
     <section className="w-full bg-white py-20">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-9xl mx-auto px-6">
         {/* Intestazione aggiornata */}
         <div className="flex flex-col lg:flex-row items-center justify-between mb-12 md:mb-16 gap-8 lg:gap-4">
           {/* Titolo e Sottotitolo a sinistra su lg, sopra e centrato su mobile */}

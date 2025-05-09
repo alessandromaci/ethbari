@@ -1,17 +1,32 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import CustomButton from './CustomBotton';
 
 const Hero: React.FC = () => {
   const { t } = useTranslation();
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    // Esegui l'handler una volta all'inizio in caso la larghezza iniziale sia già mobile
+    handleResize(); 
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []); // Array di dipendenze vuoto per eseguire l'effetto solo al montaggio e smontaggio
 
   return (
     <section className="relative w-full bg-white flex flex-col justify-center overflow-hidden">
       {/* Contenuto Principale della Hero Section */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-10 w-full">
+      <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 z-10 w-full">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center py-12 md:py-16 lg:py-20">
           {/* Colonna Sinistra: Testo */}
-          <div className="flex flex-col justify-center text-center lg:text-left">
+          <div className="flex flex-col justify-center text-left">
             <div className="mb-3 md:mb-4">
               <p className="block text-black text-xs font-semibold tracking-widest uppercase font-geist">
                 {t('hero.eventDate', 'SEPTEMBER 25-26, 2025')}
@@ -22,16 +37,16 @@ const Hero: React.FC = () => {
               {t('hero.title.line2', 'FUTURO')}<br />
               {t('hero.title.line3', 'DELLA FINANZA')}
             </h1>
-            <p className="text-black text-base md:text-lg max-w-md mx-auto lg:mx-0 mb-8 leading-relaxed font-geist">
-              {t('hero.subtitleFull', 'ETH Bari è l\'evento che porta l\'innovazione della finanza decentralizzata (DeFi) nel Sud Italia. Unisciti a studenti, giovani professionisti e appassionati di innovazione tecnologica per esplorare, costruire e dare forma al futuro della finanza — e far nascere nuove idee all\'incrocio tra tecnologia, economia e blockchain.')}
+            <p className="text-black text-base md:text-lg max-w-md lg:mx-0 mb-8 leading-relaxed font-geist">
+              {t('hero.subtitleFull', "ETH Bari è l'evento che porta l'innovazione della finanza decentralizzata (DeFi) nel Sud Italia. Unisciti a studenti, giovani professionisti e appassionati di innovazione tecnologica per esplorare, costruire e dare forma al futuro della finanza — e far nascere nuove idee all'incrocio tra tecnologia, economia e blockchain.")}
             </p>
-            <div className="flex justify-center lg:justify-start">
+            <div className="flex justify-start">
               <CustomButton
                 icon="/arrow.svg"
                 iconPosition="right"
                 iconWidth={12}
                 iconHeight={12}
-                text={window.innerWidth < 768 ? t('hero.ctaGetTicketsShort', 'Biglietto') : t('hero.ctaGetTickets', 'Prendi il tuo Biglietto')}
+                text={isMobile ? t('hero.ctaGetTicketsShort', 'Biglietto') : t('hero.ctaGetTickets', 'Prendi il tuo Biglietto')}
                 onClick={() => window.open('https://mego.tickets/#/', '_blank')}
                 backgroundClasses="bg-[linear-gradient(to_right,#FF0012_0%,rgba(255,0,18,0.49)_100%)]"
               />
@@ -70,29 +85,29 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      {/* Sezione Supporters integrata sotto */ }
-  <div className="w-full flex flex-col items-center pt-10 pb-12 md:pt-16 md:pb-20 bg-white z-10 relative">
-    <p className="text-black tracking-[0.2em] text-xs font-semibold mb-6 uppercase font-geist">
-      {t('supportersWoop.sponsoredBy', 'SUPPORTED BY')}
-    </p>
+      {/* Sezione Supporters integrata sotto */}
+      <div className="w-full flex flex-col items-center pt-10 pb-12 md:pt-16 md:pb-20 bg-white z-10 relative">
+        <p className="text-black tracking-[0.2em] text-xs font-semibold mb-6 uppercase font-geist">
+          {t('supportersWoop.sponsoredBy', 'SUPPORTED BY')}
+        </p>
 
-    {/* Immagine Ellipse per l'effetto glow, posizionata rispetto al contenitore esterno */}
-    <img
-      src="/Ellipse.png"
-      alt=""
-      className="absolute left-1/2 -translate-x-1/2 w-100 h-auto md:w-96 lg:w-[600px] z-0 pointer-events-none"
-      aria-hidden="true"
-    />
+        {/* Immagine Ellipse per l'effetto glow, posizionata rispetto al contenitore esterno */}
+        <img
+          src="/Ellipse.png"
+          alt=""
+          className="absolute left-1/2 -translate-x-1/2 w-100 h-auto md:w-96 lg:w-[600px] z-0 pointer-events-none"
+          aria-hidden="true"
+        />
 
-    {/* Contenitore per il solo logo Woop, per il controllo dello z-index */}
-    <div className="relative z-10">
-      <img
-        src="/WoopPayLogo.png"
-        alt="Woop Pay Logo"
-        className="h-10 md:h-12 lg:h-14"
-      />
-    </div>
-  </div>
+        {/* Contenitore per il solo logo Woop, per il controllo dello z-index */}
+        <div className="relative z-10">
+          <img
+            src="/WoopPayLogo.png"
+            alt="Woop Pay Logo"
+            className="h-10 md:h-12 lg:h-14"
+          />
+        </div>
+      </div>
     </section >
   );
 };

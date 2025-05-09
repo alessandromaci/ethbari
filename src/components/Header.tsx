@@ -106,7 +106,7 @@ const Header: React.FC = () => {
     <>
       {/* Header Principale */}
       <header className="w-full bg-white border-b border-gray-100 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
+        <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-20">
           {/* Logo */}
           <a href="#" className="flex items-center gap-2 group" onClick={(e) => handleSmoothScroll(e, '#')}>
             <img

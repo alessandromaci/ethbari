@@ -121,7 +121,7 @@ const WhyAttend: React.FC = () => {
 
   return (
     <section className="w-full bg-white py-20">
-      <div className="max-w-7xl mx-auto px-6">
+      <div className="max-w-9xl mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center justify-between mb-12 md:mb-16 gap-8 lg:gap-4">
           <div className="text-center lg:text-left w-full lg:w-auto order-2 lg:order-1">
             <h2 className="text-black font-black text-5xl md:text-6xl tracking-wider">
