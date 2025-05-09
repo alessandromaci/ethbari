@@ -10,9 +10,9 @@ const MoreToComeCard = () => {
                 }}
             >
                 <div className="flex flex-col items-start justify-left">
-                    <p className="text-2xl text-white font-bold text-left">More</p>
-                    <p className="text-2xl text-white font-bold text-left">to come...</p>
-                    <p className="text-lg mt-4 text-white text-left">Apply as speaker</p>
+                    <p className="text-2xl text-white font-semibold text-left font-geist">More</p>
+                    <p className="text-2xl text-white font-semibold text-left font-geist">to come...</p>
+                    <p className="text-lg mt-4 text-white font-normal text-left font-geist">Apply as speaker</p>
                 </div>
                 <img src="/Blur.svg" alt="Arrow right" className="w-10 h-10 text-white" />
             </div>

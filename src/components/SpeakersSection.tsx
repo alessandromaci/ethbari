@@ -17,7 +17,7 @@ const SpeakersSection: React.FC = () => {
     <section className="w-full bg-white py-20">
       <div className="max-w-9xl mx-auto px-6">
         <div className="gap-4 md:gap-0 flex flex-col md:flex-row items-center justify-between mb-12">
-          <h2 className="text-4xl md:text-5xl font-black text-black leading-tight">
+          <h2 className="text-4xl md:text-5xl font-black text-black leading-tight font-koho font-medium">
             {/* Usa le chiavi di traduzione */}
             {t('speakers.title.line1', 'INCONTRA I NOSTRI')}<br />{t('speakers.title.line2', 'STRAORDINARI SPEAKER')}
           </h2>

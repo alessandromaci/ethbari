@@ -82,18 +82,19 @@ const AgendaSection: React.FC = () => {
       <div className="max-w-9xl mx-auto px-6">
         {/* Intestazione aggiornata */}
         <div className="flex flex-col lg:flex-row items-center justify-between mb-12 md:mb-16 gap-8 lg:gap-4">
-          {/* Titolo e Sottotitolo a sinistra su lg, sopra e centrato su mobile */}
-          <div className="text-center lg:text-left w-full lg:w-auto order-2 lg:order-1">
-            <h2 className="text-black font-black text-5xl md:text-6xl lg:text-7xl tracking-wider mb-2">
-              {t('agenda.title', 'AGENDA')}
-            </h2>
-            <p className="hidden lg:block text-gray-600 text-sm md:text-base">
+          {/* Titolo e Sottotitolo a destra su lg, sopra e centrato su mobile */}
+          <div className="text-center lg:text-right w-full lg:w-auto order-2 lg:order-2">
+            <h2 className="text-black font-koho font-medium text-5xl md:text-6xl lg:text-7xl tracking-wider mb-2">
+            <p className="hidden lg:block text-black text-sm md:text-base font-geist">
               {t('agenda.subtitle.date', 'September 25, 2025')} | {t('agenda.subtitle.city', 'Bari')}<br />
               {t('agenda.subtitle.location', 'Location Name')}
             </p>
+              {t('agenda.title', 'AGENDA')}
+            </h2>
           </div>
-          {/* Icona a destra su lg, sotto e centrata su mobile */}
-          <div className="flex-shrink-0 order-1 lg:order-2 mx-auto lg:mx-0">
+          
+          {/* Icona a sinistra su lg, sotto e centrata su mobile */}
+          <div className="flex-shrink-0 order-1 lg:order-1 mx-auto lg:mx-0">
             <img src="/Agenda.svg" alt="Agenda Icon"
               className="w-32 h-auto sm:w-40 lg:w-48" // Dimensioni reattive per l'immagine
             />

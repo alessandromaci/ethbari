@@ -171,6 +171,7 @@ const WhyAttend: React.FC = () => {
               text={t('whyAttend.ctaBuyTicket', 'Buy your ticket')}
               onClick={() => window.open('https://mego.tickets/#/', '_blank')}
               roundSide="both"
+              backgroundClasses="bg-[linear-gradient(to_right,#FF0012_0%,rgba(255,0,18,0.49)_100%)]"
             />
             <CustomButton
               text={t('whyAttend.ctaApplySponsor', 'Apply as sponsor')}

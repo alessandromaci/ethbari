@@ -53,25 +53,25 @@ const CountdownSection: React.FC = () => {
   return (
     <section className="w-full bg-white pt-12 pb-20">
       <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-6 lg:gap-12">
-        <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12">
-          <div className="flex-1 flex flex-col justify-center text-center lg:text-left">
-            <h2 className="text-black font-black text-4xl sm:text-5xl md:text-6xl leading-none mb-6">
+        <div className="flex flex-col lg:flex-row items-start lg:gap-12">
+          <div className="flex-1 flex flex-col justify-center text-left">
+            <h2 className="text-black font-medium text-4xl sm:text-5xl md:text-6xl leading-none mb-6 font-geist">
               {t('countdownSection.title.line1', 'Il cambiamento')}<br />{t('countdownSection.title.line2', 'comincia da qui.')}
             </h2>
-            <h3 className="text-black text-lg font-semibold mb-4">
+            <h3 className="text-black text-lg font-semibold mb-4 font-geist">
               {t('countdownSection.subtitle', 'Partecipa, impara, costruisci.')}
             </h3>
             <div className="text-gray-700 text-base max-w-xl mb-8 mx-auto lg:mx-0 space-y-4 leading-relaxed">
-              <p>
-                <span className="font-bold">{t('countdownSection.mission.title', 'La nostra missione')}</span>: {t('countdownSection.mission.text', 'rendere la DeFi comprensibile e accessibile a tutti. Condividiamo conoscenze di qualità, strumenti pratici e connessioni reali per chi vuole innovare.')}
+              <p className="font-geist">
+                <span className="font-bold font-geist text-black">{t('countdownSection.mission.title', 'La nostra missione')}</span>: {t('countdownSection.mission.text', 'rendere la DeFi comprensibile e accessibile a tutti. Condividiamo conoscenze di qualità, strumenti pratici e connessioni reali per chi vuole innovare.')}
               </p>
-              <p>
-                <span className="font-bold">{t('countdownSection.vision.title', 'La nostra visione')}</span>: {t('countdownSection.vision.text', 'va oltre l\'evento: vogliamo accendere un movimento a Bari, creare opportunità concrete di apprendimento, lavoro e impresa, e coltivare una nuova generazione di talenti pronta a costruire le startup Web3 del futuro. Bari può diventare un polo di innovazione. E tutto inizia da qui.')}
+              <p className="font-geist">
+                <span className="font-bold font-geist text-black">{t('countdownSection.vision.title', 'La nostra visione')}</span>: {t('countdownSection.vision.text', 'va oltre l\'evento: vogliamo accendere un movimento a Bari, creare opportunità concrete di apprendimento, lavoro e impresa, e coltivare una nuova generazione di talenti pronta a costruire le startup Web3 del futuro. Bari può diventare un polo di innovazione. E tutto inizia da qui.')}
               </p>
             </div>
           </div>
 
-          <div className="flex-1 flex flex-col items-center justify-center w-full max-w-lg mt-10 lg:mt-0">
+          <div className="flex-1 flex flex-col items-center justify-center w-full mt-10 lg:mt-0 lg:max-w-lg">
             <div className="relative w-full rounded-2xl overflow-hidden shadow-lg">
               <img
                 src="/CountdownWallpaper.png"
@@ -80,7 +80,7 @@ const CountdownSection: React.FC = () => {
               />
               {isEventOver ? (
                 <div className="absolute bottom-0 left-0 right-0 w-full bg-black/70 backdrop-blur-sm text-white flex justify-center items-center py-4 h-[88px] md:h-[96px] rounded-b-2xl">
-                  <span className="text-lg md:text-xl font-semibold">
+                  <span className="text-lg md:text-xl font-semibold font-geist">
                     {t('countdown.eventStarted', 'Event Started')}
                   </span>
                 </div>
@@ -108,7 +108,7 @@ const CountdownSection: React.FC = () => {
           </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 mt-6 justify-center ">
+        <div className="flex flex-col sm:flex-row sm:justify-center gap-4 mt-6 justify-start">
           <CustomButton
             text={t('countdownSection.ctaStayTuned', 'Stay tuned')}
             onClick={() => console.log('Ticket button clicked')}

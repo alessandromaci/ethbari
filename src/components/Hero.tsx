@@ -28,11 +28,11 @@ const Hero: React.FC = () => {
           {/* Colonna Sinistra: Testo */}
           <div className="flex flex-col justify-center text-left">
             <div className="mb-3 md:mb-4">
-              <p className="block text-black text-xs font-semibold tracking-widest uppercase font-geist">
+              <p className="block pl-1 text-black text-xl font-semibold tracking-widest uppercase font-geist font-bold">
                 {t('hero.eventDate', 'SEPTEMBER 25-26, 2025')}
               </p>
             </div>
-            <h1 className="text-black font-black text-4xl sm:text-5xl md:text-6xl lg:text-[68px] leading-tight mb-6 font-koho" style={{ letterSpacing: '-0.02em' }}>
+            <h1 className="text-black font-black text-4xl sm:text-5xl md:text-6xl lg:text-[68px] leading-tight mb-6 font-koho font-medium" style={{ letterSpacing: '-0.02em' }}>
               {t('hero.title.line1', 'COSTRUISCI IL')}<br />
               {t('hero.title.line2', 'FUTURO')}<br />
               {t('hero.title.line3', 'DELLA FINANZA')}
@@ -60,7 +60,7 @@ const Hero: React.FC = () => {
 
             {/* Testo Location sovrapposto */}
             <div className="absolute lg:block hidden top-4 right-4 md:top-6 md:right-6 lg:top-8 lg:right-8 z-20">
-              <span className="text-black font-bold text-xs sm:text-sm md:text-base tracking-wider uppercase">
+              <span className="text-black font-bold text-xl tracking-wider uppercase font-geist font-bold">
                 {t('hero.location', 'SPAZIO MURAT - BARI')}
               </span>
             </div>
@@ -87,7 +87,7 @@ const Hero: React.FC = () => {
 
       {/* Sezione Supporters integrata sotto */}
       <div className="w-full flex flex-col items-center pt-10 pb-12 md:pt-16 md:pb-20 bg-white z-10 relative">
-        <p className="text-black tracking-[0.2em] text-xs font-semibold mb-6 uppercase font-geist">
+        <p className="text-black tracking-[0.2em] text-xs font-semibold mb-6 uppercase font-koho font-semibold">
           {t('supportersWoop.sponsoredBy', 'SUPPORTED BY')}
         </p>
 

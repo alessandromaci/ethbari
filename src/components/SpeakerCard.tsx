@@ -32,11 +32,11 @@ const SpeakerCard: React.FC<SpeakerCardProps> = ({ speaker, index }) => {
                     }
                 >
                     <div>
-                        <h3 className="text-lg font-bold text-white">{(speaker.Username) ? speaker.Username : speaker.Nome} {speaker.Cognome}</h3>
-                        <p className="text-sm text-white px-2 mb-2">{speaker?.MainHashtag}</p>
+                        <h3 className="text-lg font-bold text-white font-geist">{(speaker.Username) ? speaker.Username : speaker.Nome} {speaker.Cognome}</h3>
+                        <p className="text-sm text-white px-2 mb-2 font-geist">{speaker?.MainHashtag}</p>
                     </div>
 
-                    <p className="text-sm text-white px-2 mb-2">{speaker?.Mansione}</p>
+                    <p className="text-sm text-white px-2 mb-2 font-geist">{speaker?.Mansione}</p>
 
                     {/* Social Links nel Popup */}
                     <div className="flex flex-row gap-3 mt-1">
@@ -55,9 +55,9 @@ const SpeakerCard: React.FC<SpeakerCardProps> = ({ speaker, index }) => {
 
             {/* Info visibili solo su Mobile (sotto la card) */}
             <div className="sm:hidden flex flex-col gap-2 items-center justify-center mt-3 text-center">
-                <h3 className="text-lg font-bold">{speaker.Nome} {speaker.Cognome}</h3>
-                <p className="text-sm text-gray-500 px-2">{speaker?.MainHashtag}</p>
-                <p className="text-sm text-gray-500 px-2">{speaker.Mansione}</p>
+                <h3 className="text-lg font-bold font-geist font-semibold">{speaker.Nome} {speaker.Cognome}</h3>
+                <p className="text-sm text-gray-500 text-normal px-2 font-geist">{speaker?.MainHashtag}</p>
+                <p className="text-sm text-gray-500 text-normal px-2 font-geist">{speaker.Mansione}</p>
                 {/* Social Links Mobile */}
                 <div className="flex flex-row gap-3 mt-1">
                     {speaker?.Socials_links?.map((social, i) => (
