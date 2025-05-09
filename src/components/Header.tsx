@@ -127,7 +127,7 @@ const Header: React.FC = () => {
               <a
                 key={link.labelKey}
                 href={link.href}
-                className="text-black text-sm font-medium tracking-wide hover:text-red-600 transition-colors duration-200 uppercase"
+                className="text-black font-geist text-sm font-medium tracking-wide hover:text-red-600 transition-colors duration-200"
                 onClick={(e) => handleSmoothScroll(e, link.href)}
               >
                 {t(link.labelKey, link.defaultLabel)}
@@ -150,13 +150,12 @@ const Header: React.FC = () => {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
               className="text-black hover:text-red-600 focus:outline-none p-2 z-[101] relative" // Z-index più alto dell'overlay per essere cliccabile
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                {/* L'icona cambia in base allo stato, ma ora controlla l'overlay esterno */}
-                {isMenuOpen ? (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" /> // Icona X originale come esempio, o usa "-"
-                ) : (
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path> 
-                )}
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                {/* Mostra sempre l'icona MenuIcon.svg */}
+                <>
+                  <path d="M24 4C25.1046 4 26 3.10457 26 2C26 0.89543 25.1046 0 24 0V4ZM2 0L0 0V4L2 4V0ZM24 0L2 0V4L24 4V0Z" fill="black" stroke="none"/>
+                  <path d="M24 13C25.1046 13 26 12.1046 26 11C26 9.89543 25.1046 9 24 9V13ZM2 9H0V13H2V9ZM24 9L2 9V13L24 13V9Z" fill="black" stroke="none"/>
+                </>
               </svg>
             </button>
           </div>

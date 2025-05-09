@@ -13,17 +13,17 @@ const Hero: React.FC = () => {
           {/* Colonna Sinistra: Testo */}
           <div className="flex flex-col justify-center text-center lg:text-left">
             <div className="mb-3 md:mb-4">
-              <span className="block text-black text-xs font-semibold tracking-widest uppercase">
+              <p className="block text-black text-xs font-semibold tracking-widest uppercase font-geist">
                 {t('hero.eventDate', 'SEPTEMBER 25-26, 2025')}
-              </span>
+              </p>
             </div>
-            <h1 className="text-black font-black text-4xl sm:text-5xl md:text-6xl lg:text-[68px] leading-tight mb-6" style={{ letterSpacing: '-0.02em' }}>
+            <h1 className="text-black font-black text-4xl sm:text-5xl md:text-6xl lg:text-[68px] leading-tight mb-6 font-koho" style={{ letterSpacing: '-0.02em' }}>
               {t('hero.title.line1', 'COSTRUISCI IL')}<br />
               {t('hero.title.line2', 'FUTURO')}<br />
               {t('hero.title.line3', 'DELLA FINANZA')}
             </h1>
-            <p className="text-black text-base md:text-lg max-w-md mx-auto lg:mx-0 mb-8 leading-relaxed">
-              {t('hero.subtitleFull', 'ETH Bari è l’evento che porta l’innovazione della finanza decentralizzata (DeFi) nel Sud Italia. Unisciti a studenti, giovani professionisti e appassionati di innovazione tecnologica per esplorare, costruire e dare forma al futuro della finanza — e far nascere nuove idee all’incrocio tra tecnologia, economia e blockchain.')}
+            <p className="text-black text-base md:text-lg max-w-md mx-auto lg:mx-0 mb-8 leading-relaxed font-geist">
+              {t('hero.subtitleFull', 'ETH Bari è l\'evento che porta l\'innovazione della finanza decentralizzata (DeFi) nel Sud Italia. Unisciti a studenti, giovani professionisti e appassionati di innovazione tecnologica per esplorare, costruire e dare forma al futuro della finanza — e far nascere nuove idee all\'incrocio tra tecnologia, economia e blockchain.')}
             </p>
             <div className="flex justify-center lg:justify-start">
               <CustomButton 
@@ -64,9 +64,9 @@ const Hero: React.FC = () => {
 
       {/* Sezione Supporters integrata sotto */}
       <div className="w-full flex flex-col items-center pt-10 pb-12 md:pt-16 md:pb-20 bg-white z-10 relative">
-        <span className="text-black tracking-[0.2em] text-xs font-semibold mb-6 uppercase">
+        <p className="text-black tracking-[0.2em] text-xs font-semibold mb-6 uppercase font-geist">
           {t('supportersWoop.sponsoredBy', 'SUPPORTED BY')}
-        </span>
+        </p>
         
         {/* Immagine Ellipse per l'effetto glow, posizionata rispetto al contenitore esterno */}
         <img

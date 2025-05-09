@@ -30,7 +30,7 @@ const CustomButton = ({ icon, text, onClick, iconPosition = 'left', backgroundCl
         >
             <div className={`flex gap-2 flex-row items-center justify-center ${iconPosition === 'right' ? 'flex-row-reverse' : ''}`}>
               {icon && <img src={icon} alt="Icon" style={{ width: `${iconWidth}px`, height: `${iconHeight}px` }} />}
-              <p className="text-center">{text}</p>
+              <p className="text-center font-geist">{text}</p>
             </div>
         </button>
     )

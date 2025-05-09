@@ -40,7 +40,7 @@ const HeaderMobile: React.FC<HeaderMobileProps> = ({
     >
       <div className="flex flex-col h-full">
         {/* Top Bar dell'Overlay */}
-        <div className="flex items-center justify-between h-20 px-4 sm:px-6 border-b border-white/50">
+        <div className="flex items-center justify-between h-20 px-4 sm:px-6">
           {/* Logo nell'Overlay */}
           <a href="#" className="flex items-center gap-2 group" onClick={(e) => handleSmoothScroll(e, '#')}>
             <img
@@ -54,38 +54,47 @@ const HeaderMobile: React.FC<HeaderMobileProps> = ({
             onClick={() => setIsMenuOpen(false)}
             className="text-white hover:opacity-80 focus:outline-none p-2"
           >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20 12H4" />
+            <svg className="w-6 h-6" viewBox="0 0 26 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 4C25.1046 4 26 3.10457 26 2C26 0.89543 25.1046 0 24 0V4ZM2 0H0V4H2V0ZM24 0L2 0V4L24 4V0Z" fill="white"/>
             </svg>
           </button>
         </div>
+        {/* Separatore sotto la Top Bar */}
+        <div className="h-px bg-white mx-4 sm:mx-6"></div>
 
         {/* Navigazione Mobile */}
-        <nav className="flex-grow px-4 sm:px-6 pt-4 overflow-y-auto">
+        <nav className="flex-grow pt-4 overflow-y-auto">
           {navLinks.map((link) => (
-            <a
-              key={link.labelKey}
-              href={link.href}
-              className="block py-4 text-lg font-medium text-white border-b border-white/50 hover:opacity-80"
-              onClick={(e) => handleSmoothScroll(e, link.href)}
-            >
-              {t(link.labelKey, link.defaultLabel)}
-            </a>
+            <div key={link.labelKey}>
+              <a
+                href={link.href}
+                className="block py-4 px-4 sm:px-6 text-lg font-medium text-white hover:opacity-80"
+                onClick={(e) => handleSmoothScroll(e, link.href)}
+              >
+                {t(link.labelKey, link.defaultLabel)}
+              </a>
+              {/* Separatore sotto ogni link */}
+              <div className="h-px bg-white mx-4 sm:mx-6"></div>
+            </div>
           ))}
         </nav>
 
         {/* Sezione Inferiore: Socials e Links */}
         <div className="px-4 sm:px-6 pb-8 pt-4">
-          {/* Icone Social */}
-          <div className="flex items-center justify-center space-x-6 mb-6">
+          {/* Icone Social - allineate a sinistra */}
+          <div className="flex items-center justify-start space-x-6 mb-6">
             {socialLinks.map((social) => (
-              <SocialIcon href={social.url} iconName={social.type} />
+              <SocialIcon 
+                key={social.type} 
+                href={social.url} 
+                iconName={social.type}
+              />
             ))}
           </div>
-          {/* Link Footer */}
-          <div className="text-center space-y-2">
+          {/* Link Footer - allineati a sinistra */}
+          <div className="text-left space-y-2">
             {mobileFooterLinks.map((link) => (
-              <a key={link.label} href={link.href} onClick={() => setIsMenuOpen(false)} className="block text-sm text-white hover:opacity-80">
+              <a key={link.label} href={link.href} onClick={() => setIsMenuOpen(false)} className="block text-sm text-white hover:opacity-80 font-geist">
                 {link.label}
               </a>
             ))}
