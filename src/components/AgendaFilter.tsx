@@ -19,7 +19,7 @@ const AgendaFilter: React.FC<AgendaFilterProps> = ({ activeFilter, onFilterChang
   const commonButtonStyling = "py-2 px-6 text-sm uppercase tracking-wider transition-colors duration-200 hover:shadow-sm rounded-md font-semibold flex-1 lg:flex-initial";
 
   // Classi per lo stato ATTIVO (verde)
-  const activeBg = "bg-[#7CFC00]"; // Un verde brillante per lo stato attivo
+  const activeBg = "bg-[#8DFFA8]"; // Un verde brillante per lo stato attivo
   const activeText = "text-black";
 
   // Classi per lo stato INATTIVO (celeste)
@@ -32,18 +32,20 @@ const AgendaFilter: React.FC<AgendaFilterProps> = ({ activeFilter, onFilterChang
         text="AM"
         onClick={() => handleFilterClick('AM')}
         backgroundClasses={`
-          ${activeFilter === 'AM' ? `${activeBg} ${activeText}` : `${inactiveBg} ${inactiveText}`}
+          ${activeFilter === 'AM' ? activeBg : inactiveBg}
           ${commonButtonStyling}
         `}
+        textClasses={activeFilter === 'AM' ? activeText : inactiveText}
       />
       <CustomButton
         text="PM"
         roundSide="left"
         onClick={() => handleFilterClick('PM')}
         backgroundClasses={`
-          ${activeFilter === 'PM' ? `${activeBg} ${activeText}` : `${inactiveBg} ${inactiveText}`}
+          ${activeFilter === 'PM' ? activeBg : inactiveBg}
           ${commonButtonStyling}
         `}
+        textClasses={activeFilter === 'PM' ? activeText : inactiveText}
       />
     </div>
   );

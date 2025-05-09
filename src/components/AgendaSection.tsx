@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import agendaEventsData from '../data/agenda.json';
-import AgendaFilter from './AgendaFilter';
-import CustomButton from './CustomBotton';
+import AgendaFilter from './AgendaFilter';;
 
 // Interfaccia per la struttura dati (opzionale ma buona pratica con TS)
 interface AgendaEvent {
@@ -11,42 +10,56 @@ interface AgendaEvent {
   time: string;
   duration: string;
   tags: string[];
+  border: boolean;
+  location: string;
 }
 
 // Funzione per determinare il colore del tag (placeholder)
 const getTagColor = (tag: string) => {
-  const lowerTag = tag.toLowerCase();
-  if (['speaker', 'keynote', 'panel', 'closing'].includes(lowerTag)) {
-    return 'bg-cyan-100 text-cyan-700';
-  }
-  if (['dev', 'workshop', 'l2', 'smart contracts', 'security'].includes(lowerTag)) {
-    return 'bg-gray-100 text-gray-600'; // Grigio per tech/dev come da mockup
-  }
-  if (lowerTag === 'break') {
-    return 'bg-green-100 text-green-700';
+  console.log(tag)
+  if (tag === "Topic") {
+    return 'bg-[#00C9E3] text-black font-geist font-semibold';
   }
   // Colore default per altri tag come AI, Blockchain, NFT, Metaverse, DeFi
-  return 'bg-purple-100 text-purple-700'; // Viola come esempio, o altro colore
+  return 'bg-white text-black font-geist font-semibold border-2 border-black'; // Viola come esempio, o altro colore
 };
 
 // Componente per una riga dell'agenda
-const AgendaItem: React.FC<{ event: AgendaEvent }> = ({ event }) => {
+const AgendaItem: React.FC<{ event: AgendaEvent, border: boolean }> = ({ event, border = true }) => {
   return (
-    <div className="py-8 border-t border-gray-200 grid grid-cols-1 md:grid-cols-12 md:items-center gap-4 md:gap-6">
+    <div className={`py-8 ${border ? 'border-b border-black' : ''} grid grid-cols-1 md:grid-cols-12 md:items-center gap-4 md:gap-6`}>
       {/* Info Evento (occupa più spazio) */}
       <div className="md:col-span-5">
-        <h3 className="text-black font-bold text-xl mb-1">{event.title}</h3>
-        {event.speaker && <p className="text-gray-600 text-sm">{event.speaker}</p>}
+        <h3 className="text-black font-bold text-xl mb-1 font-geist">{event.title}</h3>
+        {event.speaker && <p className="hidden font-bold md:block text-gray-600 text-sm font-geist">{event.speaker}</p>}
       </div>
-      {/* Orario e Durata */}
-      <div className="md:col-span-3 text-left md:text-right">
-        <p className="text-black font-semibold text-lg">{event.time}</p>
-        {event.duration && <p className="text-gray-500 text-sm">{event.duration}</p>}
+
+
+      {/* Orario e Durata Desktop */}
+      <div className="md:col-span-3 text-left hidden md:block">
+        <p className="text-black font-semibold text-lg font-geist">{event.time}</p>
+        {event.duration && <p className="text-gray-500 text-sm font-geist">{event.duration}</p>}
       </div>
+
+      {/* Orario e Durata Mobile */}
+      <div className="md:hidden flex flex-row justify-between">
+        <div className="flex flex-col">
+        {event.speaker && <p className="text-black font-normaltext-lg font-geist">{event.speaker}</p>}
+        {/* {event.location && <p className="text-[#FF0012] text-sm font-geist">{event.location}</p>} */}
+        </div>
+        <div className="flex flex-col">
+          <p className="text-black font-normal text-lg font-geist">{event.time}</p>
+          {/* {event.duration && <p className="text-gray-500 text-sm font-geist">{event.duration}</p>} */}
+          {/* {event.location && <p className="text-[#FF0012] text-sm font-geist">{event.location}</p>} */}
+        </div>
+      </div>
+
+
+
       {/* Tags */}
-      <div className="md:col-span-4 flex flex-wrap gap-2 justify-start md:justify-end">
+      <div className="hidden md:flex md:col-span-4 flex flex-wrap gap-2 justify-start md:justify-end">
         {event.tags.map((tag, index) => (
-          <span key={index} className={`px-4 py-1.5 rounded-full text-sm font-medium ${getTagColor(tag)}`}>
+          <span key={index} className={`px-4 py-1.5 rounded-md text-sm font-semibold font-geist ${getTagColor(tag)}`}>
             {tag}
           </span>
         ))}
@@ -105,7 +118,7 @@ const AgendaSection: React.FC = () => {
         {/* Lista Eventi */}
         <div>
           {filteredEvents.map((event, index) => (
-            <AgendaItem key={index} event={event} />
+            <AgendaItem key={index} event={event} border={index !== filteredEvents.length - 1} />
           ))}
         </div>
       </div>
