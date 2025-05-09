@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
               {t('hero.title.line2', 'FUTURO')}<br />
               {t('hero.title.line3', 'DELLA FINANZA')}
             </h1>
-            <p className="text-black text-base md:text-lg max-w-md lg:mx-0 mb-8 leading-relaxed font-geist">
+            <p className="text-black font-normal text-base md:text-lg max-w-md lg:mx-0 mb-8 leading-relaxed font-geist">
               {t('hero.subtitleFull', "ETH Bari è l'evento che porta l'innovazione della finanza decentralizzata (DeFi) nel Sud Italia. Unisciti a studenti, giovani professionisti e appassionati di innovazione tecnologica per esplorare, costruire e dare forma al futuro della finanza — e far nascere nuove idee all'incrocio tra tecnologia, economia e blockchain.")}
             </p>
             <div className="flex justify-start">

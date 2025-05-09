@@ -61,7 +61,7 @@ const CommunitySupport: React.FC = () => {
   return (
     <section className="w-full bg-white py-16 md:py-20 overflow-hidden">
       <div className="max-w-5xl mx-auto px-6 text-center relative">
-        <h2 className="text-black font-semibold text-lg md:text-xl tracking-[0.4em] uppercase mb-12">
+        <h2 className="text-black text-lg md:text-3xl uppercase mb-12 font-koho font-medium">
           {t('communitySupport.title', 'COMMUNITY SUPPORT')}
         </h2>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 relative z-10">

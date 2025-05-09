@@ -49,8 +49,8 @@ const BenefitCard: React.FC<{ benefit: AttendBenefit }> = ({ benefit }) => {
     <div className={`p-8 rounded-3xl shadow-sm ${benefit.textColorClass} flex flex-col min-h-[200px]`}
       style={{ backgroundColor: benefit.bgColorClass }}
     >
-      <h3 className="text-xl font-bold mb-3 uppercase tracking-wide">{t(benefit.titleKey, benefit.titleDefault)}</h3>
-      <p className="text-base leading-relaxed flex-grow">{t(benefit.descriptionKey, benefit.descriptionDefault)}</p>
+      <h3 className="text-xl font-bold mb-3 uppercase tracking-wide font-koho font-bold">{t(benefit.titleKey, benefit.titleDefault)}</h3>
+      <p className="text-base leading-relaxed flex-grow font-geist font-normal">{t(benefit.descriptionKey, benefit.descriptionDefault)}</p>
     </div>
   );
 };
@@ -124,7 +124,7 @@ const WhyAttend: React.FC = () => {
       <div className="max-w-9xl mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center justify-between mb-12 md:mb-16 gap-8 lg:gap-4">
           <div className="text-center lg:text-left w-full lg:w-auto order-2 lg:order-1">
-            <h2 className="text-black font-black text-5xl md:text-6xl tracking-wider">
+            <h2 className="text-black font-black text-5xl md:text-6xl tracking-wider font-koho font-medium">
               {t('whyAttend.title', 'WHY ATTEND?')}
             </h2>
           </div>

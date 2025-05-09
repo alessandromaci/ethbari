@@ -11,10 +11,10 @@ const Footer: React.FC = () => {
         <div className="max-w-9xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
           {/* Colonna Sinistra (Info) */}
           <div className="lg:col-span-7 space-y-10">
-            <h2 className="text-4xl md:text-5xl font-black leading-tight uppercase tracking-wider">
+            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-wider font-koho font-medium">
               {t('footer.assist.title', `WE'RE HERE TO CONNECT AND ASSIST YOU`)}
             </h2>
-            <p className="text-gray-300 text-base max-w-lg">
+            <p className="text-gray-300 text-base max-w-lg font-geist font-light text-xl">
               {t('footer.assist.description', 'Have questions about the event? Need help with registration or travel? Our team is ready to assist you.')}
             </p>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
@@ -23,6 +23,12 @@ const Footer: React.FC = () => {
                 <a href={`mailto:${t('footer.email', 'ethereumbari@gmail.com')}`} className="text-gray-300 hover:text-white underline break-all">
                   {t('footer.email', 'ethereumbari@gmail.com')}
                 </a>
+                <div>
+                  <div className="flex space-x-5">
+                    <SocialIcon href="https://www.linkedin.com/company/ethereumbari" iconName="linkedin" />
+                    <SocialIcon href="https://www.instagram.com/ethereumbari" iconName="instagram" />
+                  </div>
+                </div>
               </div>
               <div>
                 <h4 className="font-bold uppercase tracking-wider mb-3">{t('footer.eventLocation', 'EVENT LOCATION')}</h4>
@@ -33,13 +39,7 @@ const Footer: React.FC = () => {
                 </p>
               </div>
             </div>
-            <div>
-              <h4 className="font-bold uppercase tracking-wider mb-3">{t('footer.followUs', 'FOLLOW US')}</h4>
-              <div className="flex space-x-5">
-                <SocialIcon href="https://www.linkedin.com/company/ethereumbari" iconName="linkedin" />
-                <SocialIcon href="https://www.instagram.com/ethereumbari" iconName="instagram" />
-              </div>
-            </div>
+
           </div>
 
           {/* Colonna Destra (Form) */}

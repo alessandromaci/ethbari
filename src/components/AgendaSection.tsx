@@ -38,7 +38,7 @@ const AgendaItem: React.FC<{ event: AgendaEvent, border: boolean }> = ({ event, 
       {/* Orario e Durata Desktop */}
       <div className="md:col-span-3 text-left hidden md:block">
         <p className="text-black font-semibold text-lg font-geist">{event.time}</p>
-        {event.duration && <p className="text-gray-500 text-sm font-geist">{event.duration}</p>}
+        {event.duration && <p className="text-black font-semibold text-sm font-geist">{event.duration}</p>}
       </div>
 
       {/* Orario e Durata Mobile */}
@@ -57,9 +57,9 @@ const AgendaItem: React.FC<{ event: AgendaEvent, border: boolean }> = ({ event, 
 
 
       {/* Tags */}
-      <div className="hidden md:flex md:col-span-4 flex flex-wrap gap-2 justify-start md:justify-end">
+      <div className="hidden md:flex md:col-span-4 flex flex-wrap gap-2 items-center justify-center md:justify-center">
         {event.tags.map((tag, index) => (
-          <span key={index} className={`px-4 py-1.5 rounded-md text-sm font-semibold font-geist ${getTagColor(tag)}`}>
+          <span key={index} className={`px-4 py-1 rounded-md text-sm font-semibold font-geist ${getTagColor(tag)}`}>
             {tag}
           </span>
         ))}
@@ -100,7 +100,7 @@ const AgendaSection: React.FC = () => {
             <h2 className="text-black font-koho font-medium text-5xl md:text-6xl lg:text-7xl tracking-wider mb-2">
               {t('agenda.title', 'AGENDA')}
             </h2>
-            <p className="hidden lg:block text-black text-sm md:text-base font-geist">
+            <p className="hidden lg:block text-black text-sm md:text-base font-geist font-semibold">
               {t('agenda.subtitle.date', 'September 25, 2025')} | {t('agenda.subtitle.city', 'Bari')}<br />
               {t('agenda.subtitle.location', 'Location Name')}
             </p>
