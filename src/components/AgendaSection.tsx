@@ -62,7 +62,7 @@ const AgendaSection: React.FC = () => {
 
   const filteredEvents = (agendaEventsData as AgendaEvent[]).filter(event => {
     if (!activeFilter) return true; // Mostra tutto se nessun filtro è attivo
-    
+
     const timeString = event.time.split(':')[0];
     if (!timeString) return false; // Gestione di orari non validi
     const hour = parseInt(timeString, 10);
@@ -85,14 +85,14 @@ const AgendaSection: React.FC = () => {
           {/* Titolo e Sottotitolo a destra su lg, sopra e centrato su mobile */}
           <div className="text-center lg:text-right w-full lg:w-auto order-2 lg:order-2">
             <h2 className="text-black font-koho font-medium text-5xl md:text-6xl lg:text-7xl tracking-wider mb-2">
+              {t('agenda.title', 'AGENDA')}
+            </h2>
             <p className="hidden lg:block text-black text-sm md:text-base font-geist">
               {t('agenda.subtitle.date', 'September 25, 2025')} | {t('agenda.subtitle.city', 'Bari')}<br />
               {t('agenda.subtitle.location', 'Location Name')}
             </p>
-              {t('agenda.title', 'AGENDA')}
-            </h2>
           </div>
-          
+
           {/* Icona a sinistra su lg, sotto e centrata su mobile */}
           <div className="flex-shrink-0 order-1 lg:order-1 mx-auto lg:mx-0">
             <img src="/Agenda.svg" alt="Agenda Icon"
