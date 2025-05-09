@@ -124,7 +124,7 @@ const WhyAttend: React.FC = () => {
       <div className="max-w-9xl mx-auto px-6">
         <div className="flex flex-col lg:flex-row items-center justify-between mb-12 md:mb-16 gap-8 lg:gap-4">
           <div className="text-center lg:text-left w-full lg:w-auto order-2 lg:order-1">
-            <h2 className="text-black font-black text-5xl md:text-6xl tracking-wider font-koho font-medium">
+            <h2 className="text-black font-black text-5xl md:text-6xl tracking-wider font-koho font-medium text-left lef:text-center">
               {t('whyAttend.title', 'WHY ATTEND?')}
             </h2>
           </div>

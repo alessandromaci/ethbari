@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
               {t('footer.assist.description', 'Have questions about the event? Need help with registration or travel? Our team is ready to assist you.')}
             </p>
 
-            <div className="flex sm:hidden lg:col-span-5 bg-[#333333] rounded-3xl flex items-center justify-center p-4">
+            <div className="flex w-full lg:hidden lg:col-span-5 bg-[#333333] rounded-3xl flex items-center justify-center p-4">
               <img
                 onClick={() => window.open('https://www.google.com/maps/place/Spazio+Murat/@41.1264093,16.8691747,17z/data=!3m2!4b1!5s0x1347e866a6711563:0xa0cf5b02f7139cf8!4m6!3m5!1s0x1347e8641da0e4bd:0x471bec7a34deffaf!8m2!3d41.1264053!4d16.8717496!16s%2Fg%2F11c45d2w4p?entry=ttu&g_ep=EgoyMDI1MDUwNS4wIKXMDSoASAFQAw%3D%3D', '_blank')}
                 src="/map.svg" alt="Map"
@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
           </div>
 
           {/* Colonna Destra (Form) */}
-          <div className="hidden sm:flex lg:col-span-5 bg-[#333333] rounded-3xl flex items-center justify-center p-4">
+          <div className="hidden lg:flex lg:col-span-5 bg-[#333333] rounded-3xl flex items-center justify-center p-4">
             <img
               onClick={() => window.open('https://www.google.com/maps/place/Spazio+Murat/@41.1264093,16.8691747,17z/data=!3m2!4b1!5s0x1347e866a6711563:0xa0cf5b02f7139cf8!4m6!3m5!1s0x1347e8641da0e4bd:0x471bec7a34deffaf!8m2!3d41.1264053!4d16.8717496!16s%2Fg%2F11c45d2w4p?entry=ttu&g_ep=EgoyMDI1MDUwNS4wIKXMDSoASAFQAw%3D%3D', '_blank')}
               src="/map.svg" alt="Map"

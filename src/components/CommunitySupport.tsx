@@ -44,7 +44,7 @@ const PartnerLogo: React.FC<{ partner: CommunityPartner }> = ({ partner }) => {
       src={logoSrc} 
       alt={`${partner.name} logo`} 
       // Aumentata altezza massima, aggiunto padding orizzontale
-      className="max-h-26 md:max-h-24 object-contain mx-auto px-4 w-full"
+      className="max-h-26 md:max-h-24 object-contain mx-auto px-4"
     />
   );
 
