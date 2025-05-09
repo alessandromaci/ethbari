@@ -44,7 +44,7 @@ const HeaderMobile: React.FC<HeaderMobileProps> = ({
           {/* Logo nell'Overlay */}
           <a href="#" className="flex items-center gap-2 group" onClick={(e) => handleSmoothScroll(e, '#')}>
             <img
-              src="/Logo_mobile.png" // Usiamo sempre il logo mobile qui
+              src="/Ethbari-logo-white.svg" // Usiamo sempre il logo mobile qui
               alt="ETHBARI Logo Mobile"
               className="h-10 w-auto"
             />

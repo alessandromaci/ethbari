@@ -5,6 +5,7 @@ import { useTranslation } from 'react-i18next';
 import speakersData from '../data/speakers.json'; // Rinominato per chiarezza
 import type { Speaker } from '../interfaces/speakers.interface';
 import SpeakerCard from './SpeakerCard';
+import MoreToComeCard from './MoreToComeCard';
 
 const SpeakersSection: React.FC = () => {
   const { t } = useTranslation();
@@ -39,6 +40,7 @@ const SpeakersSection: React.FC = () => {
               <SpeakerCard key={`speaker-${i}-${sp.Nome}-${sp.Cognome}`} speaker={sp} index={i} />
             ))
           }
+          <MoreToComeCard />
         </div>
       </div>
     </section>

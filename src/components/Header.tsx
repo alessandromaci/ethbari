@@ -115,7 +115,7 @@ const Header: React.FC = () => {
               className="hidden md:block h-10 w-auto group-hover:opacity-80 transition-opacity"
             />
             <img
-              src="/Logo_mobile.png"
+              src="/Ethbari-logo.svg"
               alt="ETHBARI Logo Mobile"
               className="block md:hidden h-10 w-auto group-hover:opacity-80 transition-opacity"
             />
