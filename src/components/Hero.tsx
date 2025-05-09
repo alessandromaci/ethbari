@@ -24,7 +24,7 @@ const Hero: React.FC = () => {
     <section className="relative w-full bg-white flex flex-col justify-center overflow-hidden">
       {/* Contenuto Principale della Hero Section */}
       <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 z-10 w-full">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center py-12 md:py-16 lg:py-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start py-12 md:py-16 lg:py-20">
           {/* Colonna Sinistra: Testo */}
           <div className="flex flex-col justify-center text-left">
             <div className="mb-3 md:mb-4">
@@ -58,9 +58,9 @@ const Hero: React.FC = () => {
             {/* Sfondo Gradiente Rosa */}
             <div className="absolute inset-x-0 bottom-0 h-3/4 md:h-full w-full md:w-4/5 lg:w-3/4 xl:w-2/3 bg-gradient-to-t from-[#fbe6e9]/70 via-[#fbe6e9]/40 to-transparent rounded-t-[150px] md:rounded-t-[200px] z-0 opacity-70 md:opacity-100 md:right-0 md:left-auto blur-2xl"></div>
 
-            {/* Testo Location sovrapposto */}
-            <div className="absolute lg:block hidden top-4 right-4 md:top-6 md:right-6 lg:top-8 lg:right-8 z-20">
-              <span className="text-black font-bold text-xl tracking-wider uppercase font-geist font-bold">
+            {/* Testo Location sovrapposto - Ripristinato e Modificato */}
+            <div className="absolute lg:block hidden top-0 right-4 md:right-6 lg:right-8 z-20">
+              <span className="text-black text-xl font-semibold tracking-widest uppercase font-geist font-bold">
                 {t('hero.location', 'SPAZIO MURAT - BARI')}
               </span>
             </div>
