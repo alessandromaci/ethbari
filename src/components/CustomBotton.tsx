@@ -28,7 +28,7 @@ const CustomButton = ({ icon, text, onClick, iconPosition = 'left', backgroundCl
 
     return (
         <button
-            className={`${currentBg} ${baseStyling}`}
+            className={`${currentBg} ${baseStyling} cursor-pointer`}
             onClick={onClick}
         >
             <div className={`flex gap-2 flex-row items-center justify-center ${iconPosition === 'right' ? 'flex-row-reverse' : ''}`}>
