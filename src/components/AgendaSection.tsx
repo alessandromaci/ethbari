@@ -20,10 +20,10 @@ interface AgendaEvent {
 const getTagColor = (tag: string) => {
   console.log(tag)
   if (tag === "topic") {
-    return 'bg-[#00C9E3] text-black font-geist font-semibold';
+    return 'bg-[#00C9E3] text-black font-geist font-semibold border-[1px] border-[#00C9E3]';
   }
   // Colore default per altri tag come AI, Blockchain, NFT, Metaverse, DeFi
-  return 'bg-white text-black font-geist font-semibold border-2 border-black'; // Viola come esempio, o altro colore
+  return 'bg-white text-black font-geist font-semibold border-[1px] border-black'; // Viola come esempio, o altro colore
 };
 
 // Componente per una riga dell'agenda
