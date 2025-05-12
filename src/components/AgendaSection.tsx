@@ -9,6 +9,7 @@ interface AgendaEvent {
   speaker: string;
   time: string;
   duration: string;
+  days: string;
   topic: string[];
   track: string[];
   border: boolean;
@@ -28,7 +29,7 @@ const getTagColor = (tag: string) => {
 // Componente per una riga dell'agenda
 const AgendaItem: React.FC<{ event: AgendaEvent, border: boolean }> = ({ event, border = true }) => {
   return (
-    <div className={`py-8 ${border ? 'border-b border-black' : ''} grid grid-cols-1 md:grid-cols-12 md:items-center gap-4 md:gap-6`}>
+    <div className={`py-8 ${border ? 'border-b border-black' : ''} grid grid-cols-1 md:grid-cols-12 md:items-start gap-4 md:gap-6`}>
       {/* Info Evento (occupa più spazio) */}
       <div className="md:col-span-5">
         <h3 className="text-black font-bold text-xl mb-1 font-geist">{event.title}</h3>
@@ -39,6 +40,7 @@ const AgendaItem: React.FC<{ event: AgendaEvent, border: boolean }> = ({ event, 
       {/* Orario e Durata Desktop */}
       <div className="md:col-span-3 text-left hidden md:block">
         <p className="text-black font-semibold text-lg font-geist">{event.time}</p>
+        <p className="text-black font-semibold text-sm font-geist">{event.days}</p>
         {event.duration && <p className="text-black font-semibold text-sm font-geist">{event.duration}</p>}
       </div>
 
@@ -50,6 +52,7 @@ const AgendaItem: React.FC<{ event: AgendaEvent, border: boolean }> = ({ event, 
         </div>
         <div className="flex flex-col">
           <p className="text-black font-normal text-lg font-geist">{event.time}</p>
+          <p className="text-black font-semibold text-sm font-geist">{event.days}</p>
           {/* {event.duration && <p className="text-gray-500 text-sm font-geist">{event.duration}</p>} */}
           {/* {event.location && <p className="text-[#FF0012] text-sm font-geist">{event.location}</p>} */}
         </div>
