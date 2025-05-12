@@ -61,7 +61,7 @@ const AgendaItem: React.FC<{ event: AgendaEvent, border: boolean }> = ({ event, 
 
 
       {/* Topic && Track */}
-      <div className="hidden md:flex md:col-span-4 flex flex-wrap gap-2 items-center justify-center md:justify-center">
+      <div className=" md:flex md:col-span-4 flex flex-wrap gap-2 items-center justify-start md:justify-center">
         {event.topic?.map((topic, index) => (
           <span key={index} className={`px-4 py-1 rounded-md text-sm font-semibold font-geist ${getTagColor("topic")}`}>
             {topic}
