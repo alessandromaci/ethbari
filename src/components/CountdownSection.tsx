@@ -115,7 +115,7 @@ const CountdownSection: React.FC = () => {
           />
           <CustomButton
             text={t('countdownSection.ctaApplyVolunteer', 'Apply as volunteer')}
-            onClick={() => console.log('Ticket button clicked')}
+            onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSdAvLPoXFZGBLQfIj5ys1jjMBxxEkkTJ-Cn2FkC06_566ZfkA/viewform', '_blank')}
             backgroundClasses="bg-[linear-gradient(90deg,#00C9E3_0.02%,rgba(0,201,227,0.34)_105.15%)]"
           />
         </div>

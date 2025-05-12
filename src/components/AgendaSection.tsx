@@ -9,7 +9,8 @@ interface AgendaEvent {
   speaker: string;
   time: string;
   duration: string;
-  tags: string[];
+  topic: string[];
+  track: string[];
   border: boolean;
   location: string;
 }
@@ -17,7 +18,7 @@ interface AgendaEvent {
 // Funzione per determinare il colore del tag (placeholder)
 const getTagColor = (tag: string) => {
   console.log(tag)
-  if (tag === "Topic") {
+  if (tag === "topic") {
     return 'bg-[#00C9E3] text-black font-geist font-semibold';
   }
   // Colore default per altri tag come AI, Blockchain, NFT, Metaverse, DeFi
@@ -56,11 +57,16 @@ const AgendaItem: React.FC<{ event: AgendaEvent, border: boolean }> = ({ event, 
 
 
 
-      {/* Tags */}
+      {/* Topic && Track */}
       <div className="hidden md:flex md:col-span-4 flex flex-wrap gap-2 items-center justify-center md:justify-center">
-        {event.tags.map((tag, index) => (
-          <span key={index} className={`px-4 py-1 rounded-md text-sm font-semibold font-geist ${getTagColor(tag)}`}>
-            {tag}
+        {event.topic?.map((topic, index) => (
+          <span key={index} className={`px-4 py-1 rounded-md text-sm font-semibold font-geist ${getTagColor("topic")}`}>
+            {topic}
+          </span>
+        ))}
+        {event.track?.map((track, index) => (
+          <span key={index} className={`px-4 py-1 rounded-md text-sm font-semibold font-geist ${getTagColor(track)}`}>
+            {track}
           </span>
         ))}
       </div>

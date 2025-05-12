@@ -1,58 +1,74 @@
 [
   {
-    "title": "Opening Ceremony",
-    "speaker": "ETHBari Team",
+    "title": "History of DeFi",
+    "speaker": "Francesco Bianchi (Growth @Idle Finance)",
     "time": "10:25-10:45",
     "duration": "20 minutes",
-    "tags": ["Topic", "Track Category"],
+    "track": ["Talk"],
+    "topic": ["DeFi"],
     "location": "Main Hall"
   },
   {
-    "title": "Keynote: The Future of DeFi",
-    "speaker": "Jane Doe",
+    "title": "RWA Tokenization and Institutions",
+    "speaker": "Alessandro Maci (Product @p2p.org)",
     "time": "10:45-11:30",
     "duration": "45 minutes",
-    "tags": ["Topic", "Track Category"],
+    "track": ["Talk"],
+    "topic": ["RWA & Institutions"],
     "location": "Main Hall"
   },
   {
-    "title": "Workshop: Building on L2s",
-    "speaker": "John Smith",
+    "title": "Maker DAO and stablecoin issuance",
+    "speaker": "Maria Magenes",
     "time": "11:30-12:15",
     "duration": "45 minutes",
-    "tags": ["Topic", "Track Category"],
+    "track": ["Talk"],
+    "topic": ["Stablecoins"],
     "location": "Main Hall"
   },
   {
-    "title": "Panel: NFTs and the Metaverse",
-    "speaker": "Alice & Bob",
+    "title": "Introduction to Solidity for non-devs",
+    "speaker": "Matteo Tambussi",
     "time": "12:15-13:00",
     "duration": "45 minutes",
-    "tags": ["Topic", "Track Category"],
+    "track": ["Talk"],
+    "topic": ["Developer Education"],
     "location": "Main Hall"
   },
   {
-    "title": "Lunch Break",
-    "speaker": "Jark",
+    "title": "Current macroeconomic situation",
+    "speaker": "Global ETH",
     "time": "13:00-14:00",
     "duration": "60 minutes",
-    "tags": ["Topic", "Track Category"],
+    "track": ["Talk"],
+    "topic": ["Macroeconomics"],
     "location": "Main Hall"
   },
   {
-    "title": "Advanced Smart Contract Security",
-    "speaker": "Charlie Brown",
+    "title": "Security in Web3",
+    "speaker": "Jaack | Routescan",
     "time": "14:00-14:45",
     "duration": "45 minutes",
-    "tags": ["Topic", "Track Category"],
+    "track": ["Talk"],
+    "topic": ["Security"],
     "location": "Main Hall"
   },
   {
-    "title": "Closing Remarks",
-    "speaker": "ETHBari Team",
+    "title": "Main applications in Web3",
+    "speaker": "Limone.eth",
     "time": "14:45-15:00",
     "duration": "15 minutes",
-    "tags": ["Topic", "Track Category"],
+    "track": ["Talk"],
+    "topic": ["Web3 Adoption"],
+    "location": "Main Hall"
+  },
+  {
+    "title": "From Zero to Hero in Blockchain Development",
+    "speaker": "Urbe.eth",
+    "time": "14:45-15:00",
+    "duration": "15 minutes",
+    "track": ["Workshop"],
+    "topic": ["Developer Education"],
     "location": "Main Hall"
   }
 ] 

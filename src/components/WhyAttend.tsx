@@ -175,7 +175,7 @@ const WhyAttend: React.FC = () => {
             />
             <CustomButton
               text={t('whyAttend.ctaApplySponsor', 'Apply as sponsor')}
-              onClick={() => {}}
+              onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScGE_C8v5PfnSCfcqX2rMT9LGs1yoED8f0EGkIMiAJwLBsTTA/viewform?usp=sharing', '_blank')}
               backgroundClasses="bg-[linear-gradient(90deg,#00C9E3_0.02%,rgba(0,201,227,0.34)_105.15%)]"
               roundSide="both"
             />
