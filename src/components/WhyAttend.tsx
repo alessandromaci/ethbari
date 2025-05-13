@@ -132,7 +132,7 @@ const WhyAttend: React.FC = () => {
           </div>
           <div className="flex-shrink-0 order-1 lg:order-1 mx-auto lg:mx-0">
             <img src="/molecules.svg" alt="Molecule Graphic" 
-              className="w-32 h-auto sm:w-40 lg:w-48"
+              className="w-[150px] h-auto sm:w-40 lg:w-48"
             />
           </div>
         </div>
@@ -174,14 +174,12 @@ const WhyAttend: React.FC = () => {
             <CustomButton
               text={t('whyAttend.ctaBuyTicket', 'Buy your ticket')}
               onClick={() => window.open('https://mego.tickets/#/', '_blank')}
-              roundSide="both"
               backgroundClasses="bg-[linear-gradient(to_right,#FF0012_0%,rgba(255,0,18,0.49)_100%)]"
             />
             <CustomButton
               text={t('whyAttend.ctaApplySponsor', 'Apply as sponsor')}
               onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScGE_C8v5PfnSCfcqX2rMT9LGs1yoED8f0EGkIMiAJwLBsTTA/viewform?usp=sharing', '_blank')}
               backgroundClasses="bg-[linear-gradient(90deg,#00C9E3_0.02%,rgba(0,201,227,0.34)_105.15%)]"
-              roundSide="both"
             />
         </div>
       </div>

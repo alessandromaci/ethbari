@@ -68,17 +68,26 @@ const Hero: React.FC = () => {
             {/* Immagine/Grafica Bari Placeholder */}
             <div className="relative z-10 w-full h-full lg:flex lg:items-center lg:justify-center lg:max-w-none">
               <img
-                src="/EthHeroImage.png"
+                src="/EthHeroImag-desktop.png"
                 alt={t('hero.imagePlaceholder', 'ETHBARI Visual Placeholder')}
-                className="absolute left-1/2 -translate-x-1/2 w-[200vw] max-w-none h-full object-cover lg:relative lg:left-auto lg:translate-x-0 lg:w-full lg:h-auto lg:object-contain lg:max-h-[500px]"
+                className="hidden absolute left-1/2 -translate-x-1/2 w-[200vw] max-w-none h-full object-cover lg:relative lg:block lg:left-auto lg:translate-x-0 lg:w-full lg:h-auto lg:object-contain lg:max-h-[500px]"
               />
 
-              <div className="absolute lg:hidden block w-[200vw] h-[100px] top-[-50px]
-              bg-gradient-to-b from-transparent via-[#fbe6e9] to-transparent">
-              </div>
-
-              <div className="absolute lg:hidden block w-[200vw] h-[100px] bottom-[-50px]
-              bg-gradient-to-t from-transparent via-[#fbe6e9] to-transparent">
+              {/* Contenitore per immagine mobile e relativi gradienti */}
+              <div className="block lg:hidden relative w-[100vw] h-full">
+                <img
+                  src="/EthHeroImage.png"
+                  alt={t('hero.imagePlaceholder', 'ETHBARI Visual Placeholder')}
+                  className="w-full h-full object-contain" // Corretta altezza e aggiunto object-fit
+                />
+                {/* Gradiente Superiore Mobile */}
+                <div 
+                  className="absolute top-0 left-0 w-full h-[150px] transform -translate-y-1/2 bg-gradient-to-b from-transparent via-[#fbe6e9] to-transparent"
+                />
+                {/* Gradiente Inferiore Mobile */}
+                <div 
+                  className="absolute bottom-0 left-0 w-full h-[150px] transform translate-y-1/2 bg-gradient-to-t from-transparent via-[#fbe6e9] to-transparent"
+                />
               </div>
             </div>
           </div>

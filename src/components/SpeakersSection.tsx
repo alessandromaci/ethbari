@@ -25,7 +25,7 @@ const SpeakersSection: React.FC = () => {
           </div>
           <div className="flex-shrink-0 order-1 lg:order-1 mx-auto lg:mx-0">
             <img  src="/Boat.svg" alt="Molecule Graphic"
-              className="w-32 h-auto sm:w-40 lg:w-48"
+              className="w-[150px] h-auto sm:w-40 lg:w-48"
             />
           </div>
         </div>

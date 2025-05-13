@@ -112,12 +112,13 @@ const CountdownSection: React.FC = () => {
           <CustomButton
             text={t('countdownSection.ctaStayTuned', 'Stay tuned')}
             onClick={() => console.log('Ticket button clicked')}
+            backgroundClasses="bg-[linear-gradient(to_right,#FF0012_0%,rgba(255,0,18,0.49)_100%)]"
           />
           <CustomButton
             text={t('countdownSection.ctaApplyVolunteer', 'Apply as volunteer')}
             onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSdAvLPoXFZGBLQfIj5ys1jjMBxxEkkTJ-Cn2FkC06_566ZfkA/viewform', '_blank')}
             backgroundClasses="bg-[linear-gradient(90deg,#00C9E3_0.02%,rgba(0,201,227,0.34)_105.15%)]"
-          />
+            />
         </div>
       </div>
     </section>

@@ -128,7 +128,7 @@ const AgendaSection: React.FC = () => {
           {/* Icona a sinistra su lg, sotto e centrata su mobile */}
           <div className="flex-shrink-0 order-1 lg:order-1 mx-auto lg:mx-0">
             <img src="/Agenda.svg" alt="Agenda Icon"
-              className="w-32 h-auto sm:w-40 lg:w-48" // Dimensioni reattive per l'immagine
+              className="w-[150px] h-auto sm:w-40 lg:w-48" // Dimensioni reattive per l'immagine
             />
           </div>
         </div>
