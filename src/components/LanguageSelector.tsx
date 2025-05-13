@@ -6,9 +6,10 @@ import "/node_modules/flag-icons/css/flag-icons.min.css";
 
 interface LanguageSelectorProps {
   onLanguageChange?: (language: string) => void;
+  borderColor?: string;
 }
 
-const LanguageSelector: React.FC<LanguageSelectorProps> = ({ onLanguageChange }) => {
+const LanguageSelector: React.FC<LanguageSelectorProps> = ({ onLanguageChange, borderColor = '#000000' }) => {
   const { i18n } = useTranslation();
   const currentLanguage = i18n.language;
 
@@ -23,15 +24,10 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({ onLanguageChange })
   return (
     <div
       onClick={toggleLanguage}
+      className={`cursor-pointer p-[5px] inline-flex items-center justify-center min-w-[44px] min-h-[44px]`}
       style={{
-        cursor: 'pointer',
-        border: '1px solid #ccc',
-        padding: '5px',
-        display: 'inline-flex',
-        alignItems: 'center',
-        justifyContent: 'center', // Centra la bandiera anche orizzontalmente nel box
-        minWidth: '43px', // Assicura una larghezza minima per contenere la bandiera
-        minHeight: '43px', // Assicura un'altezza minima per contenere la bandiera
+        borderColor: borderColor,
+        borderWidth: '1px',
       }}
       title={currentLanguage === 'it' ? "Switch to English" : "Passa all'italiano"}
     >

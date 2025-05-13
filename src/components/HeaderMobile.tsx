@@ -50,7 +50,6 @@ const HeaderMobile: React.FC<HeaderMobileProps> = ({
               className="h-10 w-auto"
             />
           </a>
-          {/* <LanguageSelector onLanguageChange={() => setIsMenuOpen(false)} /> */}
           {/* Bottone Chiusura ("-") nell'Overlay */}
           <button
             onClick={() => setIsMenuOpen(false)}
@@ -83,6 +82,9 @@ const HeaderMobile: React.FC<HeaderMobileProps> = ({
 
         {/* Sezione Inferiore: Socials e Links */}
         <div className="px-4 sm:px-6 pb-8 pt-4">
+          <div className="mb-4">
+            <LanguageSelector borderColor="#fff" onLanguageChange={() => setIsMenuOpen(false)} />
+          </div>
           {/* Icone Social - allineate a sinistra */}
           <div className="flex items-center justify-start space-x-6 mb-6">
             {socialLinks.map((social) => (
