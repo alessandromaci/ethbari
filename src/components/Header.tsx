@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import CustomButton from './CustomBotton';
 import HeaderMobile from './HeaderMobile'; // Importa il nuovo componente mobile
+import LanguageSelector from './LanguageSelector';
 
 // Definizioni dati comuni
 export interface NavLink { // Esporta il tipo per poterlo importare in HeaderMobile
@@ -30,7 +31,7 @@ const socialLinks = [
 const Header: React.FC = () => {
   const { t } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
+
   // Link aggiuntivi per il footer del menu mobile
   const mobileFooterLinks = [
     { href: '#contacts', label: t('footer.contact', 'Contact Us') }, // Aggiungere chiavi i18n se necessario
@@ -52,10 +53,10 @@ const Header: React.FC = () => {
 
   const handleSmoothScroll = (event: React.MouseEvent<HTMLAnchorElement, MouseEvent>, href: string) => {
     event.preventDefault();
-    
+
     // Chiudi il menu se è aperto quando viene cliccato un link (sia da mobile che da desktop, anche se per desktop non ha effetto)
     if (isMenuOpen) {
-        setIsMenuOpen(false);
+      setIsMenuOpen(false);
     }
 
     // Funzione di scroll separata
@@ -66,27 +67,27 @@ const Header: React.FC = () => {
         const elementId = href.substring(1);
         const element = document.getElementById(elementId);
         if (element) {
-          const headerOffset = 80; 
+          const headerOffset = 80;
           const elementPosition = element.getBoundingClientRect().top;
           const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-          window.scrollTo({ 
-              top: offsetPosition,
-              behavior: "smooth"
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: "smooth"
           });
         } else {
-             // Fallback se l'elemento non è disponibile subito
-             setTimeout(() => {
-                const elementRetry = document.getElementById(elementId);
-                if(elementRetry){
-                    const headerOffset = 80; 
-                    const elementPosition = elementRetry.getBoundingClientRect().top;
-                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-                    window.scrollTo({ 
-                        top: offsetPosition,
-                        behavior: "smooth"
-                    });
-                }
-             }, 350); 
+          // Fallback se l'elemento non è disponibile subito
+          setTimeout(() => {
+            const elementRetry = document.getElementById(elementId);
+            if (elementRetry) {
+              const headerOffset = 80;
+              const elementPosition = elementRetry.getBoundingClientRect().top;
+              const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+              });
+            }
+          }, 350);
         }
       }
     }
@@ -96,7 +97,7 @@ const Header: React.FC = () => {
     // Usiamo una variabile locale perché lo stato `isMenuOpen` potrebbe essere già `false` a questo punto.
     const wasMenuOpen = isMenuOpen; // Cattura lo stato al momento del click
     if (wasMenuOpen) {
-      setTimeout(scrollAction, 50); 
+      setTimeout(scrollAction, 50);
     } else {
       scrollAction(); // Scroll immediato se il menu non era aperto
     }
@@ -122,7 +123,7 @@ const Header: React.FC = () => {
           </a>
 
           {/* Navigazione Desktop */}
-          <nav className="hidden md:flex flex-1 justify-center items-center space-x-10">
+          <nav className="hidden md:flex flex-row justify-center items-center md:gap-4 lg:gap-8">
             {navLinks.map((link) => (
               <a
                 key={link.labelKey}
@@ -135,15 +136,19 @@ const Header: React.FC = () => {
             ))}
           </nav>
 
+
           {/* Bottone Ticket Desktop */}
-          <div className="hidden md:block">
+          <div className="hidden md:flex flex-row gap-2 items-center justify-center">
+            <div className="">
+              <LanguageSelector />
+            </div>
             <CustomButton
               text={t('header.ticketButton', 'TICKETS')}
               onClick={() => window.open('https://mego.tickets/#/', '_blank')} // Azione placeholder
             />
           </div>
 
-          {/* Bottone Hamburger/Menu Mobile */} 
+          {/* Bottone Hamburger/Menu Mobile */}
           {/* Nota: Il bottone stesso rimane nell'Header, ma controlla lo stato che apre HeaderMobile */}
           <div className="md:hidden">
             <button
@@ -153,8 +158,8 @@ const Header: React.FC = () => {
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                 {/* Mostra sempre l'icona MenuIcon.svg */}
                 <>
-                  <path d="M24 4C25.1046 4 26 3.10457 26 2C26 0.89543 25.1046 0 24 0V4ZM2 0L0 0V4L2 4V0ZM24 0L2 0V4L24 4V0Z" fill="black" stroke="none"/>
-                  <path d="M24 13C25.1046 13 26 12.1046 26 11C26 9.89543 25.1046 9 24 9V13ZM2 9H0V13H2V9ZM24 9L2 9V13L24 13V9Z" fill="black" stroke="none"/>
+                  <path d="M24 4C25.1046 4 26 3.10457 26 2C26 0.89543 25.1046 0 24 0V4ZM2 0L0 0V4L2 4V0ZM24 0L2 0V4L24 4V0Z" fill="black" stroke="none" />
+                  <path d="M24 13C25.1046 13 26 12.1046 26 11C26 9.89543 25.1046 9 24 9V13ZM2 9H0V13H2V9ZM24 9L2 9V13L24 13V9Z" fill="black" stroke="none" />
                 </>
               </svg>
             </button>
@@ -163,9 +168,9 @@ const Header: React.FC = () => {
       </header>
 
       {/* Renderizza il componente Overlay Mobile separato */}
-      <HeaderMobile 
-        isMenuOpen={isMenuOpen} 
-        setIsMenuOpen={setIsMenuOpen} 
+      <HeaderMobile
+        isMenuOpen={isMenuOpen}
+        setIsMenuOpen={setIsMenuOpen}
         navLinks={navLinks}
         mobileFooterLinks={mobileFooterLinks}
         socialLinks={socialLinks}
