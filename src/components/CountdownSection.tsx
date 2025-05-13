@@ -85,7 +85,11 @@ const CountdownSection: React.FC = () => {
                   </span>
                 </div>
               ) : (
-                <div className="absolute bottom-0 left-0 right-0 w-full bg-black/70 backdrop-blur-sm text-white flex justify-around py-4 rounded-b-2xl">
+                <div className="
+                absolute bottom-0 left-0 right-0 
+                w-full lg:w-2/3 
+                bg-black/25 backdrop-blur-sm text-white flex justify-around py-4 
+                rounded-bl-2xl rounded-br-2xl lg:rounded-bl-2xl lg:rounded-br-none">
                   <div className="flex flex-col items-center px-2">
                     <span className="text-3xl md:text-4xl font-bold tabular-nums">{formatTime(timeLeft.months)}</span>
                     <span className="text-xs uppercase tracking-wider mt-1">{t('countdown.months', 'Months')}</span>

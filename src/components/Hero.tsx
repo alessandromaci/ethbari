@@ -70,7 +70,7 @@ const Hero: React.FC = () => {
               <img
                 src="/EthHeroImag-desktop.png"
                 alt={t('hero.imagePlaceholder', 'ETHBARI Visual Placeholder')}
-                className="hidden absolute left-1/2 -translate-x-1/2 w-[200vw] max-w-none h-full object-cover lg:relative lg:block lg:left-auto lg:translate-x-0 lg:w-full lg:h-auto lg:object-contain lg:max-h-[500px]"
+                className="hidden absolute left-1/2 -translate-x-1/2 w-[200vw] max-w-none h-full object-cover lg:relative lg:block lg:left-auto lg:translate-x-0 lg:w-full lg:h-auto lg:object-contain lg:max-h-[500px] lg:[mask-image:linear-gradient(to_right,black_60%,transparent_100%)]"
               />
 
               {/* Contenitore per immagine mobile e relativi gradienti */}

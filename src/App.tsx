@@ -16,7 +16,9 @@ function App() {
         <div id="home">
         <Hero />
         </div>
+        <div id="about">
         <CountdownSection />
+        </div>
         <div id="speaker">
         <SpeakersSection />
         </div>
