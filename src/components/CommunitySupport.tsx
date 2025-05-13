@@ -6,6 +6,7 @@ interface CommunityPartner {
   name: string;
   logoUrl?: string;
   websiteUrl?: string;
+  logoHeightClass?: string;
 }
 
 // Aggiorniamo con i partner visibili nel design
@@ -14,44 +15,51 @@ const communityPartners: CommunityPartner[] = [
     id: 'spaghetti-eth',
     name: 'Spaghetti ETH',
     logoUrl: '/logos/logo-spaghetteth.png', // Placeholder
-    websiteUrl: 'https://www.spaghett-eth.com/'
+    websiteUrl: 'https://www.spaghett-eth.com/',
+    logoHeightClass: 'h-24'
   },
   {
     id: 'urbe-eth',
     name: 'Urbe.ETH',
     logoUrl: '/logos/logo-urbeeth.png',
-    websiteUrl: 'https://urbe.build/'
+    websiteUrl: 'https://urbe.build/',
+    logoHeightClass: 'h-24'
   },
   {
     id: 'global-shapers',
     name: 'Global Shapers Community',
     logoUrl: '/logos/logo-global-shapers.png',
-    websiteUrl: 'https://www.globalshapers.org/home'
+    websiteUrl: 'https://www.globalshapers.org/home',
+    logoHeightClass: 'h-24'
   },
   {
     id: 'ethna',
     name: 'ETHNA',
     logoUrl: '/logos/logo-ethna.png',
-    websiteUrl: 'https://ethna.rocks/'
+    websiteUrl: 'https://ethna.rocks/',
+    logoHeightClass: 'h-24'
   },
 ];
 
 const PartnerLogo: React.FC<{ partner: CommunityPartner }> = ({ partner }) => {
   const logoSrc = partner.logoUrl;
-  
-  const logoElement = (
-    <img 
-      src={logoSrc} 
-      alt={`${partner.name} logo`} 
-      // Aumentata altezza massima, aggiunto padding orizzontale
-      className="max-h-26 md:max-h-24 object-contain mx-auto px-4"
-    />
-  );
+  const containerHeightClass = partner.logoHeightClass || 'h-28';
 
   return (
-    <a href={partner.websiteUrl || '#'} target="_blank" rel="noopener noreferrer" className="block py-2 hover:opacity-80 transition-opacity duration-200">
-      {logoElement}
-    </a>
+    <div className={`flex items-center justify-center ${containerHeightClass}`}>
+      <a
+        href={partner.websiteUrl || '#'}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="flex items-center justify-center w-full h-full p-2 hover:opacity-80 transition-opacity duration-200"
+      >
+        <img
+          src={logoSrc}
+          alt={`${partner.name} logo`}
+          className="object-contain max-h-full max-w-full"
+        />
+      </a>
+    </div>
   );
 };
 
