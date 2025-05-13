@@ -2,6 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 import type { NavLink } from './Header'; // Importiamo il tipo NavLink se definito in Header o lo definiamo qui
 import SocialIcon from './SocialIcon';
+import LanguageSelector from './LanguageSelector';
 
 // Definiamo tipi locali se non importati
 interface MobileFooterLink {
@@ -49,6 +50,7 @@ const HeaderMobile: React.FC<HeaderMobileProps> = ({
               className="h-10 w-auto"
             />
           </a>
+          {/* <LanguageSelector onLanguageChange={() => setIsMenuOpen(false)} /> */}
           {/* Bottone Chiusura ("-") nell'Overlay */}
           <button
             onClick={() => setIsMenuOpen(false)}
