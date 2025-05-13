@@ -120,20 +120,24 @@ const WhyAttend: React.FC = () => {
   }, [benefits.length, activeIndex]); // Aggiunto activeIndex per evitare che lo stato interno dell'handler sia stale
 
   return (
-    <section className="w-full bg-white py-20">
+    <section className="w-full bg-white py-10">
       <div className="max-w-9xl mx-auto px-6">
+
+        
         <div className="flex flex-col lg:flex-row items-center justify-between mb-12 md:mb-16 gap-8 lg:gap-4">
           <div className="text-center lg:text-left w-full lg:w-auto order-2 lg:order-1">
-            <h2 className="text-black font-black text-5xl md:text-6xl tracking-wider font-koho font-medium text-left lef:text-center">
+            <h2 className="text-black font-black text-4xl md:text-6xl tracking-wider font-koho font-medium text-left lef:text-center">
               {t('whyAttend.title', 'WHY ATTEND?')}
             </h2>
           </div>
-          <div className="flex-shrink-0 order-1 lg:order-2 mx-auto lg:mx-0">
+          <div className="flex-shrink-0 order-1 lg:order-1 mx-auto lg:mx-0">
             <img src="/molecules.svg" alt="Molecule Graphic" 
-              className="w-20 h-auto sm:w-24 lg:w-32"
+              className="w-32 h-auto sm:w-40 lg:w-48"
             />
           </div>
         </div>
+
+
         {/* Contenitore per le card, modificato per scroll orizzontale su mobile */}
         <div 
           ref={scrollContainerRef} // Aggiunto ref per il container di scroll

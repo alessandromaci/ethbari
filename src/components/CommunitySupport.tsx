@@ -13,25 +13,25 @@ const communityPartners: CommunityPartner[] = [
   {
     id: 'spaghetti-eth',
     name: 'Spaghetti ETH',
-    logoUrl: '/logos/logo-spaghetteth.svg', // Placeholder
+    logoUrl: '/logos/logo-spaghetteth.png', // Placeholder
     websiteUrl: 'https://www.spaghett-eth.com/'
   },
   {
     id: 'urbe-eth',
     name: 'Urbe.ETH',
-    logoUrl: '/logos/logo-urbeeth.svg',
+    logoUrl: '/logos/logo-urbeeth.png',
     websiteUrl: 'https://urbe.build/'
   },
   {
     id: 'global-shapers',
     name: 'Global Shapers Community',
-    logoUrl: '/logos/logo-global-shapers.svg',
+    logoUrl: '/logos/logo-global-shapers.png',
     websiteUrl: 'https://www.globalshapers.org/home'
   },
   {
     id: 'ethna',
     name: 'ETHNA',
-    logoUrl: '/logos/logo-ethna.svg',
+    logoUrl: '/logos/logo-ethna.png',
     websiteUrl: 'https://ethna.rocks/'
   },
 ];
@@ -61,10 +61,10 @@ const CommunitySupport: React.FC = () => {
   return (
     <section className="w-full bg-white py-16 md:py-20 overflow-hidden">
       <div className="max-w-5xl mx-auto px-6 text-center relative">
-        <h2 className="text-black text-lg md:text-3xl uppercase mb-12 font-koho font-medium">
+        <h2 className="text-black text-4xl md:text-3xl uppercase mb-12 font-koho font-medium">
           {t('communitySupport.title', 'COMMUNITY SUPPORT')}
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 relative z-10">
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 relative z-10">
           {communityPartners.map((partner) => (
             <PartnerLogo key={partner.id} partner={partner} />
           ))}

@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
           {/* Colonna Sinistra: Testo */}
           <div className="flex flex-col justify-center text-left">
             <div className="mb-3 md:mb-4">
-              <p className="block pl-1 text-black text-xl font-semibold tracking-widest uppercase font-geist font-bold">
+              <p className="block pl-1 text-black text-lg md:text-xl font-semibold tracking-widest uppercase font-geist font-bold">
                 {t('hero.eventDate', 'SEPTEMBER 25-26, 2025')}
               </p>
             </div>

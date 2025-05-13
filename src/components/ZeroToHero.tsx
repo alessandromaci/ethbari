@@ -6,7 +6,7 @@ const ZeroToHero: React.FC = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="w-full bg-white py-20">
+    <section className="w-full bg-white py-10">
       <div className="max-w-9xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
         {/* Colonna Sinistra */}
         <div className="flex-1 lg:max-w-xl text-left">

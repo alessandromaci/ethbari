@@ -26,7 +26,7 @@ const SpeakerCard: React.FC<SpeakerCardProps> = ({ speaker, index }) => {
 
                 {/* Popup Overlay (visibile solo su sm+ on hover) */}
                 <div
-                    className={`absolute inset-0 bg-[#FF0012] py-8 rounded-xl hidden sm:flex flex-col items-center justify-between text-center 
+                    className={`absolute inset-0 bg-[#FF0012] py-8 rounded-[9px] border-2 border-[#FF0012] hidden sm:flex flex-col items-center justify-between text-center 
                                transition-opacity duration-300 ease-in-out 
                                ${isHovered ? 'opacity-100' : 'opacity-0 pointer-events-none'}` // Controllo opacità e pointer-events
                     }

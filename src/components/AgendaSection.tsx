@@ -100,7 +100,7 @@ const AgendaSection: React.FC = () => {
   });
 
   return (
-    <section className="w-full bg-white py-20">
+    <section className="w-full bg-white py-10">
       <div className="max-w-9xl mx-auto px-6">
         {/* Intestazione aggiornata */}
         <div className="flex flex-col lg:flex-row items-center justify-between mb-12 md:mb-16 gap-8 lg:gap-4">
