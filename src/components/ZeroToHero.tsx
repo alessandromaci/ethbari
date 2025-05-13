@@ -10,7 +10,7 @@ const ZeroToHero: React.FC = () => {
       <div className="max-w-9xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
         {/* Colonna Sinistra */}
         <div className="flex-1 lg:max-w-xl text-left">
-          <h2 className="text-black font-black text-4xl sm:text-5xl md:text-6xl leading-tight mb-4 font-geist font-medium">
+          <h2 className="text-black font-black text-4xl text sm:text-5xl md:text-6xl leading-tight mb-4 font-geist font-medium">
             {t('zeroToHero.title', 'From zero to hero in blockchain development')}
           </h2>
           <p className="text-black text-base mb-6 font-geist font-semibold">
