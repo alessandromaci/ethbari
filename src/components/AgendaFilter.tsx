@@ -1,5 +1,6 @@
 import React from 'react';
 import CustomButton from './CustomBotton';
+import { useTranslation } from 'react-i18next';
 
 interface AgendaFilterProps {
   activeFilter: 'AM' | 'PM' | null;
@@ -26,10 +27,12 @@ const AgendaFilter: React.FC<AgendaFilterProps> = ({ activeFilter, onFilterChang
   const inactiveBg = "bg-[#00C9E3] hover:bg-[#00A8BF]"; // Celeste, con hover più scuro
   const inactiveText = "text-white";
 
+  const { t } = useTranslation();
+
   return (
     <div className="flex justify-center items-center gap-4 my-8">
       <CustomButton
-        text="AM"
+        text={t('AM')}
         onClick={() => handleFilterClick('AM')}
         backgroundClasses={`
           ${activeFilter === 'AM' ? activeBg : inactiveBg}
@@ -38,7 +41,7 @@ const AgendaFilter: React.FC<AgendaFilterProps> = ({ activeFilter, onFilterChang
         textClasses={activeFilter === 'AM' ? activeText : inactiveText}
       />
       <CustomButton
-        text="PM"
+        text={t('PM')}
         roundSide="left"
         onClick={() => handleFilterClick('PM')}
         backgroundClasses={`

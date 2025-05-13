@@ -1,5 +1,8 @@
+'use client'
+import { useTranslation } from "react-i18next";
+
 const MoreToComeCard = () => {
-    
+    const { t } = useTranslation();
     return (
         <div className="flex flex-col gap-2">
             {/* Contenitore principale per immagine e overlay hover */}
@@ -10,9 +13,9 @@ const MoreToComeCard = () => {
                 }}
             >
                 <div className="flex flex-col items-start justify-left">
-                    <p className="text-2xl text-white font-semibold text-left font-geist">More</p>
-                    <p className="text-2xl text-white font-semibold text-left font-geist">to come...</p>
-                    <p className="text-lg mt-4 text-white font-normal text-left font-geist">Apply as speaker</p>
+                    <p className="text-2xl text-white font-semibold text-left font-geist">{t('speakers.moreToCome.line1', 'More')}</p>
+                    <p className="text-2xl text-white font-semibold text-left font-geist">{t('speakers.moreToCome.line2', 'to come...')}</p>
+                    <p className="text-lg mt-4 text-white font-normal text-left font-geist">{t('speakers.moreToCome.cta', 'Apply as speaker')}</p>
                 </div>
                 <img src="/Blur.svg" alt="Arrow right" className="w-10 h-10 text-white" />
             </div>

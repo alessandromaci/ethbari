@@ -5,13 +5,23 @@ import AgendaFilter from './AgendaFilter';;
 
 // Interfaccia per la struttura dati (opzionale ma buona pratica con TS)
 interface AgendaEvent {
-  title: string;
+  title: {
+    [key: string]: string;
+  };
   speaker: string;
   time: string;
-  duration: string;
-  days: string;
-  topic: string[];
-  track: string[];
+  duration: {
+    [key: string]: string;
+  };
+  days: {
+    [key: string]: string;
+  };
+  topic: {
+    [key: string]: string[];
+  };
+  track: {
+    [key: string]: string[];
+  };
   border: boolean;
   location: string;
 }
@@ -28,33 +38,33 @@ const getTagColor = (tag: string) => {
 
 // Componente per una riga dell'agenda
 const AgendaItem: React.FC<{ event: AgendaEvent, border: boolean }> = ({ event, border = true }) => {
+
+  const { t } = useTranslation();
+  const { i18n } = useTranslation();
   return (
     <div className={`py-8 ${border ? 'border-b border-black' : ''} grid grid-cols-1 md:grid-cols-12 md:items-start gap-4 md:gap-6`}>
       {/* Info Evento (occupa più spazio) */}
       <div className="md:col-span-5">
-        <h3 className="text-black font-bold text-xl mb-1 font-geist">{event.title}</h3>
+        <h3 className="text-black font-bold text-xl mb-1 font-geist">{event.title[i18n.language]}</h3>
         {event.speaker && <p className="hidden font-bold md:block text-gray-600 text-sm font-geist">{event.speaker}</p>}
       </div>
-
 
       {/* Orario e Durata Desktop */}
       <div className="md:col-span-3 text-left hidden md:block">
         <p className="text-black font-semibold text-lg font-geist">{event.time}</p>
-        <p className="text-black font-semibold text-sm font-geist">{event.days}</p>
-        {event.duration && <p className="text-black font-semibold text-sm font-geist">{event.duration}</p>}
+        {event.days[i18n.language] && <p className="text-black font-semibold text-sm font-geist">{event.days[i18n.language]}</p>}
+        {event.duration[i18n.language] && <p className="text-black font-semibold text-sm font-geist">{event.duration[i18n.language]}</p>}
       </div>
 
       {/* Orario e Durata Mobile */}
       <div className="md:hidden flex flex-row justify-between">
         <div className="flex flex-col">
         {event.speaker && <p className="text-black font-normaltext-lg font-geist">{event.speaker}</p>}
-        {/* {event.location && <p className="text-[#FF0012] text-sm font-geist">{event.location}</p>} */}
+
         </div>
         <div className="flex flex-col">
           <p className="text-black font-normal text-lg font-geist">{event.time}</p>
-          <p className="text-black font-semibold text-sm font-geist">{event.days}</p>
-          {/* {event.duration && <p className="text-gray-500 text-sm font-geist">{event.duration}</p>} */}
-          {/* {event.location && <p className="text-[#FF0012] text-sm font-geist">{event.location}</p>} */}
+          {event.days[i18n.language] && <p className="text-black font-semibold text-sm font-geist">{event.days[i18n.language]}</p>}
         </div>
       </div>
 
@@ -62,12 +72,12 @@ const AgendaItem: React.FC<{ event: AgendaEvent, border: boolean }> = ({ event, 
 
       {/* Topic && Track */}
       <div className=" md:flex md:col-span-4 flex flex-wrap gap-2 items-center justify-start md:justify-end">
-        {event.topic?.map((topic, index) => (
+        {event.topic[i18n.language]?.map((topic, index) => (
           <span key={index} className={`px-4 py-1 rounded-md text-sm font-semibold font-geist ${getTagColor("topic")}`}>
             {topic}
           </span>
         ))}
-        {event.track?.map((track, index) => (
+        {event.track[i18n.language]?.map((track, index) => (
           <span key={index} className={`px-4 py-1 rounded-md text-sm font-semibold font-geist ${getTagColor(track)}`}>
             {track}
           </span>
@@ -82,7 +92,7 @@ const AgendaSection: React.FC = () => {
   const { t } = useTranslation();
   const [activeFilter, setActiveFilter] = useState<'AM' | 'PM' | null>(null);
 
-  const filteredEvents = (agendaEventsData as AgendaEvent[]).filter(event => {
+  const filteredEvents = (agendaEventsData as unknown as AgendaEvent[]).filter(event => {
     if (!activeFilter) return true; // Mostra tutto se nessun filtro è attivo
 
     const timeString = event.time.split(':')[0];
@@ -111,7 +121,7 @@ const AgendaSection: React.FC = () => {
             </h2>
             <p className="hidden lg:block text-black text-sm md:text-base font-geist font-semibold">
               {t('agenda.subtitle.date', 'September 25, 2025')} | {t('agenda.subtitle.city', 'Bari')}<br />
-              {t('agenda.subtitle.location', 'Location Name')}
+              Spazio Murat
             </p>
           </div>
 

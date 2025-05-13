@@ -1,82 +1,202 @@
 [
   {
-    "title": "History of DeFi",
+    "title": {
+      "it": "Storia della DeFi",
+      "en": "History of DeFi"
+    },
     "speaker": "Francesco Bianchi",
     "time": "10:25-10:45",
-    "duration": "20 minutes",
-    "days": "25/09/2025",
-    "track": ["Talk"],
-    "topic": ["DeFi"],
+    "duration": {
+      "it": "20 minuti",
+      "en": "20 minutes"
+    },
+    "days": {
+      "it": "25/09/2025",
+      "en": "09/25/2025"
+    },
+    "track": {
+      "it": ["Talk"],
+      "en": ["Talk"]
+    },
+    "topic": {
+      "it": ["DeFi"],
+      "en": ["DeFi"]
+    },
     "location": "Main Hall"
   },
   {
-    "title": "RWA Tokenization and Institutions",
+    "title": {
+      "it": "RWA Tokenization and Institutions",
+      "en": "RWA Tokenization and Institutions"
+    },
     "speaker": "Alessandro Maci",
     "time": "10:45-11:30",
-    "duration": "45 minutes",
-    "days": "25/09/2025",
-    "track": ["Talk"],
-    "topic": ["RWA & Institutions"],
+    "duration": {
+      "it": "45 minuti",
+      "en": "45 minutes"
+    },
+    "days": {
+      "it": "25/09/2025",
+      "en": "09/25/2025"
+    },
+    "track": {
+      "it": ["Talk"],
+      "en": ["Talk"]
+    },
+    "topic": {
+      "it": ["RWA & Institutions"],
+      "en": ["RWA & Institutions"]
+    },
     "location": "Main Hall"
   },
   {
-    "title": "Maker DAO and stablecoin issuance",
+    "title": {
+      "it": "Maker DAO e emissione di stablecoin",
+      "en": "Maker DAO and stablecoin issuance"
+    },
     "speaker": "Maria Magenes",
     "time": "11:30-12:15",
-    "duration": "45 minutes",
-    "days": "25/09/2025",
-    "track": ["Talk"],
-    "topic": ["Stablecoins"],
+    "duration": {
+      "it": "45 minuti",
+      "en": "45 minutes"
+    },
+    "days": {
+      "it": "25/09/2025",
+      "en": "09/25/2025"
+    },
+    "track": {
+      "it": ["Talk"],
+      "en": ["Talk"]
+    },
+    "topic": {
+      "it": ["Stablecoins"],
+      "en": ["Stablecoins"]
+    },
     "location": "Main Hall"
   },
   {
-    "title": "Introduction to Solidity for non-devs",
+    "title": {
+      "it": "Introduzione a Solidity per non-devs",
+      "en": "Introduction to Solidity for non-devs"
+    },
     "speaker": "Matteo Tambussi",
     "time": "12:15-13:00",
-    "duration": "45 minutes",
-    "days": "25/09/2025",
-    "track": ["Talk"],
-    "topic": ["Developer Education"],
+    "duration": {
+      "it": "45 minuti",
+      "en": "45 minutes"
+    },
+    "days": {
+      "it": "25/09/2025",
+      "en": "09/25/2025"
+    },
+    "track": {
+      "it": ["Talk"],
+      "en": ["Talk"]
+    },
+    "topic": {
+      "it": ["Developer Education"],
+      "en": ["Developer Education"]
+    },
     "location": "Main Hall"
   },
   {
-    "title": "Current macroeconomic situation",
+    "title": {
+      "it": "Situazione macroeconomica corrente",
+      "en": "Current macroeconomic situation"
+    },
     "speaker": "Global ETH",
     "time": "13:00-14:00",
-    "duration": "60 minutes",
-    "days": "25/09/2025",
-    "track": ["Talk"],
-    "topic": ["Macroeconomics"],
+    "duration": {
+      "it": "60 minuti",
+      "en": "60 minutes"
+    },
+    "days": {
+      "it": "25/09/2025",
+      "en": "09/25/2025"
+    },
+    "track": {
+      "it": ["Talk"],
+      "en": ["Talk"]
+    },
+    "topic": {
+      "it": ["Macroeconomics"],
+      "en": ["Macroeconomics"]
+    },
     "location": "Main Hall"
   },
   {
-    "title": "Security in Web3",
+    "title": {
+      "it": "Sicurezza in Web3",
+      "en": "Security in Web3"
+    },
     "speaker": "Jaack | Routescan",
     "time": "14:00-14:45",
-    "duration": "45 minutes",
-    "days": "25/09/2025",
-    "track": ["Talk"],
-    "topic": ["Security"],
+    "duration": {
+      "it": "45 minuti",
+      "en": "45 minutes"
+    },
+    "days": {
+      "it": "25/09/2025",
+      "en": "09/25/2025"
+    },
+    "track": {
+      "it": ["Talk"],
+      "en": ["Talk"]
+    },
+    "topic": {
+      "it": ["Security"],
+      "en": ["Security"]
+    },
     "location": "Main Hall"
   },
   {
-    "title": "Main applications in Web3",
+    "title": {
+      "it": "Applicazioni principali in Web3",
+      "en": "Main applications in Web3"
+    },
     "speaker": "Limone.eth",
     "time": "14:45-15:00",
-    "duration": "15 minutes",
-    "days": "25/09/2025",
-    "track": ["Talk"],
-    "topic": ["Web3 Adoption"],
+    "duration": {
+      "it": "15 minuti",
+      "en": "15 minutes"
+    },
+    "days": {
+      "it": "25/09/2025",
+      "en": "09/25/2025"
+    },
+    "track": {
+      "it": ["Talk"],
+      "en": ["Talk"]
+    },
+    "topic": {
+      "it": ["Web3 Adoption"],
+      "en": ["Web3 Adoption"]
+    },
     "location": "Main Hall"
   },
   {
-    "title": "From Zero to Hero in Blockchain Development",
+    "title": {
+      "it": "Da zero a eroe in sviluppo blockchain",
+      "en": "From Zero to Hero in Blockchain Development"
+    },
     "speaker": "Urbe.eth",
     "time": "14:45-15:00",
-    "duration": "15 minutes",
-    "days": "26-28/09/2025",
-    "track": ["Workshop"],
-    "topic": ["Developer Education"],
+    "duration": {
+      "it": "15 minuti",
+      "en": "15 minutes"
+    },
+    "days": {
+      "it": "26-28/09/2025",
+      "en": "09/26-28/2025"
+    },
+    "track": {
+      "it": ["Workshop"],
+      "en": ["Workshop"]
+    },
+    "topic": {
+      "it": ["Developer Education"],
+      "en": ["Developer Education"]
+    },
     "location": "Main Hall"
   }
 ] 
