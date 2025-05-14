@@ -23,7 +23,7 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({ onLanguageChange, b
   return (
     <div
       onClick={toggleLanguage}
-      className={`cursor-pointer p-[5px] inline-flex items-center justify-center min-w-[44px] min-h-[44px]`}
+      className={`cursor-pointer p-[5px] inline-flex items-center justify-center min-w-[44px] min-h-[44px] rounded-md`}
       style={{
         borderColor: borderColor,
         borderWidth: '1px',
