@@ -7,9 +7,10 @@ import "/node_modules/flag-icons/css/flag-icons.min.css";
 interface LanguageSelectorProps {
   onLanguageChange?: (language: string) => void;
   borderColor?: string;
+  textColor?: string;
 }
 
-const LanguageSelector: React.FC<LanguageSelectorProps> = ({ onLanguageChange, borderColor = '#000000' }) => {
+const LanguageSelector: React.FC<LanguageSelectorProps> = ({ onLanguageChange, borderColor = '#000000', textColor = '#000000' }) => {
   const { i18n } = useTranslation();
   const currentLanguage = i18n.language;
 
@@ -19,8 +20,6 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({ onLanguageChange, b
     onLanguageChange?.(newLanguage);
   };
 
-  const flagToShow = currentLanguage === 'it' ? 'gb' : 'it';
-
   return (
     <div
       onClick={toggleLanguage}
@@ -28,10 +27,11 @@ const LanguageSelector: React.FC<LanguageSelectorProps> = ({ onLanguageChange, b
       style={{
         borderColor: borderColor,
         borderWidth: '1px',
+        color: textColor,
       }}
       title={currentLanguage === 'it' ? "Switch to English" : "Passa all'italiano"}
     >
-      <span className={`fi fi-${flagToShow}`}></span>
+      {currentLanguage === 'it' ? "IT" : "EN"}
     </div>
   );
 };
