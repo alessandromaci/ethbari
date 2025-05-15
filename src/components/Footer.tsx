@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
         <div className="max-w-9xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12">
           {/* Colonna Sinistra (Info) - Contenuti centrati sotto sm, allineati a sinistra da sm in su */}
           <div className="lg:col-span-7 space-y-10 flex flex-col items-center text-center sm:items-start sm:text-left lg:items-start lg:text-left">
-            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-wider font-koho font-medium">
+            <h2 className="text-4xl md:text-5xl font-black uppercase tracking-wider font-koho font-medium lg:pr-56">
               {t('footer.assist.title', `WE\'RE HERE TO CONNECT AND ASSIST YOU`)}
             </h2>
             <p className="text-gray-300 text-base max-w-lg font-geist font-light text-xl">

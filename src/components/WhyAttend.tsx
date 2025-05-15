@@ -46,10 +46,10 @@ const benefits: AttendBenefit[] = [
 const BenefitCard: React.FC<{ benefit: AttendBenefit }> = ({ benefit }) => {
   const { t } = useTranslation();
   return (
-    <div className={`p-8 rounded-3xl shadow-sm ${benefit.textColorClass} flex flex-col min-h-[300px]`}
+    <div className={`py-6 px-4 lg:px-10 lg:py-10 rounded-3xl shadow-sm ${benefit.textColorClass} flex flex-col min-h-[300px]`}
       style={{ backgroundColor: benefit.bgColorClass }}
     >
-      <h3 className="text-xl font-bold mb-3 uppercase tracking-wide font-koho font-bold">{t(benefit.titleKey, benefit.titleDefault)}</h3>
+      <h3 className="text-2xl lg:text-4xl font-bold mb-3 uppercase tracking-wide font-koho font-bold">{t(benefit.titleKey, benefit.titleDefault)}</h3>
       <p className="text-base leading-relaxed flex-grow font-geist font-normal">{t(benefit.descriptionKey, benefit.descriptionDefault)}</p>
     </div>
   );
@@ -124,7 +124,7 @@ const WhyAttend: React.FC = () => {
       <div className="max-w-9xl mx-auto px-6">
 
         
-        <div className="flex flex-col lg:flex-row items-center justify-between mb-12 md:mb-16 gap-8 lg:gap-4">
+        <div className="flex flex-col lg:flex-row items-end justify-between mb-12 md:mb-16 gap-8 lg:gap-4">
           <div className="text-center lg:text-left w-full lg:w-auto order-2 lg:order-1">
             <h2 className="text-black font-black text-4xl text-center md:text-6xl tracking-wider font-koho font-medium text-left lef:text-center">
               {t('whyAttend.title', 'WHY ATTEND?')}
@@ -132,7 +132,7 @@ const WhyAttend: React.FC = () => {
           </div>
           <div className="flex-shrink-0 order-1 lg:order-1 mx-auto lg:mx-0">
             <img src="/molecules.svg" alt="Molecule Graphic" 
-              className="w-[150px] h-auto sm:w-40 lg:w-48"
+              className="w-[150px] h-auto sm:w-40 lg:w-[309px] lg:mb-[-56px]"
             />
           </div>
         </div>

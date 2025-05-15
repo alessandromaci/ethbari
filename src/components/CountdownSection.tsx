@@ -55,10 +55,10 @@ const CountdownSection: React.FC = () => {
       <div className="max-w-9xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-6 lg:gap-12">
         <div className="flex flex-col lg:flex-row items-start lg:gap-12">
           <div className="flex-1 flex flex-col justify-center text-left">
-            <h2 className="text-black font-medium text-4xl sm:text-5xl md:text-6xl leading-none mb-6 font-geist">
+            <h2 className="text-black font-medium text-4xl sm:text-5xl md:text-[72px] leading-none mb-6 font-geist">
               {t('countdownSection.title.line1', 'Il cambiamento')}<br />{t('countdownSection.title.line2', 'comincia da qui.')}
             </h2>
-            <h3 className="text-black text-lg font-semibold mb-4 font-geist">
+            <h3 className="text-black text-[25px] font-semibold mb-8 font-geist">
               {t('countdownSection.subtitle', 'Partecipa, impara, costruisci.')}
             </h3>
             <div className="text-gray-700 text-base max-w-xl mb-8 mx-auto lg:mx-0 space-y-4 leading-relaxed">
@@ -71,7 +71,7 @@ const CountdownSection: React.FC = () => {
             </div>
           </div>
 
-          <div className="flex-1 flex flex-col items-center justify-center w-full mt-10 lg:mt-0 lg:max-w-lg">
+          <div className="flex-1 flex flex-col items-center justify-center w-full mt-10 lg:mt-0 lg:max-w-[612px]">
             <div className="relative w-full rounded-2xl overflow-hidden shadow-lg">
               <img
                 src="/CountdownWallpaper.png"

@@ -19,6 +19,11 @@ export default {
         '8xl': '1400px',
         '9xl': '1600px',
       },
+      fontSize: {
+        '7xl': '75px',
+        '6xl': '72px',
+        'xl': '22px',
+      },
       fontWeight: {
         'extralight': '200',
         'light': '300',

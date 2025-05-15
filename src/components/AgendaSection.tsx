@@ -45,13 +45,13 @@ const AgendaItem: React.FC<{ event: AgendaEvent, border: boolean }> = ({ event, 
     <div className={`py-8 ${border ? 'border-b border-black' : ''} grid grid-cols-1 md:grid-cols-12 md:items-start gap-4 md:gap-6`}>
       {/* Info Evento (occupa più spazio) */}
       <div className="md:col-span-5">
-        <h3 className="text-black font-bold text-xl mb-1 font-geist">{event.title[i18n.language]}</h3>
+        <h3 className="text-black font-bold text-2xl mb-1 font-geist">{event.title[i18n.language]}</h3>
         {event.speaker && <p className="hidden font-bold md:block text-gray-600 text-sm font-geist">{event.speaker}</p>}
       </div>
 
       {/* Orario e Durata Desktop */}
       <div className="md:col-span-3 text-left hidden md:block">
-        <p className="text-black font-semibold text-lg font-geist">{event.time}</p>
+        <p className="text-black font-bold text-2xl font-geist">{event.time}</p>
         {event.days[i18n.language] && <p className="text-black font-semibold text-sm font-geist">{event.days[i18n.language]}</p>}
         {event.duration[i18n.language] && <p className="text-black font-semibold text-sm font-geist">{event.duration[i18n.language]}</p>}
       </div>
@@ -127,8 +127,8 @@ const AgendaSection: React.FC = () => {
 
           {/* Icona a sinistra su lg, sotto e centrata su mobile */}
           <div className="flex-shrink-0 order-1 lg:order-1 mx-auto lg:mx-0">
-            <img src="/Agenda.svg" alt="Agenda Icon"
-              className="w-[150px] h-auto sm:w-40 lg:w-48" // Dimensioni reattive per l'immagine
+            <img src="/Agenda.webp" alt="Agenda Icon"
+              className="w-[200px] h-auto sm:w-40 lg:w-[344px]" // Dimensioni reattive per l'immagine
             />
           </div>
         </div>

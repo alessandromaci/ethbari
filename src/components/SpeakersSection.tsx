@@ -19,13 +19,12 @@ const SpeakersSection: React.FC = () => {
 
         <div className="flex flex-col lg:flex-row items-center justify-between mb-12 md:mb-16 gap-8 lg:gap-4">
           <div className="text-center lg:text-left w-full lg:w-auto order-2 lg:order-1">
-            <h2 className="text-black font-black text-4xl text-center md:text-6xl lg:text-left tracking-wider font-koho font-medium text-left lef:text-center">
-              {t('speakers.title.line1', 'INCONTRA I NOSTRI')}<br />{t('speakers.title.line2', 'STRAORDINARI SPEAKER')}
+            <h2 className="text-black font-black text-2xl text-center md:text-[75px] md:leading-[90px] lg:text-left tracking-wider font-koho font-medium text-left lef:text-center">              {t('speakers.title.line1', 'INCONTRA I NOSTRI')}<br />{t('speakers.title.line2', 'STRAORDINARI SPEAKER')}
             </h2>
           </div>
           <div className="flex-shrink-0 order-1 lg:order-1 mx-auto lg:mx-0">
-            <img  src="/Boat.svg" alt="Molecule Graphic"
-              className="w-[150px] h-auto sm:w-40 lg:w-48"
+            <img  src="/Boat.webp" alt="Molecule Graphic"
+              className="w-[150px] h-auto sm:w-40 lg:w-[278px]"
             />
           </div>
         </div>

@@ -68,9 +68,9 @@ const Hero: React.FC = () => {
             {/* Immagine/Grafica Bari Placeholder */}
             <div className="relative z-10 w-full h-full lg:flex lg:items-center lg:justify-center lg:max-w-none">
               <img
-                src="/EthHeroImag-desktop.png"
+                src="/EthHeroImag-desktop.webp"
                 alt={t('hero.imagePlaceholder', 'ETHBARI Visual Placeholder')}
-                className="hidden absolute left-1/2 -translate-x-1/2 w-[200vw] max-w-none h-full object-cover lg:relative lg:block lg:left-auto lg:translate-x-0 lg:w-full lg:h-auto lg:object-contain lg:max-h-[500px] lg:[mask-image:linear-gradient(to_right,black_60%,transparent_100%)]"
+                className="hidden lg:block min-h-[773px] mt-[-100px] min-w-[1036px] lg:[mask-image:linear-gradient(to_right,black_60%,transparent_100%)]"
               />
 
               {/* Contenitore per immagine mobile e relativi gradienti */}
@@ -95,8 +95,8 @@ const Hero: React.FC = () => {
       </div>
 
       {/* Sezione Supporters integrata sotto */}
-      <div className="w-full flex flex-col items-center pt-10 pb-12 md:pt-16 md:pb-20 bg-white z-10 relative">
-        <p className="text-black tracking-[0.2em] text-xs font-semibold mb-6 uppercase font-koho font-semibold">
+      <div className="w-full flex flex-col items-center pt-10 pb-12 md:pt-16 md:pb-20 z-10 relative">
+        <p className="text-black text-[22px] leading-[25px] font-semibold tracking-[39%]  font-semibold mb-6 uppercase font-koho font-semibold">
           {t('supportersWoop.sponsoredBy', 'SUPPORTED BY')}
         </p>
 
@@ -104,7 +104,7 @@ const Hero: React.FC = () => {
         <img
           src="/Ellipse.png"
           alt=""
-          className="absolute left-1/2 -translate-x-1/2 w-100 h-auto md:w-96 lg:w-[600px] z-0 pointer-events-none"
+          className="absolute left-1/2 -translate-x-1/2 w-100 h-auto md:w-96 lg:w-[600px] z-0 mt-[24px] pointer-events-none"
           aria-hidden="true"
         />
 
@@ -113,7 +113,7 @@ const Hero: React.FC = () => {
           <img
             src="/WoopPayLogo.png"
             alt="Woop Pay Logo"
-            className="h-10 md:h-12 lg:h-14"
+            className="h-[10] md:h-[12] lg:h-[66px] mt-[24px]"
           />
         </div>
       </div>
