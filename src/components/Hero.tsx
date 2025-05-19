@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import CustomButton from './CustomBotton';
+import Timer from './Timer';
 
 const Hero: React.FC = () => {
   const { t } = useTranslation();
@@ -13,7 +14,7 @@ const Hero: React.FC = () => {
 
     window.addEventListener('resize', handleResize);
     // Esegui l'handler una volta all'inizio in caso la larghezza iniziale sia già mobile
-    handleResize(); 
+    handleResize();
 
     return () => {
       window.removeEventListener('resize', handleResize);
@@ -81,16 +82,22 @@ const Hero: React.FC = () => {
                   className="w-full h-full object-contain" // Corretta altezza e aggiunto object-fit
                 />
                 {/* Gradiente Superiore Mobile */}
-                <div 
+                <div
                   className="absolute top-0 left-0 w-full h-[150px] transform -translate-y-1/2 bg-gradient-to-b from-transparent via-[#fbe6e9] to-transparent"
                 />
                 {/* Gradiente Inferiore Mobile */}
-                <div 
+                <div
                   className="absolute bottom-0 left-0 w-full h-[150px] transform translate-y-1/2 bg-gradient-to-t from-transparent via-[#fbe6e9] to-transparent"
                 />
               </div>
             </div>
           </div>
+        </div>
+      </div>
+
+      <div className="w-full flex flex-row justify-center items-center">
+        <div className="w-full md:w-[400px]">
+          <Timer />
         </div>
       </div>
 
@@ -107,6 +114,7 @@ const Hero: React.FC = () => {
           className="absolute left-1/2 -translate-x-1/2 w-100 h-auto md:w-96 lg:w-[600px] z-0 mt-[24px] pointer-events-none"
           aria-hidden="true"
         />
+
 
         {/* Contenitore per il solo logo Woop, per il controllo dello z-index */}
         <div className="relative z-10">

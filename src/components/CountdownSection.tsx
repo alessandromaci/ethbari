@@ -72,44 +72,16 @@ const CountdownSection: React.FC = () => {
           </div>
 
           <div className="flex-1 flex flex-col items-center justify-center w-full mt-10 lg:mt-0 lg:max-w-[612px]">
+            
             <div className="relative w-full rounded-2xl overflow-hidden shadow-lg">
               <img
                 src="/CountdownWallpaper.png"
                 alt="Bari waterfront"
                 className="w-full h-auto object-cover"
               />
-              {isEventOver ? (
-                <div className="absolute bottom-0 left-0 right-0 w-full bg-black/70 backdrop-blur-sm text-white flex justify-center items-center py-4 h-[88px] md:h-[96px] rounded-b-2xl">
-                  <span className="text-lg md:text-xl font-semibold font-geist">
-                    {t('countdown.eventStarted', 'Event Started')}
-                  </span>
-                </div>
-              ) : (
-                <div className="
-                absolute bottom-0 left-0 right-0 
-                w-full lg:w-2/3 
-                bg-black/25 backdrop-blur-sm text-white flex justify-around py-4 
-                rounded-bl-2xl rounded-br-2xl lg:rounded-bl-2xl lg:rounded-br-none">
-                  <div className="flex flex-col items-center px-2">
-                    <span className="text-3xl md:text-4xl font-bold tabular-nums">{formatTime(timeLeft.months)}</span>
-                    <span className="text-xs uppercase tracking-wider mt-1">{t('countdown.months', 'Months')}</span>
-                  </div>
-                  <div className="flex flex-col items-center px-2">
-                    <span className="text-3xl md:text-4xl font-bold tabular-nums">{formatTime(timeLeft.hours)}</span>
-                    <span className="text-xs uppercase tracking-wider mt-1">{t('countdown.hours', 'Hours')}</span>
-                  </div>
-                  <div className="flex flex-col items-center px-2">
-                    <span className="text-3xl md:text-4xl font-bold tabular-nums">{formatTime(timeLeft.minutes)}</span>
-                    <span className="text-xs uppercase tracking-wider mt-1">{t('countdown.minutes', 'Minutes')}</span>
-                  </div>
-                  <div className="flex flex-col items-center px-2">
-                    <span className="text-3xl md:text-4xl font-bold tabular-nums">{formatTime(timeLeft.seconds)}</span>
-                    <span className="text-xs uppercase tracking-wider mt-1">{t('countdown.seconds', 'Seconds')}</span>
-                  </div>
-                </div>
-              )}
             </div>
           </div>
+          
         </div>
 
         <div className="flex flex-col sm:flex-row sm:justify-center gap-4 mt-6 justify-start">
