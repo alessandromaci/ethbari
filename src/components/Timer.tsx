@@ -68,20 +68,20 @@ const Timer = () => {
             ) : (
                 <>
                     <div className="flex flex-col items-center px-2 justify-center h-full">
-                        <span className="text-lg md:text-xl text-black font-bold tabular-nums leading-none">{formatTime(timeLeft.months)}</span>
-                        <span className="text-[10px] text-black uppercase tracking-wider leading-none">{t('countdown.months', 'Months')}</span>
+                        <span className="text-lg font-geist md:text-xl text-black font-bold tabular-nums leading-none">{formatTime(timeLeft.months)}</span>
+                        <span className="text-[10px] font-geist text-black uppercase tracking-wider leading-none">{t('countdown.months', 'Months')}</span>
                     </div>
                     <div className="flex flex-col items-center px-2 justify-center h-full">
-                        <span className="text-lg md:text-xl text-black font-bold tabular-nums leading-none">{formatTime(timeLeft.hours)}</span>
-                        <span className="text-[10px] text-black uppercase tracking-wider leading-none">{t('countdown.hours', 'Hours')}</span>
+                        <span className="text-lg font-geist md:text-xl text-black font-bold tabular-nums leading-none">{formatTime(timeLeft.hours)}</span>
+                        <span className="text-[10px] font-geist text-black uppercase tracking-wider leading-none">{t('countdown.hours', 'Hours')}</span>
                     </div>
                     <div className="flex flex-col items-center px-2 justify-center h-full">
-                        <span className="text-lg md:text-xl text-black font-bold tabular-nums leading-none">{formatTime(timeLeft.minutes)}</span>
-                        <span className="text-[10px] text-black uppercase tracking-wider leading-none">{t('countdown.minutes', 'Minutes')}</span>
+                        <span className="text-lg font-geist md:text-xl text-black font-bold tabular-nums leading-none">{formatTime(timeLeft.minutes)}</span>
+                        <span className="text-[10px] font-geist text-black uppercase tracking-wider leading-none">{t('countdown.minutes', 'Minutes')}</span>
                     </div>
                     <div className="flex flex-col items-center px-2 justify-center h-full">
-                        <span className="text-lg md:text-xl text-black font-bold tabular-nums leading-none">{formatTime(timeLeft.seconds)}</span>
-                        <span className="text-[10px] text-black uppercase tracking-wider leading-none">{t('countdown.seconds', 'Seconds')}</span>
+                        <span className="text-lg font-geist md:text-xl text-black font-bold tabular-nums leading-none">{formatTime(timeLeft.seconds)}</span>
+                        <span className="text-[10px] font-geist text-black uppercase tracking-wider leading-none">{t('countdown.seconds', 'Seconds')}</span>
                     </div>
                 </>
             )}
