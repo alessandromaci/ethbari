@@ -14,25 +14,25 @@ function App() {
       <Header />
       <main className="flex-grow">
         <div id="home">
-        <Hero />
+          <Hero />
         </div>
         <div id="about">
-        <CountdownSection />
+          <CountdownSection />
         </div>
         <div id="speaker">
-        <SpeakersSection />
+          <SpeakersSection />
         </div>
         <div id="agenda">
-        <AgendaSection />
+          <AgendaSection />
         </div>
         <ZeroToHero />
         <div id="about">
-        <WhyAttend />
+          <WhyAttend />
         </div>
         <CommunitySupport />
       </main>
       <div id="contacts">
-      <Footer />
+        <Footer />
       </div>
     </div>
   );
