@@ -17,7 +17,7 @@ const SpeakerCard: React.FC<SpeakerCardProps> = ({ speaker, index }) => {
         <div className="flex flex-col gap-2">
             {/* Contenitore principale per immagine e overlay hover */}
             <div
-                className="relative rounded-xl border-2 border-red-500 overflow-hidden h-96 bg-gray-100" // Rimosso aspect-ratio, ripristinato h-96
+                className="relative rounded-xl border-2 border-red-500 overflow-hidden h-[520px] bg-gray-100" // Rimosso aspect-ratio, ripristinato h-96
                 onMouseEnter={() => setIsHovered(true)}
                 onMouseLeave={() => setIsHovered(false)}
             >

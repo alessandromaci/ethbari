@@ -7,7 +7,7 @@ const MoreToComeCard = () => {
         <div className="flex flex-col gap-2">
             {/* Contenitore principale per immagine e overlay hover */}
             <div
-                className="cursor-pointer relative rounded-xl border-2 border-red-500 overflow-hidden h-96 bg-[#FF0012] flex flex-col justify-end items-start px-8 pb-8"
+                className="cursor-pointer relative rounded-xl border-2 border-red-500 overflow-hidden h-[520px] bg-[#FF0012] flex flex-col justify-end items-start px-8 pb-8"
                 onClick={() => {
                     window.location.href = '#';
                 }}
