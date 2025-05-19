@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import type { Speaker } from "../interfaces/speakers.interface";
+import { useTranslation } from "react-i18next";
 
 interface SpeakerCardProps {
     speaker: Speaker;
@@ -8,6 +9,9 @@ interface SpeakerCardProps {
 
 const SpeakerCard: React.FC<SpeakerCardProps> = ({ speaker, index }) => {
     const [isHovered, setIsHovered] = useState(false);
+
+    const { t } = useTranslation();
+    const { i18n } = useTranslation();
 
     return (
         <div className="flex flex-col gap-2">
@@ -36,7 +40,7 @@ const SpeakerCard: React.FC<SpeakerCardProps> = ({ speaker, index }) => {
                         <p className="text-sm text-white px-2 mb-2 font-geist">{speaker?.MainHashtag}</p>
                     </div>
 
-                    <p className="text-sm text-white px-2 mb-2 font-geist">{speaker?.Mansione}</p>
+                    <p className="text-sm text-white px-2 mb-2 font-geist">{speaker?.Mansione[i18n.language] ?? speaker?.Mansione.en}</p>
 
                     {/* Social Links nel Popup */}
                     <div className="flex flex-row gap-3 mt-1">
@@ -57,7 +61,7 @@ const SpeakerCard: React.FC<SpeakerCardProps> = ({ speaker, index }) => {
             <div className="sm:hidden flex flex-col gap-2 items-center justify-center mt-3 text-center">
                 <h3 className="text-lg font-bold font-geist font-semibold">{speaker.Nome} {speaker.Cognome}</h3>
                 <p className="text-sm text-gray-500 text-normal px-2 font-geist">{speaker?.MainHashtag}</p>
-                <p className="text-sm text-gray-500 text-normal px-2 font-geist">{speaker.Mansione}</p>
+                <p className="text-sm text-gray-500 text-normal px-2 font-geist">{speaker.Mansione[i18n.language] ?? speaker.Mansione.en}</p>
                 {/* Social Links Mobile */}
                 <div className="flex flex-row gap-3 mt-1">
                     {speaker?.Socials_links?.map((social, i) => (

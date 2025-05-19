@@ -6,7 +6,10 @@
     "Socials_links": [
       { "type": "twitter", "url": "https://x.com/matteotambussi" }
     ],
-    "Mansione": "Musician and web3 art since 2018. Co-founder of SpaghettETH. Previously: Livepeer, Remix IDE, Stake Capital, Rekt, StableSummit",
+    "Mansione": {
+      "it": "Musicista e artista web3 dal 2018. Co-fondatore di SpaghettETH. Precedentemente: Livepeer, Remix IDE, Stake Capital, Rekt, StableSummit",
+      "en": "Musician and web3 artist since 2018. Co-founder of SpaghettETH. Previously: Livepeer, Remix IDE, Stake Capital, Rekt, StableSummit"
+    },
     "Photourl": "/speakers/matlemad.jpg"
   },
   {
@@ -16,7 +19,10 @@
     "Socials_links": [
       { "type": "twitter", "url": "https://x.com/biafffff" }
     ],
-    "Mansione": "Francesco leads growth at Pareto. Previously, a researcher in academia and a banker at Citi.",
+    "Mansione": {
+      "it": "Francesco conduce il growth di Pareto. Precedentemente, ricercatore in academia e banchiere presso Citi.",
+      "en": "Francesco leads growth at Pareto. Previously, a researcher in academia and a banker at Citi."
+    },
     "Photourl": "/speakers/francesco_bianchi.jpg"
   },
   {
@@ -26,7 +32,10 @@
     "Socials_links": [
       { "type": "twitter", "url": "https://x.com/mariamagenes1" }
     ],
-    "Mansione": "Maria is VP of Strategy at hype, a crypto marketing agency. She’s been involved in the DeFi marketing since 2018. Prev @summerfinance_, @balancer, @MakerDAO & @aave.",
+    "Mansione": {
+      "it": "Maria è VP di Strategy presso hype, agenzia di marketing crypto. È stata coinvolta nel marketing DeFi sin dal 2018. Precedentemente: @summerfinance_, @balancer, @MakerDAO & @aave.",
+      "en": "Maria is VP of Strategy at hype, a crypto marketing agency. She’s been involved in the DeFi marketing since 2018. Previously: @summerfinance_, @balancer, @MakerDAO & @aave."
+    },
     "Photourl": "/speakers/maria.jpg"
   },
   {
@@ -36,7 +45,10 @@
     "Socials_links": [
       { "type": "twitter", "url": "https://x.com/alerex_eth" }
     ],
-    "Mansione": "Product Lead at P2P.org, building the infrastructure that powers institutional access to digital assets and managing over $7B in TVL. His background includes co-founding Woop and contributing to DeFi DAOs like Index Coop and Developer DAO",
+    "Mansione": {
+      "it": "Product Lead presso P2P.org, costruendo l'infrastruttura che fornisce l'accesso istituzionale ai digital assets e gestendo oltre $7B in TVL. Il suo background include la co-fondazione di Woop e la contribuzione a DAOs DeFi come Index Coop e Developer DAO.",
+      "en": "Product Lead at P2P.org, building the infrastructure that powers institutional access to digital assets and managing over $7B in TVL. His background includes co-founding Woop and contributing to DeFi DAOs like Index Coop and Developer DAO"
+    },
     "Photourl": "/speakers/alessandro_maci.jpg"
   },
   {
@@ -47,7 +59,10 @@
     "Socials_links": [
       { "type": "twitter", "url": "https://x.com/limone_eth" }
     ],
-    "Mansione": "Product @builders_garden 📷 | hosting a web3 hub in Rome @urbeEth @ETHRome",
+    "Mansione": {
+      "it": "Product @builders_garden 📷 | hosting a web3 hub in Rome @urbeEth @ETHRome",
+      "en": "Product @builders_garden 📷 | hosting a web3 hub in Rome @urbeEth @ETHRome"
+    },
     "Photourl": "/speakers/limoneth.png"
   },
   {
@@ -58,7 +73,10 @@
     "Socials_links": [
       { "type": "twitter", "url": "https://x.com/ijaack94" }
     ],
-    "Mansione": "DAO Facilitator & Governance Specialist",
+    "Mansione": {
+      "it": "DAO Facilitator & Governance Specialist",
+      "en": "DAO Facilitator & Governance Specialist"
+    },
     "Photourl": "/speakers/jack.jpg"
   }
 ] 

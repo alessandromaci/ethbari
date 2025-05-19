@@ -9,7 +9,11 @@ interface Speaker {
     Username?: string;
     MainHashtag: string;
     Socials_links: SocialLink[];
-    Mansione: string;
+    Mansione: {
+        [key: string]: string;
+        it: string;
+        en: string;
+    };
     Photourl: string;
 }
 
