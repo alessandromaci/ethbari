@@ -59,6 +59,7 @@ const Hero: React.FC = () => {
             {/* Sfondo Gradiente Rosa */}
             <div className="absolute inset-x-0 bottom-0 h-3/4 md:h-full w-full md:w-4/5 lg:w-3/4 xl:w-2/3 bg-gradient-to-t from-[#fbe6e9]/70 via-[#fbe6e9]/40 to-transparent rounded-t-[150px] md:rounded-t-[200px] z-0 opacity-70 md:opacity-100 md:right-0 md:left-auto blur-2xl"></div>
 
+
             {/* Testo Location sovrapposto - Ripristinato e Modificato */}
             <div className="absolute lg:block hidden top-0 right-4 md:right-6 lg:right-8 z-20">
               <span className="text-black text-xl font-semibold tracking-widest uppercase font-geist font-bold">
@@ -71,8 +72,12 @@ const Hero: React.FC = () => {
               <img
                 src="/EthHeroImag-desktop.webp"
                 alt={t('hero.imagePlaceholder', 'ETHBARI Visual Placeholder')}
-                className="hidden lg:block min-h-[773px] mt-[-100px] min-w-[1036px] lg:[mask-image:linear-gradient(to_right,black_60%,transparent_100%)]"
+                className="hidden lg:block min-h-[773px] mt-[-100px] min-w-[1036px] lg:scale-[0.8] lg:-translate-y-5 transition-transform duration-500 lg:[mask-image:linear-gradient(to_right,black_60%,transparent_100%)]"
               />
+
+              <div className="absolute hidden lg:block left-[0px] w-[100%] bottom-0 md:w-[110%] md:bottom-[-15px]">
+                <Timer />
+              </div>
 
               {/* Contenitore per immagine mobile e relativi gradienti */}
               <div className="block lg:hidden relative w-[100vw] h-full">
@@ -95,12 +100,13 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      <div className="w-full flex flex-row justify-center items-center">
-        <div className="w-full md:w-[400px]">
+      <div className="w-full block relative lg:hidden h-[30px]">
+        <div className="absolute bottom-[0px] left-0 w-full z-[1000]">
           <Timer />
         </div>
       </div>
 
+      
       {/* Sezione Supporters integrata sotto */}
       <div className="w-full flex flex-col items-center pt-10 pb-12 md:pt-16 md:pb-20 z-10 relative">
         <p className="text-black text-[22px] leading-[25px] font-semibold tracking-[39%]  font-semibold mb-6 uppercase font-koho font-semibold">
