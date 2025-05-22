@@ -54,7 +54,7 @@ const Timer = () => {
     return (
         <div className="
                 w-full
-                rounded-2xl
+                rounded-[10px]
                 bg-[linear-gradient(90deg,_#00C9E3_0%,_#00C9E31A_100%)]
                 backdrop-blur-sm text-white flex justify-around
                 h-12
