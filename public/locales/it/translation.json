@@ -78,7 +78,11 @@
   "agenda.event4.track": "Traccia Beta",
   "zeroToHero.title": "Da zero a hero nello sviluppo blockchain",
   "zeroToHero.author": "da Urbe.ETH",
-  "zeroToHero.description": "Diventa un blockchain developer con Urbe Campus. Partecipa a tre giornate intensive per imparare a sviluppare applicazioni nel mondo Web3. Con il supporto dei migliori sviluppatori italiani, imparerai a scrivere smart contract, usare gli strumenti più avanzati e lanciare la tua prima dApp DeFi. Il workshop è pensato per studenti e giovani professionisti che vogliono muovere i primi passi nella blockchain con un approccio pratico e guidato. Alla fine del percorso, avrai le competenze per iniziare a costruire da subito nel mondo decentralizzato.",
+
+  "zeroToHero.description": "Diventa un blockchain developer con Urbe Campus",
+  "zeroToHeroFirstParagraph": "Partecipa a tre giornate intensive per imparare a sviluppare applicazioni nel mondo Web3. Con il supporto dei migliori sviluppatori italiani, imparerai a scrivere smart contract, usare gli strumenti più avanzati e lanciare la tua prima dApp DeFi.",
+  "zeroToHeroSecondParagraph": "Il workshop è pensato per studenti e giovani professionisti che vogliono muovere i primi passi nella blockchain con un approccio pratico e guidato. Alla fine del percorso, avrai le competenze per iniziare a costruire da subito nel mondo decentralizzato.",
+  
   "zeroToHero.cta": "Prenota il tuo posto",
   "whyAttend.title": "PERCHÉ PARTECIPARE?",
   "whyAttend.students.title": "STUDENTI E GIOVANI PROFESSIONISTI",
