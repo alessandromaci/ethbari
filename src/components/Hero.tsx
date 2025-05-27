@@ -30,7 +30,7 @@ const Hero: React.FC = () => {
           <div className="flex flex-col justify-center text-left">
             <div className="mb-3 md:mb-4">
               <p className="block pl-1 text-black text-lg md:text-xl font-semibold tracking-widest uppercase font-geist font-bold">
-                {t('hero.eventDate', 'SEPTEMBER 25-26, 2025')}
+                {t('hero.eventDate', 'SEPTEMBER 25-28, 2025')}
               </p>
             </div>
             <h1 className="text-black font-black text-4xl sm:text-5xl md:text-6xl lg:text-[68px] leading-tight mb-6 font-koho font-medium" style={{ letterSpacing: '-0.02em' }}>
