@@ -87,7 +87,7 @@ const CountdownSection: React.FC = () => {
         <div className="flex flex-col sm:flex-row sm:justify-center gap-4 mt-6 justify-start">
           <CustomButton
             text={t('countdownSection.ctaStayTuned', 'Stay tuned')}
-            onClick={() => console.log('Ticket button clicked')}
+            onClick={() => window.open('https://substack.com/@ethereumbari', '_blank')}
             backgroundClasses="bg-[linear-gradient(to_right,#FF0012_0%,rgba(255,0,18,0.49)_100%)]"
           />
           <CustomButton
