@@ -1,16 +1,18 @@
-import Header from './components/Header';
-import Hero from './components/Hero';
-import CountdownSection from './components/CountdownSection';
-import SpeakersSection from './components/SpeakersSection';
-import AgendaSection from './components/AgendaSection';
-import ZeroToHero from './components/ZeroToHero';
-import WhyAttend from './components/WhyAttend';
-import CommunitySupport from './components/CommunitySupport';
-import Footer from './components/Footer';
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import CountdownSection from "./components/CountdownSection";
+import SpeakersSection from "./components/SpeakersSection";
+import AgendaSection from "./components/AgendaSection";
+import ZeroToHero from "./components/ZeroToHero";
+import WhyAttend from "./components/WhyAttend";
+import CommunitySupport from "./components/CommunitySupport";
+import Footer from "./components/Footer";
+import SEO from "./components/SEO";
 
 function App() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
+      <SEO />
       <Header />
       <main className="flex-grow">
         <div id="home">
@@ -38,4 +40,4 @@ function App() {
   );
 }
 
-export default App; 
+export default App;
