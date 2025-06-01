@@ -9,7 +9,7 @@ const EarlyBuilderBanner: React.FC = () => {
     currentLang === "it"
       ? t(
           "earlyBuilder.message.it",
-          "🎉 Registrati ora e ottieni un biglietto gratuito! Usa il codice:"
+          "🎉 Registrati ora per un biglietto gratuito! Usa il codice:"
         )
       : t(
           "earlyBuilder.message.en",
