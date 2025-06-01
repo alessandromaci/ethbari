@@ -136,15 +136,19 @@ const Header: React.FC = () => {
             ))}
           </nav>
 
-
           {/* Bottone Ticket Desktop */}
           <div className="hidden md:flex flex-row gap-2 items-center justify-center">
             <div className="">
               <LanguageSelector />
             </div>
             <CustomButton
-              text={t('header.ticketButton', 'TICKETS')}
-              onClick={() => window.open('https://mego.tickets/#/', '_blank')} // Azione placeholder
+              text={t("header.ticketButton", "TICKETS")}
+              onClick={() =>
+                window.open(
+                  "https://app.mego.tickets/event/2915db7c-40dc-402e-84de-20076403bf12",
+                  "_blank"
+                )
+              } // Azione placeholder
             />
           </div>
 

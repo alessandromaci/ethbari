@@ -171,20 +171,30 @@ const WhyAttend: React.FC = () => {
         </div>
 
         <div className="flex flex-col sm:flex-row gap-4 mt-6 justify-center ">
-            <CustomButton
-              text={t('whyAttend.ctaBuyTicket', 'Buy your ticket')}
-              onClick={() => window.open('https://mego.tickets/#/', '_blank')}
-              backgroundClasses="bg-[linear-gradient(to_right,#FF0012_0%,rgba(255,0,18,0.49)_100%)]"
-            />
-            <CustomButton
-              text={t('whyAttend.ctaApplySponsor', 'Apply as sponsor')}
-              onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLScGE_C8v5PfnSCfcqX2rMT9LGs1yoED8f0EGkIMiAJwLBsTTA/viewform?usp=sharing', '_blank')}
-              backgroundClasses="bg-[linear-gradient(90deg,#00C9E3_0.02%,rgba(0,201,227,0.34)_105.15%)]"
-            />
+          <CustomButton
+            text={t("whyAttend.ctaBuyTicket", "Buy your ticket")}
+            onClick={() =>
+              window.open(
+                "https://app.mego.tickets/event/2915db7c-40dc-402e-84de-20076403bf12",
+                "_blank"
+              )
+            }
+            backgroundClasses="bg-[linear-gradient(to_right,#FF0012_0%,rgba(255,0,18,0.49)_100%)]"
+          />
+          <CustomButton
+            text={t("whyAttend.ctaApplySponsor", "Apply as sponsor")}
+            onClick={() =>
+              window.open(
+                "https://docs.google.com/forms/d/e/1FAIpQLScGE_C8v5PfnSCfcqX2rMT9LGs1yoED8f0EGkIMiAJwLBsTTA/viewform?usp=sharing",
+                "_blank"
+              )
+            }
+            backgroundClasses="bg-[linear-gradient(90deg,#00C9E3_0.02%,rgba(0,201,227,0.34)_105.15%)]"
+          />
         </div>
       </div>
     </section>
   );
 };
 
-export default WhyAttend; 
+export default WhyAttend;

@@ -47,8 +47,17 @@ const Hero: React.FC = () => {
                 iconPosition="right"
                 iconWidth={12}
                 iconHeight={12}
-                text={isMobile ? t('hero.ctaGetTicketsShort', 'Biglietto') : t('hero.ctaGetTickets', 'Prendi il tuo Biglietto')}
-                onClick={() => window.open('https://mego.tickets/#/', '_blank')}
+                text={
+                  isMobile
+                    ? t("hero.ctaGetTicketsShort", "Biglietto")
+                    : t("hero.ctaGetTickets", "Prendi il tuo Biglietto")
+                }
+                onClick={() =>
+                  window.open(
+                    "https://app.mego.tickets/event/2915db7c-40dc-402e-84de-20076403bf12",
+                    "_blank"
+                  )
+                }
                 backgroundClasses="bg-[linear-gradient(to_right,#FF0012_0%,rgba(255,0,18,0.49)_100%)]"
               />
             </div>
