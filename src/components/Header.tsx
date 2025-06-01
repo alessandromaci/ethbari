@@ -1,31 +1,42 @@
-import React, { useState, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
-import CustomButton from './CustomBotton';
-import HeaderMobile from './HeaderMobile'; // Importa il nuovo componente mobile
-import LanguageSelector from './LanguageSelector';
+import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import CustomButton from "./CustomBotton";
+import HeaderMobile from "./HeaderMobile"; // Importa il nuovo componente mobile
+import LanguageSelector from "./LanguageSelector";
 
 // Definizioni dati comuni
-export interface NavLink { // Esporta il tipo per poterlo importare in HeaderMobile
+export interface NavLink {
+  // Esporta il tipo per poterlo importare in HeaderMobile
   href: string;
   labelKey: string;
   defaultLabel: string;
 }
 
-
 const navLinks: NavLink[] = [
-  { href: '#', labelKey: 'nav.home', defaultLabel: 'Home' },
-  { href: '#about', labelKey: 'nav.about', defaultLabel: 'About' },
-  { href: '#speaker', labelKey: 'nav.speakers', defaultLabel: 'Speaker' },
-  { href: '#agenda', labelKey: 'nav.agenda', defaultLabel: 'Agenda' },
-  { href: '#contacts', labelKey: 'nav.contacts', defaultLabel: 'Contacts' },
+  { href: "#", labelKey: "nav.home", defaultLabel: "Home" },
+  { href: "#about", labelKey: "nav.about", defaultLabel: "About" },
+  { href: "#speaker", labelKey: "nav.speakers", defaultLabel: "Speaker" },
+  { href: "#agenda", labelKey: "nav.agenda", defaultLabel: "Agenda" },
+  { href: "#contacts", labelKey: "nav.contacts", defaultLabel: "Contacts" },
 ];
-
 
 // Icone social per il menu mobile
 const socialLinks = [
-  { type: 'facebook', url: 'https://www.facebook.com/ethereumbari', icon: '/icons/facebook.svg' },
-  { type: 'linkedin', url: 'https://www.linkedin.com/company/ethereumbari', icon: '/icons/linkedin.svg' },
-  { type: 'instagram', url: 'https://www.instagram.com/ethereumbari', icon: '/icons/instagram.svg' },
+  {
+    type: "telegram",
+    url: "https://t.me/ethbari",
+    icon: "/icons/telegram.svg",
+  },
+  {
+    type: "twitter",
+    url: "https://x.com/ethereumbari",
+    icon: "/icons/twitter.svg",
+  },
+  {
+    type: "instagram",
+    url: "https://www.instagram.com/ethereumbari",
+    icon: "/icons/instagram.svg",
+  },
 ];
 
 const Header: React.FC = () => {
