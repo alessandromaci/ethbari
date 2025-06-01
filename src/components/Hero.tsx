@@ -130,18 +130,24 @@ const Hero: React.FC = () => {
           aria-hidden="true"
         />
 
-
         {/* Contenitore per il solo logo Woop, per il controllo dello z-index */}
         <div className="relative z-10">
-          <img
-            src="/WoopPayLogo.png"
-            alt="Woop Pay Logo"
-            className="h-[10] md:h-[12] lg:h-[66px] mt-[24px]"
-          />
+          <a
+            href="https://woopwidget.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer hover:opacity-90 transition-opacity"
+          >
+            <img
+              src="/WoopPayLogo.png"
+              alt="Woop Pay Logo"
+              className="h-[10] md:h-[12] lg:h-[66px] mt-[24px]"
+            />
+          </a>
         </div>
       </div>
-    </section >
+    </section>
   );
 };
 
-export default Hero; 
+export default Hero;
