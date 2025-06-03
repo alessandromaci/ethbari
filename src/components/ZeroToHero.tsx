@@ -40,8 +40,10 @@ const ZeroToHero: React.FC = () => {
           </p>
           <div className="inline-block">
             <CustomButton
-              text={t('zeroToHero.cta', 'Reserve your spot')}
-              onClick={() => { }}
+              text={t("zeroToHero.cta", "Reserve your spot")}
+              onClick={() => {
+                window.open("https://lu.ma/h9qcecja", "_blank");
+              }}
               backgroundClasses="bg-[linear-gradient(to_right,#FF0012_0%,rgba(255,0,18,0.49)_100%)]"
             />
           </div>
