@@ -9,6 +9,7 @@ import CommunitySupport from "./components/CommunitySupport";
 import Footer from "./components/Footer";
 import SEO from "./components/SEO";
 import EarlyBuilderBanner from "./components/EarlyBuilderBanner";
+import { Analytics } from "@vercel/analytics/react";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
       <div id="contacts">
         <Footer />
       </div>
+      <Analytics />
     </div>
   );
 }
