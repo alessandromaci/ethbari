@@ -11,7 +11,7 @@ interface SEOProps {
 const SEO: React.FC<SEOProps> = ({
   title,
   description,
-  image = "/EthHeroImag-desktop.png", // Default OG image
+  image = "/og-image.png", // Default OG image - should be 1200x630px PNG
   url = "https://ethbari.org", // Default URL
 }) => {
   const { t, i18n } = useTranslation();
@@ -26,12 +26,60 @@ const SEO: React.FC<SEOProps> = ({
   const seoTitle = title || defaultTitle;
   const seoDescription = description || defaultDescription;
 
+  // Structured data for the event
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    name: "ETH Bari",
+    description: seoDescription,
+    startDate: "2025-09-25",
+    endDate: "2025-09-28",
+    location: {
+      "@type": "Place",
+      name: "Spazio Murat",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Bari",
+        addressCountry: "IT",
+      },
+    },
+    organizer: {
+      "@type": "Organization",
+      name: "ETH Bari",
+      url: "https://ethbari.org",
+    },
+    offers: {
+      "@type": "Offer",
+      url: "https://app.mego.tickets/event/2915db7c-40dc-402e-84de-20076403bf12",
+      availability: "https://schema.org/InStock",
+    },
+  };
+
   return (
     <Helmet>
       {/* Primary Meta Tags */}
       <title>{seoTitle}</title>
       <meta name="title" content={seoTitle} />
       <meta name="description" content={seoDescription} />
+      <meta
+        name="keywords"
+        content="ETH Bari, DeFi, Blockchain, Finanza Decentralizzata, Cryptocurrency, Web3, Bari, Italia, Ethereum, Smart Contracts, Workshop, Evento Crypto"
+      />
+      <meta name="author" content="ETH Bari" />
+      <meta
+        name="robots"
+        content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+      />
+      <meta
+        name="language"
+        content={currentLang === "it" ? "Italian" : "English"}
+      />
+      <meta name="revisit-after" content="7 days" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="theme-color" content="#FF0012" />
+
+      {/* Canonical URL */}
+      <link rel="canonical" href={url} />
 
       {/* Twitter */}
       <meta name="twitter:card" content="summary_large_image" />
@@ -45,19 +93,16 @@ const SEO: React.FC<SEOProps> = ({
       {/* Language */}
       <html lang={currentLang} />
 
+      {/* Structured Data */}
+      <script type="application/ld+json">
+        {JSON.stringify(structuredData)}
+      </script>
+
       {/* Additional Meta Tags */}
-      <meta
-        name="keywords"
-        content="ETH Bari, DeFi, Blockchain, Finanza Decentralizzata, Cryptocurrency, Web3, Bari, Italia"
-      />
-      <meta name="author" content="ETH Bari" />
-      <meta name="robots" content="index, follow" />
-      <meta
-        name="language"
-        content={currentLang === "it" ? "Italian" : "English"}
-      />
-      <meta name="revisit-after" content="7 days" />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <meta name="geo.region" content="IT-BA" />
+      <meta name="geo.placename" content="Bari" />
+      <meta name="geo.position" content="41.1171;16.8719" />
+      <meta name="ICBM" content="41.1171, 16.8719" />
     </Helmet>
   );
 };
