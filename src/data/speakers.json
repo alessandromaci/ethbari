@@ -7,8 +7,8 @@
       { "type": "twitter", "url": "https://x.com/matteotambussi" }
     ],
     "Mansione": {
-      "it": "Musicista e artista web3 dal 2018. Co-fondatore di SpaghettETH. Precedentemente: Livepeer, Remix IDE, Stake Capital, Rekt, StableSummit",
-      "en": "Musician and web3 artist since 2018. Co-founder of SpaghettETH. Previously: Livepeer, Remix IDE, Stake Capital, Rekt, StableSummit"
+      "it": "Musicista e artista web3 dal 2018, co-fondatore di SpaghettETH. Ha collaborato con Livepeer, Remix IDE, Stake Capital, Rekt e StableSummit.",
+      "en": "Musician and web3 artist since 2018, co-founder of SpaghettETH. Collaborated with Livepeer, Remix IDE, Stake Capital, Rekt, and StableSummit."
     },
     "Photourl": "/speakers/matlemad.jpg"
   },
@@ -16,12 +16,10 @@
     "Nome": "Francesco",
     "Cognome": "Bianchi",
     "MainHashtag": "@Pareto",
-    "Socials_links": [
-      { "type": "twitter", "url": "https://x.com/biafffff" }
-    ],
+    "Socials_links": [{ "type": "twitter", "url": "https://x.com/biafffff" }],
     "Mansione": {
-      "it": "Francesco conduce il growth di Pareto. Precedentemente, ricercatore in academia e banchiere presso Citi.",
-      "en": "Francesco leads growth at Pareto. Previously, a researcher in academia and a banker at Citi."
+      "it": "Growth Lead a Pareto. In precedenza ricercatore accademico e banchiere presso Citi.",
+      "en": "Growth Lead at Pareto. Previously an academic researcher and banker at Citi."
     },
     "Photourl": "/speakers/francesco_bianchi.jpg"
   },
@@ -33,8 +31,8 @@
       { "type": "twitter", "url": "https://x.com/mariamagenes1" }
     ],
     "Mansione": {
-      "it": "Maria è VP di Strategy presso hype, agenzia di marketing crypto. È stata coinvolta nel marketing DeFi sin dal 2018. Precedentemente: @summerfinance_, @balancer, @MakerDAO & @aave.",
-      "en": "Maria is VP of Strategy at hype, a crypto marketing agency. She’s been involved in the DeFi marketing since 2018. Previously: @summerfinance_, @balancer, @MakerDAO & @aave."
+      "it": "VP Strategy presso Hype, agenzia di marketing crypto. Attiva nel marketing DeFi dal 2018, ha lavorato con Summer.Finance, Balancer, MakerDAO e Aave.",
+      "en": "VP Strategy at Hype, a crypto marketing agency. Active in DeFi marketing since 2018, with experience at Summer.Finance, Balancer, MakerDAO, and Aave."
     },
     "Photourl": "/speakers/maria.jpg"
   },
@@ -42,12 +40,10 @@
     "Nome": "Alessandro",
     "Cognome": "Maci",
     "MainHashtag": "@P2P.org",
-    "Socials_links": [
-      { "type": "twitter", "url": "https://x.com/alerex_eth" }
-    ],
+    "Socials_links": [{ "type": "twitter", "url": "https://x.com/alerex_eth" }],
     "Mansione": {
-      "it": "Product Lead presso P2P.org, costruendo l'infrastruttura che fornisce l'accesso istituzionale ai digital assets e gestendo oltre $7B in TVL. Il suo background include la co-fondazione di Woop e la contribuzione a DAOs DeFi come Index Coop e Developer DAO.",
-      "en": "Product Lead at P2P.org, building the infrastructure that powers institutional access to digital assets and managing over $7B in TVL. His background includes co-founding Woop and contributing to DeFi DAOs like Index Coop and Developer DAO"
+      "it": "Product Lead presso P2P.org, dove sviluppa infrastrutture per l'accesso istituzionale agli asset digitali e gestisce oltre $7B in TVL. Co-fondatore di Woop e contributor in DAOs come Index Coop e Developer DAO.",
+      "en": "Product Lead at P2P.org, building infrastructure for institutional access to digital assets and managing over $7B in TVL. Co-founder of Woop and contributor to DAOs such as Index Coop and Developer DAO."
     },
     "Photourl": "/speakers/alessandro_maci.jpg"
   },
@@ -56,12 +52,10 @@
     "Cognome": null,
     "Username": "LimoneETH",
     "MainHashtag": "@builders_garden",
-    "Socials_links": [
-      { "type": "twitter", "url": "https://x.com/limone_eth" }
-    ],
+    "Socials_links": [{ "type": "twitter", "url": "https://x.com/limone_eth" }],
     "Mansione": {
-      "it": "Product @builders_garden 📷 | hosting a web3 hub in Rome @urbeEth @ETHRome",
-      "en": "Product @builders_garden 📷 | hosting a web3 hub in Rome @urbeEth @ETHRome"
+      "it": "Product presso builders_garden e host di un hub web3 a Roma con urbeEth e ETHRome.",
+      "en": "Product at builders_garden and host of a web3 hub in Rome with urbeEth and ETHRome."
     },
     "Photourl": "/speakers/limoneth.png"
   },
@@ -70,13 +64,11 @@
     "Cognome": null,
     "Username": "Jaack",
     "MainHashtag": "@Routescan",
-    "Socials_links": [
-      { "type": "twitter", "url": "https://x.com/ijaack94" }
-    ],
+    "Socials_links": [{ "type": "twitter", "url": "https://x.com/ijaack94" }],
     "Mansione": {
-      "it": "DAO Facilitator & Governance Specialist",
-      "en": "DAO Facilitator & Governance Specialist"
+      "it": "DAO Facilitator e Governance Specialist presso Routescan.",
+      "en": "DAO Facilitator and Governance Specialist at Routescan."
     },
     "Photourl": "/speakers/jack.jpg"
   }
-] 
+]
