@@ -17,10 +17,14 @@ const SEO: React.FC<SEOProps> = ({
   const { t, i18n } = useTranslation();
   const currentLang = i18n.language;
 
-  const defaultTitle = t("seo.title", "ETH Bari - Costruisci il Futuro Crypto");
+  const eventDate = "25-28 Settembre 2025";
+  const defaultTitle = t(
+    "seo.title",
+    `ETH Bari - ${eventDate} - Costruisci il Futuro Crypto`
+  );
   const defaultDescription = t(
     "seo.description",
-    "ETH Bari è l'evento che porta l'innovazione crypto e della finanza decentralizzata (DeFi) nel Sud Italia. Unisciti a studenti, giovani professionisti e appassionati di innovazione tecnologica per esplorare, costruire e dare forma al futuro della finanza."
+    `ETH Bari si terrà dal ${eventDate}. È l'evento che porta l'innovazione crypto e della finanza decentralizzata (DeFi) nel Sud Italia. Unisciti a studenti, giovani professionisti e appassionati di innovazione tecnologica per esplorare, costruire e dare forma al futuro della finanza.`
   );
 
   const seoTitle = title || defaultTitle;
@@ -34,6 +38,8 @@ const SEO: React.FC<SEOProps> = ({
     description: seoDescription,
     startDate: "2025-09-25",
     endDate: "2025-09-28",
+    eventStatus: "https://schema.org/EventScheduled",
+    eventAttendanceMode: "https://schema.org/OfflineEventAttendanceMode",
     location: {
       "@type": "Place",
       name: "Spazio Murat",
@@ -103,6 +109,9 @@ const SEO: React.FC<SEOProps> = ({
       <meta name="geo.placename" content="Bari" />
       <meta name="geo.position" content="41.1171;16.8719" />
       <meta name="ICBM" content="41.1171, 16.8719" />
+
+      {/* Favicon */}
+      <link rel="icon" href="/favicon.ico" />
     </Helmet>
   );
 };
