@@ -173,12 +173,7 @@ const WhyAttend: React.FC = () => {
         <div className="flex flex-col sm:flex-row gap-4 mt-6 justify-center ">
           <CustomButton
             text={t("whyAttend.ctaBuyTicket", "Buy your ticket")}
-            onClick={() =>
-              window.open(
-                "https://app.mego.tickets/event/2915db7c-40dc-402e-84de-20076403bf12",
-                "_blank"
-              )
-            }
+            onClick={() => window.open("https://lu.ma/o2el68y0", "_blank")}
             backgroundClasses="bg-[linear-gradient(to_right,#FF0012_0%,rgba(255,0,18,0.49)_100%)]"
           />
           <CustomButton

@@ -154,12 +154,7 @@ const Header: React.FC = () => {
             </div>
             <CustomButton
               text={t("header.ticketButton", "TICKETS")}
-              onClick={() =>
-                window.open(
-                  "https://app.mego.tickets/event/2915db7c-40dc-402e-84de-20076403bf12",
-                  "_blank"
-                )
-              } // Azione placeholder
+              onClick={() => window.open("https://lu.ma/o2el68y0", "_blank")} // Azione placeholder
             />
           </div>
 

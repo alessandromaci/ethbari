@@ -56,7 +56,7 @@ const SEO: React.FC<SEOProps> = ({
     },
     offers: {
       "@type": "Offer",
-      url: "https://app.mego.tickets/event/2915db7c-40dc-402e-84de-20076403bf12",
+      url: "https://lu.ma/o2el68y0",
       availability: "https://schema.org/InStock",
     },
   };
