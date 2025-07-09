@@ -1,164 +1,39 @@
 [
   {
     "title": {
-      "it": "Storia della DeFi",
-      "en": "History of DeFi"
-    },
-    "speaker": "Francesco Bianchi",
-    "time": "10:25-10:45",
-    "duration": {
-      "it": "20 minuti",
-      "en": "20 minutes"
-    },
-    "days": {
-      "it": "25/09/2025",
-      "en": "09/25/2025"
-    },
-    "track": {
-      "it": ["Talk"],
-      "en": ["Talk"]
-    },
-    "topic": {
-      "it": ["DeFi"],
-      "en": ["DeFi"]
-    },
-    "location": "Main Hall"
-  },
-  {
-    "title": {
-      "it": "RWA Tokenization and Institutions",
-      "en": "RWA Tokenization and Institutions"
+      "it": "Perché ETH Bari?",
+      "en": "Why ETH Bari?"
     },
     "speaker": "Alessandro Maci",
-    "time": "10:45-11:30",
-    "duration": {
-      "it": "45 minuti",
-      "en": "45 minutes"
-    },
-    "days": {
-      "it": "25/09/2025",
-      "en": "09/25/2025"
-    },
-    "track": {
-      "it": ["Talk"],
-      "en": ["Talk"]
-    },
-    "topic": {
-      "it": ["RWA & Institutions"],
-      "en": ["RWA & Institutions"]
-    },
-    "location": "Main Hall"
-  },
-  {
-    "title": {
-      "it": "Maker DAO e emissione di stablecoin",
-      "en": "Maker DAO and stablecoin issuance"
-    },
-    "speaker": "Maria Magenes",
-    "time": "11:30-12:15",
-    "duration": {
-      "it": "45 minuti",
-      "en": "45 minutes"
-    },
-    "days": {
-      "it": "25/09/2025",
-      "en": "09/25/2025"
-    },
-    "track": {
-      "it": ["Talk"],
-      "en": ["Talk"]
-    },
-    "topic": {
-      "it": ["Stablecoins"],
-      "en": ["Stablecoins"]
-    },
-    "location": "Main Hall"
-  },
-  {
-    "title": {
-      "it": "Introduzione a Solidity per non-devs",
-      "en": "Introduction to Solidity for non-devs"
-    },
-    "speaker": "Matteo Tambussi",
-    "time": "12:15-13:00",
-    "duration": {
-      "it": "45 minuti",
-      "en": "45 minutes"
-    },
-    "days": {
-      "it": "25/09/2025",
-      "en": "09/25/2025"
-    },
-    "track": {
-      "it": ["Talk"],
-      "en": ["Talk"]
-    },
-    "topic": {
-      "it": ["Developer Education"],
-      "en": ["Developer Education"]
-    },
-    "location": "Main Hall"
-  },
-  {
-    "title": {
-      "it": "Situazione macroeconomica corrente",
-      "en": "Current macroeconomic situation"
-    },
-    "speaker": "Global ETH",
-    "time": "13:00-14:00",
-    "duration": {
-      "it": "60 minuti",
-      "en": "60 minutes"
-    },
-    "days": {
-      "it": "25/09/2025",
-      "en": "09/25/2025"
-    },
-    "track": {
-      "it": ["Talk"],
-      "en": ["Talk"]
-    },
-    "topic": {
-      "it": ["Macroeconomics"],
-      "en": ["Macroeconomics"]
-    },
-    "location": "Main Hall"
-  },
-  {
-    "title": {
-      "it": "Sicurezza in Web3",
-      "en": "Security in Web3"
-    },
-    "speaker": "Jaack | Routescan",
-    "time": "14:00-14:45",
-    "duration": {
-      "it": "45 minuti",
-      "en": "45 minutes"
-    },
-    "days": {
-      "it": "25/09/2025",
-      "en": "09/25/2025"
-    },
-    "track": {
-      "it": ["Talk"],
-      "en": ["Talk"]
-    },
-    "topic": {
-      "it": ["Security"],
-      "en": ["Security"]
-    },
-    "location": "Main Hall"
-  },
-  {
-    "title": {
-      "it": "Applicazioni principali in Web3",
-      "en": "Main applications in Web3"
-    },
-    "speaker": "Limone.eth",
-    "time": "14:45-15:00",
+    "time": "10:00-10:15",
     "duration": {
       "it": "15 minuti",
       "en": "15 minutes"
+    },
+    "days": {
+      "it": "25/09/2025",
+      "en": "09/25/2025"
+    },
+    "track": {
+      "it": ["Introduzione"],
+      "en": ["Introduction"]
+    },
+    "topic": {
+      "it": ["Warm-up"],
+      "en": ["Warm-up"]
+    },
+    "location": "Main Hall"
+  },
+  {
+    "title": {
+      "it": "La fiducia - una introduzione alla Blockchain",
+      "en": "Trust - an introduction to Blockchain"
+    },
+    "speaker": "Gabriele Martemucci",
+    "time": "10:15-10:45",
+    "duration": {
+      "it": "30 minuti",
+      "en": "30 minutes"
     },
     "days": {
       "it": "25/09/2025",
@@ -176,27 +51,277 @@
   },
   {
     "title": {
-      "it": "Da zero a eroe in sviluppo blockchain",
-      "en": "From Zero to Hero in Blockchain Development"
+      "it": "Come siamo arrivati qui? La storia della DeFi",
+      "en": "How did we get here? The history of DeFi"
     },
-    "speaker": "Urbe.eth",
-    "time": "14:45-15:00",
+    "speaker": "Francesco Bianchi",
+    "time": "10:45-11:15",
     "duration": {
-      "it": "15 minuti",
-      "en": "15 minutes"
+      "it": "30 minuti",
+      "en": "30 minutes"
     },
     "days": {
-      "it": "26-28/09/2025",
-      "en": "09/26-28/2025"
+      "it": "25/09/2025",
+      "en": "09/25/2025"
     },
     "track": {
-      "it": ["Workshop"],
-      "en": ["Workshop"]
+      "it": ["Talk"],
+      "en": ["Talk"]
+    },
+    "topic": {
+      "it": ["DeFi"],
+      "en": ["DeFi"]
+    },
+    "location": "Main Hall"
+  },
+  {
+    "title": {
+      "it": "Stablecoin: minaccia o salvezza per il sistema?",
+      "en": "Stablecoins: threat or salvation for the system?"
+    },
+    "speaker": "Maria Magenes",
+    "time": "11:15-11:45",
+    "duration": {
+      "it": "30 minuti",
+      "en": "30 minutes"
+    },
+    "days": {
+      "it": "25/09/2025",
+      "en": "09/25/2025"
+    },
+    "track": {
+      "it": ["Talk"],
+      "en": ["Talk"]
+    },
+    "topic": {
+      "it": ["DeFi"],
+      "en": ["DeFi"]
+    },
+    "location": "Main Hall"
+  },
+  {
+    "title": {
+      "it": "Tokenizzare tutto? Le istituzioni e gli asset reali",
+      "en": "Tokenize everything? Institutions and real-world assets"
+    },
+    "speaker": "Alessandro Maci",
+    "time": "11:45-12:15",
+    "duration": {
+      "it": "30 minuti",
+      "en": "30 minutes"
+    },
+    "days": {
+      "it": "25/09/2025",
+      "en": "09/25/2025"
+    },
+    "track": {
+      "it": ["Talk"],
+      "en": ["Talk"]
+    },
+    "topic": {
+      "it": ["RWA & Istituzioni"],
+      "en": ["RWA & Institutions"]
+    },
+    "location": "Main Hall"
+  },
+  {
+    "title": {
+      "it": "Pranzo",
+      "en": "Lunch"
+    },
+    "speaker": "",
+    "time": "12:15-13:30",
+    "duration": {
+      "it": "45 minuti",
+      "en": "45 minutes"
+    },
+    "days": {
+      "it": "25/09/2025",
+      "en": "09/25/2025"
+    },
+    "track": {
+      "it": ["Break"],
+      "en": ["Break"]
+    },
+    "topic": {
+      "it": ["Networking"],
+      "en": ["Networking"]
+    },
+    "location": "Main Hall"
+  },
+  {
+    "title": {
+      "it": "Cosa possiamo fare con Ethereum oggi?",
+      "en": "What can we do with Ethereum today?"
+    },
+    "speaker": "Limone.eth",
+    "time": "13:30-14:00",
+    "duration": {
+      "it": "30 minuti",
+      "en": "30 minutes"
+    },
+    "days": {
+      "it": "25/09/2025",
+      "en": "09/25/2025"
+    },
+    "track": {
+      "it": ["Talk"],
+      "en": ["Talk"]
+    },
+    "topic": {
+      "it": ["Web3 Adoption"],
+      "en": ["Web3 Adoption"]
+    },
+    "location": "Main Hall"
+  },
+  {
+    "title": {
+      "it": "Non e` mai troppo tardi. Introduzione a Solidity",
+      "en": "It's never too late. Introduction to Solidity"
+    },
+    "speaker": "Matteo Tambussi",
+    "time": "14:00-14:30",
+    "duration": {
+      "it": "30 minuti",
+      "en": "30 minutes"
+    },
+    "days": {
+      "it": "25/09/2025",
+      "en": "09/25/2025"
+    },
+    "track": {
+      "it": ["Talk"],
+      "en": ["Talk"]
     },
     "topic": {
       "it": ["Developer Education"],
       "en": ["Developer Education"]
     },
     "location": "Main Hall"
+  },
+  {
+    "title": {
+      "it": "Quando il codice protegge il denaro",
+      "en": "When code protects money"
+    },
+    "speaker": "Valerio Leo",
+    "time": "14:30-15:00",
+    "duration": {
+      "it": "30 minuti",
+      "en": "30 minutes"
+    },
+    "days": {
+      "it": "25/09/2025",
+      "en": "09/25/2025"
+    },
+    "track": {
+      "it": ["Talk"],
+      "en": ["Talk"]
+    },
+    "topic": {
+      "it": ["Cryptography"],
+      "en": ["Cryptography"]
+    },
+    "location": "Main Hall"
+  },
+  {
+    "title": {
+      "it": "Coffee break e networking",
+      "en": "Coffee break and networking"
+    },
+    "speaker": "",
+    "time": "15:00-15:45",
+    "duration": {
+      "it": "45 minuti",
+      "en": "45 minutes"
+    },
+    "days": {
+      "it": "25/09/2025",
+      "en": "09/25/2025"
+    },
+    "track": {
+      "it": ["Break"],
+      "en": ["Break"]
+    },
+    "topic": {
+      "it": ["Networking"],
+      "en": ["Networking"]
+    },
+    "location": "Main Hall"
+  },
+  {
+    "title": {
+      "it": "Parliamo di rischi e sicurezza",
+      "en": "Let's chat about risks and security"
+    },
+    "speaker": "Jaack | Routescan",
+    "time": "15:45-16:15",
+    "duration": {
+      "it": "30 minuti",
+      "en": "30 minutes"
+    },
+    "days": {
+      "it": "25/09/2025",
+      "en": "09/25/2025"
+    },
+    "track": {
+      "it": ["Talk"],
+      "en": ["Talk"]
+    },
+    "topic": {
+      "it": ["Security"],
+      "en": ["Security"]
+    },
+    "location": "Main Hall"
+  },
+  {
+    "title": {
+      "it": "Il ruolo della blockchain nell'economia globale",
+      "en": "The role of blockchain in the global economy"
+    },
+    "speaker": "Global Shapers Bari",
+    "time": "16:15-16:45",
+    "duration": {
+      "it": "30 minuti",
+      "en": "30 minutes"
+    },
+    "days": {
+      "it": "25/09/2025",
+      "en": "09/25/2025"
+    },
+    "track": {
+      "it": ["Talk"],
+      "en": ["Talk"]
+    },
+    "topic": {
+      "it": ["Macroeconomics"],
+      "en": ["Macroeconomics"]
+    },
+    "location": "Main Hall"
+  },
+  {
+    "title": {
+      "it": "Chiusura",
+      "en": "Closing"
+    },
+    "speaker": "Alessandro Maci",
+    "time": "17:15-17:30",
+    "duration": {
+      "it": "15 minuti",
+      "en": "15 minutes"
+    },
+    "days": {
+      "it": "25/09/2025",
+      "en": "09/25/2025"
+    },
+    "track": {
+      "it": ["Closing"],
+      "en": ["Closing"]
+    },
+    "topic": {
+      "it": ["Wrap-up"],
+      "en": ["Wrap-up"]
+    },
+    "location": "Main Hall"
   }
-] 
+]

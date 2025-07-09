@@ -70,5 +70,15 @@
       "en": "DAO Facilitator and Governance Specialist at Routescan."
     },
     "Photourl": "/speakers/jack.jpg"
+  },
+  {
+    "Nome": "Gabriele",
+    "Cognome": "Martemucci",
+    "MainHashtag": "@UniCrypto",
+    "Mansione": {
+      "it": "Executive Manager presso UniCrypto, la prima community nazionale di studenti in Italia appassionati al Web3 e alla blockchain.",
+      "en": "Executive Manager at UniCrypto, the first national community of students in Italy passionate about Web3 and blockchain."
+    },
+    "Photourl": "/speakers/gabriele.jpeg"
   }
 ]
