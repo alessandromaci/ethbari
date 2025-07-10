@@ -226,8 +226,8 @@
   },
   {
     "title": {
-      "it": "Coffee break e networking",
-      "en": "Coffee break and networking"
+      "it": "Coffee break",
+      "en": "Coffee break"
     },
     "speaker": "",
     "time": "15:00-15:45",
@@ -301,31 +301,6 @@
   },
   {
     "title": {
-      "it": "Chiusura",
-      "en": "Closing"
-    },
-    "speaker": "Alessandro Maci",
-    "time": "17:15-17:30",
-    "duration": {
-      "it": "15 minuti",
-      "en": "15 minutes"
-    },
-    "days": {
-      "it": "25/09/2025",
-      "en": "09/25/2025"
-    },
-    "track": {
-      "it": ["Closing"],
-      "en": ["Closing"]
-    },
-    "topic": {
-      "it": ["Wrap-up"],
-      "en": ["Wrap-up"]
-    },
-    "location": "Main Hall"
-  },
-  {
-    "title": {
       "it": "Da zero a hero come blockchain developer",
       "en": "From zero to hero as a blockchain developer"
     },
@@ -336,8 +311,8 @@
       "en": "3 days"
     },
     "days": {
-      "it": "26/09/2025",
-      "en": "09/26/2025"
+      "it": "26-27-28/09/2025",
+      "en": "09/26-27-28/2025"
     },
     "track": {
       "it": ["Bootcamp"],

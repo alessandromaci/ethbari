@@ -42,7 +42,11 @@ const AgendaItem: React.FC<{ event: AgendaEvent, border: boolean }> = ({ event, 
   const { t } = useTranslation();
   const { i18n } = useTranslation();
   return (
-    <div className={`py-8 ${border ? 'border-b border-black' : ''} grid grid-cols-1 md:grid-cols-12 md:items-start gap-4 md:gap-6`}>
+    <div
+      className={`py-7 ${
+        border ? "border-b border-black" : ""
+      } grid grid-cols-1 md:grid-cols-12 md:items-start gap-4 md:gap-6`}
+    >
       {/* Info Evento (occupa più spazio) */}
       <div className="md:col-span-5">
         <h3 className="text-black font-bold text-2xl mb-1 font-geist">{event.title[i18n.language]}</h3>
