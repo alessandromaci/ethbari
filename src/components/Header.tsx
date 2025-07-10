@@ -24,7 +24,7 @@ const navLinks: NavLink[] = [
 const socialLinks = [
   {
     type: "telegram",
-    url: "https://t.me/ethbari",
+    url: "https://t.me/+XwfcBtCwOPE4NWI0",
     icon: "/icons/telegram.svg",
   },
   {

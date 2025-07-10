@@ -65,7 +65,7 @@ const Footer: React.FC = () => {
                       iconName="twitter"
                     />
                     <SocialIcon
-                      href="https://t.me/ethbari"
+                      href="https://t.me/+XwfcBtCwOPE4NWI0"
                       iconName="telegram"
                     />
                   </div>
