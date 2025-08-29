@@ -15,11 +15,11 @@
   {
     "Nome": "Francesco",
     "Cognome": "Bianchi",
-    "MainHashtag": "@Pareto",
+    "MainHashtag": "@kpk",
     "Socials_links": [{ "type": "twitter", "url": "https://x.com/biafffff" }],
     "Mansione": {
-      "it": "Growth Lead a Pareto. In precedenza ricercatore accademico e banchiere presso Citi.",
-      "en": "Growth Lead at Pareto. Previously an academic researcher and banker at Citi."
+      "it": "Growth Lead a kpk. In precedenza Growth Lead a Pareto, ricercatore accademico e banchiere presso Citi.",
+      "en": "Growth Lead at kpk. Previously Growth Lead at Pareto, academic researcher and banker at Citi."
     },
     "Photourl": "/speakers/francesco_bianchi.jpg"
   },
