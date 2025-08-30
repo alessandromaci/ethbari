@@ -1,5 +1,5 @@
-import React from 'react';
-import { useTranslation } from 'react-i18next';
+import React from "react";
+import { useTranslation } from "react-i18next";
 
 interface CommunityPartner {
   id: string;
@@ -12,43 +12,50 @@ interface CommunityPartner {
 // Aggiorniamo con i partner visibili nel design
 const communityPartners: CommunityPartner[] = [
   {
-    id: 'spaghetti-eth',
-    name: 'Spaghetti ETH',
-    logoUrl: '/logos/logo-spaghetteth.png', // Placeholder
-    websiteUrl: 'https://www.spaghett-eth.com/',
-    logoHeightClass: 'h-24'
+    id: "spaghetti-eth",
+    name: "Spaghetti ETH",
+    logoUrl: "/logos/logo-spaghetteth.png", // Placeholder
+    websiteUrl: "https://www.spaghett-eth.com/",
+    logoHeightClass: "h-24",
   },
   {
-    id: 'urbe-eth',
-    name: 'Urbe.ETH',
-    logoUrl: '/logos/logo-urbeeth.png',
-    websiteUrl: 'https://urbe.build/',
-    logoHeightClass: 'h-24'
+    id: "urbe-eth",
+    name: "Urbe.ETH",
+    logoUrl: "/logos/logo-urbeeth.png",
+    websiteUrl: "https://urbe.build/",
+    logoHeightClass: "h-24",
   },
   {
-    id: 'global-shapers',
-    name: 'Global Shapers Community',
-    logoUrl: '/logos/logo-global-shapers.png',
-    websiteUrl: 'https://www.globalshapers.org/home',
-    logoHeightClass: 'h-24'
+    id: "global-shapers",
+    name: "Global Shapers Community",
+    logoUrl: "/logos/logo-global-shapers.png",
+    websiteUrl: "https://www.globalshapers.org/home",
+    logoHeightClass: "h-24",
   },
   {
-    id: 'ethna',
-    name: 'ETHNA',
-    logoUrl: '/logos/logo-ethna.png',
-    websiteUrl: 'https://ethna.rocks/',
-    logoHeightClass: 'h-24'
+    id: "unicrypto",
+    name: "UniCrypto",
+    logoUrl: "/logos/logo-unicrypto.png",
+    websiteUrl: "https://www.instagram.com/unicrypto.it/",
+    logoHeightClass: "h-24",
+  },
+  {
+    id: "ethna",
+    name: "ETHNA",
+    logoUrl: "/logos/logo-ethna.png",
+    websiteUrl: "https://ethna.rocks/",
+    logoHeightClass: "h-24",
   },
 ];
 
 const PartnerLogo: React.FC<{ partner: CommunityPartner }> = ({ partner }) => {
   const logoSrc = partner.logoUrl;
-  const containerHeightClass = partner.logoHeightClass || 'h-28';
+  const containerHeightClass = partner.logoHeightClass || "h-28";
 
   return (
     <div className={`flex items-center justify-center ${containerHeightClass}`}>
       <a
-        href={partner.websiteUrl || '#'}
+        href={partner.websiteUrl || "#"}
         target="_blank"
         rel="noopener noreferrer"
         className="flex items-center justify-center w-full h-full p-2 hover:opacity-80 transition-opacity duration-200"
@@ -70,9 +77,9 @@ const CommunitySupport: React.FC = () => {
     <section className="w-full bg-white py-16 md:py-20 overflow-hidden">
       <div className="max-w-5xl mx-auto px-6 text-center relative">
         <h2 className="text-black text-4xl md:text-5xl uppercase mb-12 font-koho font-medium">
-          {t('communitySupport.title', 'COMMUNITY SUPPORT')}
+          {t("communitySupport.title", "COMMUNITY SUPPORT")}
         </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 relative z-10">
+        <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 relative z-10">
           {communityPartners.map((partner) => (
             <PartnerLogo key={partner.id} partner={partner} />
           ))}
@@ -89,4 +96,4 @@ const CommunitySupport: React.FC = () => {
   );
 };
 
-export default CommunitySupport; 
+export default CommunitySupport;
