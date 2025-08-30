@@ -15,7 +15,7 @@ function App() {
   return (
     <div className="flex flex-col min-h-screen bg-white">
       <SEO />
-      <EarlyBuilderBanner />
+      {/* <EarlyBuilderBanner /> */}
       <Header />
       <main className="flex-grow">
         <div id="home">
