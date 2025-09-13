@@ -5,10 +5,10 @@
       "en": "Why ETH Bari?"
     },
     "speaker": "Alessandro Maci",
-    "time": "10:00-10:15",
+    "time": "10:00-10:05",
     "duration": {
-      "it": "15 minuti",
-      "en": "15 minutes"
+      "it": "5 minuti",
+      "en": "5 minutes"
     },
     "days": {
       "it": "25/09/2025",
@@ -26,14 +26,14 @@
   },
   {
     "title": {
-      "it": "La fiducia - una introduzione alla Blockchain",
-      "en": "Trust - an introduction to Blockchain"
+      "it": "La Fiducia - Introduzione alla Blockchain",
+      "en": "Trust - Introduction to Blockchain"
     },
     "speaker": "Gabriele Martemucci",
-    "time": "10:15-10:45",
+    "time": "10:05-10:30",
     "duration": {
-      "it": "30 minuti",
-      "en": "30 minutes"
+      "it": "25 minuti",
+      "en": "25 minutes"
     },
     "days": {
       "it": "25/09/2025",
@@ -44,18 +44,18 @@
       "en": ["Talk"]
     },
     "topic": {
-      "it": ["Web3 Adoption"],
-      "en": ["Web3 Adoption"]
+      "it": ["Tecnologia"],
+      "en": ["Technology"]
     },
     "location": "Main Hall"
   },
   {
     "title": {
-      "it": "Come siamo arrivati qui? La storia della DeFi",
-      "en": "How did we get here? The history of DeFi"
+      "it": "Conosciamo la Finanza Decentralizzata (DeFi)",
+      "en": "Let's talk about DeFi"
     },
     "speaker": "Francesco Bianchi",
-    "time": "10:45-11:15",
+    "time": "10:30-11:00",
     "duration": {
       "it": "30 minuti",
       "en": "30 minutes"
@@ -76,36 +76,11 @@
   },
   {
     "title": {
-      "it": "Stablecoin: minaccia o salvezza per il sistema?",
-      "en": "Stablecoins: threat or salvation for the system?"
-    },
-    "speaker": "Maria Magenes",
-    "time": "11:15-11:45",
-    "duration": {
-      "it": "30 minuti",
-      "en": "30 minutes"
-    },
-    "days": {
-      "it": "25/09/2025",
-      "en": "09/25/2025"
-    },
-    "track": {
-      "it": ["Talk"],
-      "en": ["Talk"]
-    },
-    "topic": {
-      "it": ["DeFi"],
-      "en": ["DeFi"]
-    },
-    "location": "Main Hall"
-  },
-  {
-    "title": {
-      "it": "Tokenizzare tutto? Le istituzioni e gli asset reali",
-      "en": "Tokenize everything? Institutions and real-world assets"
+      "it": "Il Ruolo delle Istituzioni Finanziare",
+      "en": "The Role of Financial Institutions"
     },
     "speaker": "Alessandro Maci",
-    "time": "11:45-12:15",
+    "time": "11:00-11:30",
     "duration": {
       "it": "30 minuti",
       "en": "30 minutes"
@@ -119,21 +94,47 @@
       "en": ["Talk"]
     },
     "topic": {
-      "it": ["RWA & Istituzioni"],
-      "en": ["RWA & Institutions"]
+      "it": ["Istituzioni"],
+      "en": ["Institutions"]
     },
     "location": "Main Hall"
   },
   {
     "title": {
-      "it": "Pranzo",
-      "en": "Lunch"
+      "it": "Introduzione a Stablecoin",
+      "en": "Introduction to Stablecoins"
+    },
+    "speaker": "Maria Magenes",
+    "time": "11:30-12:00",
+    "duration": {
+      "it": "30 minuti",
+      "en": "30 minutes"
+    },
+    "days": {
+      "it": "25/09/2025",
+      "en": "09/25/2025"
+    },
+    "track": {
+      "it": ["Talk"],
+      "en": ["Talk"]
+    },
+    "topic": {
+      "it": ["DeFi"],
+      "en": ["DeFi"]
+    },
+    "location": "Main Hall"
+  },
+
+  {
+    "title": {
+      "it": "Pranzo 🥪",
+      "en": "Lunch 🥪"
     },
     "speaker": "",
-    "time": "12:15-13:30",
+    "time": "12:00-13:30",
     "duration": {
-      "it": "45 minuti",
-      "en": "45 minutes"
+      "it": "90 minuti",
+      "en": "90 minutes"
     },
     "days": {
       "it": "25/09/2025",
@@ -151,10 +152,10 @@
   },
   {
     "title": {
-      "it": "Cosa possiamo fare con Ethereum oggi?",
-      "en": "What can we do with Ethereum today?"
+      "it": "Introduzione a Solidity: Non e` mai troppo tardi.",
+      "en": "Introduction to Solidity: It's never too late."
     },
-    "speaker": "Limone.eth",
+    "speaker": "Matteo Tambussi",
     "time": "13:30-14:00",
     "duration": {
       "it": "30 minuti",
@@ -169,17 +170,18 @@
       "en": ["Talk"]
     },
     "topic": {
-      "it": ["Web3 Adoption"],
-      "en": ["Web3 Adoption"]
+      "it": ["Tecnologia"],
+      "en": ["Technology"]
     },
     "location": "Main Hall"
   },
+
   {
     "title": {
-      "it": "Non e` mai troppo tardi. Introduzione a Solidity",
-      "en": "It's never too late. Introduction to Solidity"
+      "it": "Voce alle Community Pugliesi",
+      "en": "Voice to the Puglian Community"
     },
-    "speaker": "Matteo Tambussi",
+    "speaker": "Apulian Chain, Global Shapers Bari, Puglia Techs, Hoken Tech",
     "time": "14:00-14:30",
     "duration": {
       "it": "30 minuti",
@@ -194,17 +196,18 @@
       "en": ["Talk"]
     },
     "topic": {
-      "it": ["Developer Education"],
-      "en": ["Developer Education"]
+      "it": ["Community"],
+      "en": ["Community"]
     },
     "location": "Main Hall"
   },
+
   {
     "title": {
-      "it": "Quando il codice protegge il denaro",
-      "en": "When code protects money"
+      "it": "Parliamo di Sicurezza e Protezione",
+      "en": "Let's talk about Security and Protection"
     },
-    "speaker": "Valerio Leo",
+    "speaker": "Jaack",
     "time": "14:30-15:00",
     "duration": {
       "it": "30 minuti",
@@ -219,15 +222,16 @@
       "en": ["Talk"]
     },
     "topic": {
-      "it": ["Cryptography"],
-      "en": ["Cryptography"]
+      "it": ["Tecnologia"],
+      "en": ["Technology"]
     },
     "location": "Main Hall"
   },
+
   {
     "title": {
-      "it": "Coffee break",
-      "en": "Coffee break"
+      "it": "Coffee Break ☕",
+      "en": "Coffee Break ☕"
     },
     "speaker": "",
     "time": "15:00-15:45",
@@ -249,12 +253,13 @@
     },
     "location": "Main Hall"
   },
+
   {
     "title": {
-      "it": "Parliamo di rischi e sicurezza",
-      "en": "Let's chat about risks and security"
+      "it": "Le App ed il Potenziale di Ethereum",
+      "en": "The Apps and the Potential of Ethereum"
     },
-    "speaker": "Jaack | Routescan",
+    "speaker": "Limone.eth",
     "time": "15:45-16:15",
     "duration": {
       "it": "30 minuti",
@@ -269,17 +274,18 @@
       "en": ["Talk"]
     },
     "topic": {
-      "it": ["Security"],
-      "en": ["Security"]
+      "it": ["Tecnologia"],
+      "en": ["Technology"]
     },
     "location": "Main Hall"
   },
+
   {
     "title": {
-      "it": "Il ruolo della blockchain nell'economia globale",
-      "en": "The role of blockchain in the global economy"
+      "it": "Introduzione a Privacy su Blockchain",
+      "en": "Introduction to Privacy on Blockchain"
     },
-    "speaker": "Global Shapers Bari",
+    "speaker": "Valerio Leo",
     "time": "16:15-16:45",
     "duration": {
       "it": "30 minuti",
@@ -294,8 +300,34 @@
       "en": ["Talk"]
     },
     "topic": {
-      "it": ["Macroeconomics"],
-      "en": ["Macroeconomics"]
+      "it": ["Tecnologia"],
+      "en": ["Technology"]
+    },
+    "location": "Main Hall"
+  },
+
+  {
+    "title": {
+      "it": "Blockchain oggi tra prospettive accademiche ed economiche",
+      "en": "Blockchain today between academic and economic perspectives"
+    },
+    "speaker": "Prof.ssa Marina Mongiello, Giulio Albano",
+    "time": "16:45-17:15",
+    "duration": {
+      "it": "30 minuti",
+      "en": "30 minutes"
+    },
+    "days": {
+      "it": "25/09/2025",
+      "en": "09/25/2025"
+    },
+    "track": {
+      "it": ["Panel"],
+      "en": ["Panel"]
+    },
+    "topic": {
+      "it": ["Economia, Ricerca"],
+      "en": ["Economics, Research"]
     },
     "location": "Main Hall"
   },
