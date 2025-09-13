@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
-import { useTranslation } from 'react-i18next';
-import CustomButton from './CustomBotton';
-import Timer from './Timer';
+import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
+import CustomButton from "./CustomBotton";
+import Timer from "./Timer";
 
 const Hero: React.FC = () => {
   const { t } = useTranslation();
@@ -12,12 +12,12 @@ const Hero: React.FC = () => {
       setIsMobile(window.innerWidth < 768);
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
     // Esegui l'handler una volta all'inizio in caso la larghezza iniziale sia già mobile
     handleResize();
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
   }, []); // Array di dipendenze vuoto per eseguire l'effetto solo al montaggio e smontaggio
 
@@ -30,16 +30,24 @@ const Hero: React.FC = () => {
           <div className="flex flex-col justify-center text-left">
             <div className="mb-3 md:mb-4">
               <p className="block pl-1 text-black text-lg md:text-xl font-semibold tracking-widest uppercase font-geist font-bold">
-                {t('hero.eventDate', 'SEPTEMBER 25-28, 2025')}
+                {t("hero.eventDate", "SEPTEMBER 25-28, 2025")}
               </p>
             </div>
-            <h1 className="text-black font-black text-4xl sm:text-5xl md:text-6xl lg:text-[68px] leading-tight mb-6 font-koho font-medium" style={{ letterSpacing: '-0.02em' }}>
-              {t('hero.title.line1', 'COSTRUISCI IL')}<br />
-              {t('hero.title.line2', 'FUTURO')}<br />
-              {t('hero.title.line3', 'DELLA FINANZA')}
+            <h1
+              className="text-black font-black text-4xl sm:text-5xl md:text-6xl lg:text-[68px] leading-tight mb-6 font-koho font-medium"
+              style={{ letterSpacing: "-0.02em" }}
+            >
+              {t("hero.title.line1", "COSTRUISCI IL")}
+              <br />
+              {t("hero.title.line2", "FUTURO")}
+              <br />
+              {t("hero.title.line3", "DELLA FINANZA")}
             </h1>
             <p className="text-black font-normal text-base md:text-lg max-w-md lg:mx-0 mb-8 leading-relaxed font-geist">
-              {t('hero.subtitleFull', "ETH Bari è l'evento che porta l'innovazione della finanza decentralizzata (DeFi) nel Sud Italia. Unisciti a studenti, giovani professionisti e appassionati di innovazione tecnologica per esplorare, costruire e dare forma al futuro della finanza — e far nascere nuove idee all'incrocio tra tecnologia, economia e blockchain.")}
+              {t(
+                "hero.subtitleFull",
+                "ETH Bari è l'evento che porta l'innovazione della finanza decentralizzata (DeFi) nel Sud Italia. Unisciti a studenti, giovani professionisti e appassionati di innovazione tecnologica per esplorare, costruire e dare forma al futuro della finanza — e far nascere nuove idee all'incrocio tra tecnologia, economia e blockchain."
+              )}
             </p>
             <div className="flex justify-start">
               <CustomButton
@@ -63,11 +71,10 @@ const Hero: React.FC = () => {
             {/* Sfondo Gradiente Rosa */}
             <div className="absolute inset-x-0 bottom-0 h-3/4 md:h-full w-full md:w-4/5 lg:w-3/4 xl:w-2/3 bg-gradient-to-t from-[#fbe6e9]/70 via-[#fbe6e9]/40 to-transparent rounded-t-[150px] md:rounded-t-[200px] z-0 opacity-70 md:opacity-100 md:right-0 md:left-auto blur-2xl"></div>
 
-
             {/* Testo Location sovrapposto - Ripristinato e Modificato */}
             <div className="absolute lg:block hidden top-0 right-4 md:right-6 lg:right-8 z-20">
               <span className="text-black text-xl font-semibold tracking-widest uppercase font-geist font-bold">
-                {t('hero.location', 'SPAZIO MURAT - BARI')}
+                {t("hero.location", "SPAZIO MURAT - BARI")}
               </span>
             </div>
 
@@ -75,7 +82,7 @@ const Hero: React.FC = () => {
             <div className="relative z-10 w-full h-full lg:flex lg:items-center lg:justify-center lg:max-w-none">
               <img
                 src="/EthHeroImag-desktop.webp"
-                alt={t('hero.imagePlaceholder', 'ETHBARI Visual Placeholder')}
+                alt={t("hero.imagePlaceholder", "ETHBARI Visual Placeholder")}
                 className="hidden lg:block min-h-[773px] mt-[-100px] min-w-[1036px] lg:scale-[0.8] lg:-translate-y-5 transition-transform duration-500 lg:[mask-image:linear-gradient(to_right,black_60%,transparent_100%)]"
               />
 
@@ -87,17 +94,13 @@ const Hero: React.FC = () => {
               <div className="block lg:hidden relative w-[100vw] h-full">
                 <img
                   src="/EthHeroImage.png"
-                  alt={t('hero.imagePlaceholder', 'ETHBARI Visual Placeholder')}
+                  alt={t("hero.imagePlaceholder", "ETHBARI Visual Placeholder")}
                   className="w-full h-full object-contain" // Corretta altezza e aggiunto object-fit
                 />
                 {/* Gradiente Superiore Mobile */}
-                <div
-                  className="absolute top-0 left-0 w-full h-[150px] transform -translate-y-1/2 bg-gradient-to-b from-transparent via-[#fbe6e9] to-transparent"
-                />
+                <div className="absolute top-0 left-0 w-full h-[150px] transform -translate-y-1/2 bg-gradient-to-b from-transparent via-[#fbe6e9] to-transparent" />
                 {/* Gradiente Inferiore Mobile */}
-                <div
-                  className="absolute bottom-0 left-0 w-full h-[150px] transform translate-y-1/2 bg-gradient-to-t from-transparent via-[#fbe6e9] to-transparent"
-                />
+                <div className="absolute bottom-0 left-0 w-full h-[150px] transform translate-y-1/2 bg-gradient-to-t from-transparent via-[#fbe6e9] to-transparent" />
               </div>
             </div>
           </div>
@@ -110,23 +113,15 @@ const Hero: React.FC = () => {
         </div>
       </div>
 
-      
       {/* Sezione Supporters integrata sotto */}
       <div className="w-full flex flex-col items-center pt-10 pb-12 md:pt-16 md:pb-20 z-10 relative">
         <p className="text-black text-[22px] leading-[25px] font-semibold tracking-[39%]  font-semibold mb-6 uppercase font-koho font-semibold">
-          {t('supportersWoop.sponsoredBy', 'SUPPORTED BY')}
+          {t("supportersWoop.sponsoredBy", "SUPPORTED BY")}
         </p>
 
-        {/* Immagine Ellipse per l'effetto glow, posizionata rispetto al contenitore esterno */}
-        <img
-          src="/Ellipse.png"
-          alt=""
-          className="absolute left-1/2 -translate-x-1/2 w-100 h-auto md:w-96 lg:w-[600px] z-0 mt-[24px] pointer-events-none"
-          aria-hidden="true"
-        />
-
-        {/* Contenitore per il solo logo Woop, per il controllo dello z-index */}
-        <div className="relative z-10">
+        {/* Contenitore per i loghi degli sponsor, per il controllo dello z-index */}
+        <div className="relative z-10 flex flex-col sm:flex-row items-center justify-center gap-16 sm:gap-20 lg:gap-24 mt-[24px]">
+          {/* Woop Pay */}
           <a
             href="https://woopwidget.com"
             target="_blank"
@@ -136,7 +131,35 @@ const Hero: React.FC = () => {
             <img
               src="/WoopPayLogo.png"
               alt="Woop Pay Logo"
-              className="h-[10] md:h-[12] lg:h-[66px] mt-[24px]"
+              className="h-[75px] md:h-[90px] lg:h-[120px]"
+            />
+          </a>
+
+          {/* Avalanche */}
+          <a
+            href="https://www.avax.network"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer hover:opacity-90 transition-opacity"
+          >
+            <img
+              src="/AvalancheLogo.png"
+              alt="Avalanche Logo"
+              className="h-[90px] md:h-[105px] lg:h-[135px]"
+            />
+          </a>
+
+          {/* spaghettETH */}
+          <a
+            href="https://spaghetteth.io"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="cursor-pointer hover:opacity-90 transition-opacity"
+          >
+            <img
+              src="/logos/logo-spaghetteth.png"
+              alt="spaghettETH Logo"
+              className="h-[90px] md:h-[105px] lg:h-[135px]"
             />
           </a>
         </div>

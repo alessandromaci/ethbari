@@ -46,6 +46,13 @@ const communityPartners: CommunityPartner[] = [
     websiteUrl: "https://ethna.rocks/",
     logoHeightClass: "h-24",
   },
+  {
+    id: "pugliatechs",
+    name: "Puglia Techs",
+    logoUrl: "/logos/logo-puglia-techs.png",
+    websiteUrl: "https://pugliatechs.com/",
+    logoHeightClass: "h-24",
+  },
 ];
 
 const PartnerLogo: React.FC<{ partner: CommunityPartner }> = ({ partner }) => {
@@ -79,7 +86,7 @@ const CommunitySupport: React.FC = () => {
         <h2 className="text-black text-4xl md:text-5xl uppercase mb-12 font-koho font-medium">
           {t("communitySupport.title", "COMMUNITY SUPPORT")}
         </h2>
-        <div className="grid grid-cols-2 sm:grid-cols-5 gap-4 relative z-10">
+        <div className="grid grid-cols-2 sm:grid-cols-6 gap-4 relative z-10">
           {communityPartners.map((partner) => (
             <PartnerLogo key={partner.id} partner={partner} />
           ))}
