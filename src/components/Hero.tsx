@@ -151,7 +151,7 @@ const Hero: React.FC = () => {
 
           {/* spaghettETH */}
           <a
-            href="https://spaghetteth.io"
+            href="https://www.spaghett-eth.com/"
             target="_blank"
             rel="noopener noreferrer"
             className="cursor-pointer hover:opacity-90 transition-opacity"
