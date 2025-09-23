@@ -1,6 +1,31 @@
 [
   {
     "title": {
+      "it": "Caffè di Benvenuto ☕",
+      "en": "Welcome Coffee ☕"
+    },
+    "speaker": "",
+    "time": "9:00-10:00",
+    "duration": {
+      "it": "1 ora",
+      "en": "1 hour"
+    },
+    "days": {
+      "it": "25/09/2025",
+      "en": "09/25/2025"
+    },
+    "track": {
+      "it": ["Break"],
+      "en": ["Break"]
+    },
+    "topic": {
+      "it": ["Networking"],
+      "en": ["Networking"]
+    },
+    "location": "Main Hall"
+  },
+  {
+    "title": {
       "it": "Perché ETH Bari?",
       "en": "Why ETH Bari?"
     },
